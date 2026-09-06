@@ -1,0 +1,2456 @@
+{
+  "meta": {
+    "survey_year": 2024,
+    "total_n": 2020,
+    "public_n": 1012,
+    "private_n": 1008,
+    "scale": "1~5점",
+    "weighting": "원자료 가중치(WT) 적용",
+    "analysis": "조직유형별 가중 최소제곱 회귀, HC3 강건표준오차",
+    "outcome": "혁신행동(Y15-7~9 평균)",
+    "controls": [
+      "연령",
+      "재직기간",
+      "월평균 개인소득",
+      "혼인상태",
+      "성별",
+      "학력",
+      "업무량",
+      "직무만족",
+      "조직공정성"
+    ],
+    "control_terms": 18,
+    "control_note": "원고의 9개 통제개념을 2024 자료에서 대응 가능한 범주와 문항으로 모두 반영했습니다. 혼인상태·학력 범주는 통합했고, 조직공정성은 2024 절차·분배 공정성 5문항으로 대체했습니다. 원고의 동일 코딩을 재현한 모형은 아닙니다.",
+    "caution": "횡단면 인식조사이므로 영향력은 인과효과가 아닌 통제 후 연관성입니다."
+  },
+  "groups": {
+    "public": {
+      "n": 1012,
+      "weighted_n": 1012.0,
+      "r_squared": 0.404,
+      "adjusted_r_squared": 0.39,
+      "max_factor_vif": 1.76,
+      "max_full_model_vif": 12.47,
+      "factor_vif": {
+        "proactivity": 1.44,
+        "autonomy": 1.56,
+        "goal_clarity": 1.76,
+        "public_service_motivation": 1.57,
+        "integrated_leadership": 1.45
+      },
+      "innovation_mean": 3.57,
+      "innovation_high_share": 0.426,
+      "coefficients": {
+        "proactivity": {
+          "beta": 0.427,
+          "p": 0.0,
+          "ci_low": 0.339,
+          "ci_high": 0.516
+        },
+        "autonomy": {
+          "beta": 0.145,
+          "p": 0.001,
+          "ci_low": 0.059,
+          "ci_high": 0.232
+        },
+        "goal_clarity": {
+          "beta": -0.005,
+          "p": 0.9126,
+          "ci_low": -0.099,
+          "ci_high": 0.088
+        },
+        "public_service_motivation": {
+          "beta": 0.143,
+          "p": 0.0038,
+          "ci_low": 0.046,
+          "ci_high": 0.24
+        },
+        "integrated_leadership": {
+          "beta": 0.102,
+          "p": 0.0505,
+          "ci_low": -0.0,
+          "ci_high": 0.205
+        }
+      },
+      "control_coefficients": {
+        "age_30s": {
+          "label": "연령: 30대",
+          "beta": 0.112,
+          "p": 0.3771
+        },
+        "age_40s": {
+          "label": "연령: 40대",
+          "beta": 0.186,
+          "p": 0.2142
+        },
+        "age_50plus": {
+          "label": "연령: 50대 이상",
+          "beta": 0.043,
+          "p": 0.8154
+        },
+        "tenure_6_10": {
+          "label": "재직기간: 6~10년",
+          "beta": -0.005,
+          "p": 0.9623
+        },
+        "tenure_11_20": {
+          "label": "재직기간: 11~20년",
+          "beta": 0.098,
+          "p": 0.3808
+        },
+        "tenure_21plus": {
+          "label": "재직기간: 21년 이상",
+          "beta": 0.018,
+          "p": 0.9045
+        },
+        "income_200_400": {
+          "label": "소득: 200~400만원",
+          "beta": 0.208,
+          "p": 0.3175
+        },
+        "income_400_600": {
+          "label": "소득: 400~600만원",
+          "beta": 0.103,
+          "p": 0.6439
+        },
+        "income_600_800": {
+          "label": "소득: 600~800만원",
+          "beta": 0.1,
+          "p": 0.6861
+        },
+        "income_800plus": {
+          "label": "소득: 800만원 이상",
+          "beta": 0.549,
+          "p": 0.0394
+        },
+        "partnered": {
+          "label": "혼인상태: 배우자 있음",
+          "beta": 0.083,
+          "p": 0.2486
+        },
+        "male": {
+          "label": "성별: 남성",
+          "beta": -0.059,
+          "p": 0.3648
+        },
+        "education_high": {
+          "label": "학력: 고졸 이하",
+          "beta": -0.138,
+          "p": 0.4963
+        },
+        "education_college": {
+          "label": "학력: 전문대 졸업",
+          "beta": -0.286,
+          "p": 0.1588
+        },
+        "education_university": {
+          "label": "학력: 4년제 대학 졸업",
+          "beta": -0.083,
+          "p": 0.2832
+        },
+        "z_workload": {
+          "label": "업무량",
+          "beta": 0.033,
+          "p": 0.3618
+        },
+        "z_job_satisfaction": {
+          "label": "직무만족",
+          "beta": 0.021,
+          "p": 0.7054
+        },
+        "z_organizational_justice": {
+          "label": "조직공정성",
+          "beta": -0.074,
+          "p": 0.1538
+        }
+      }
+    },
+    "private": {
+      "n": 1008,
+      "weighted_n": 1008.0,
+      "r_squared": 0.442,
+      "adjusted_r_squared": 0.429,
+      "max_factor_vif": 1.89,
+      "max_full_model_vif": 19.97,
+      "factor_vif": {
+        "proactivity": 1.57,
+        "autonomy": 1.62,
+        "goal_clarity": 1.89,
+        "public_service_motivation": 1.52,
+        "integrated_leadership": 1.79
+      },
+      "innovation_mean": 3.54,
+      "innovation_high_share": 0.359,
+      "coefficients": {
+        "proactivity": {
+          "beta": 0.451,
+          "p": 0.0,
+          "ci_low": 0.375,
+          "ci_high": 0.527
+        },
+        "autonomy": {
+          "beta": 0.109,
+          "p": 0.0064,
+          "ci_low": 0.031,
+          "ci_high": 0.188
+        },
+        "goal_clarity": {
+          "beta": 0.084,
+          "p": 0.0604,
+          "ci_low": -0.004,
+          "ci_high": 0.171
+        },
+        "public_service_motivation": {
+          "beta": 0.145,
+          "p": 0.0001,
+          "ci_low": 0.074,
+          "ci_high": 0.215
+        },
+        "integrated_leadership": {
+          "beta": 0.005,
+          "p": 0.9146,
+          "ci_low": -0.084,
+          "ci_high": 0.093
+        }
+      },
+      "control_coefficients": {
+        "age_30s": {
+          "label": "연령: 30대",
+          "beta": 0.021,
+          "p": 0.8475
+        },
+        "age_40s": {
+          "label": "연령: 40대",
+          "beta": -0.023,
+          "p": 0.8422
+        },
+        "age_50plus": {
+          "label": "연령: 50대 이상",
+          "beta": -0.057,
+          "p": 0.6338
+        },
+        "tenure_6_10": {
+          "label": "재직기간: 6~10년",
+          "beta": -0.022,
+          "p": 0.7974
+        },
+        "tenure_11_20": {
+          "label": "재직기간: 11~20년",
+          "beta": -0.024,
+          "p": 0.7632
+        },
+        "tenure_21plus": {
+          "label": "재직기간: 21년 이상",
+          "beta": -0.034,
+          "p": 0.7164
+        },
+        "income_200_400": {
+          "label": "소득: 200~400만원",
+          "beta": -0.292,
+          "p": 0.1825
+        },
+        "income_400_600": {
+          "label": "소득: 400~600만원",
+          "beta": -0.237,
+          "p": 0.2863
+        },
+        "income_600_800": {
+          "label": "소득: 600~800만원",
+          "beta": -0.236,
+          "p": 0.3066
+        },
+        "income_800plus": {
+          "label": "소득: 800만원 이상",
+          "beta": -0.143,
+          "p": 0.5433
+        },
+        "partnered": {
+          "label": "혼인상태: 배우자 있음",
+          "beta": 0.053,
+          "p": 0.3666
+        },
+        "male": {
+          "label": "성별: 남성",
+          "beta": 0.044,
+          "p": 0.3692
+        },
+        "education_high": {
+          "label": "학력: 고졸 이하",
+          "beta": 0.016,
+          "p": 0.8739
+        },
+        "education_college": {
+          "label": "학력: 전문대 졸업",
+          "beta": -0.032,
+          "p": 0.7517
+        },
+        "education_university": {
+          "label": "학력: 4년제 대학 졸업",
+          "beta": 0.022,
+          "p": 0.7612
+        },
+        "z_workload": {
+          "label": "업무량",
+          "beta": -0.004,
+          "p": 0.8715
+        },
+        "z_job_satisfaction": {
+          "label": "직무만족",
+          "beta": 0.085,
+          "p": 0.0795
+        },
+        "z_organizational_justice": {
+          "label": "조직공정성",
+          "beta": -0.059,
+          "p": 0.2276
+        }
+      }
+    }
+  },
+  "control_scales": {
+    "mean_method": "집단별 비가중 산술평균",
+    "scales": [
+      {
+        "id": "workload",
+        "label": "업무량",
+        "variables": [
+          "Y7_1",
+          "Y7_2"
+        ],
+        "reliability_alpha": 0.84,
+        "public": {
+          "mean": 3.38
+        },
+        "private": {
+          "mean": 3.04
+        },
+        "item_means": [
+          {
+            "id": "Y7_1",
+            "label": "7] 1) 직장일이 많아져 가족적 책임(육아, 가사활동 등)을 다하기 어렵다",
+            "public": 3.34,
+            "private": 2.94
+          },
+          {
+            "id": "Y7_2",
+            "label": "7] 2) 직장일로 인하여 개인적인 삶을 즐기는 것이 어렵고 그로 인해 스트레스가 발생한다",
+            "public": 3.41,
+            "private": 3.14
+          }
+        ]
+      },
+      {
+        "id": "job_satisfaction",
+        "label": "직무만족",
+        "variables": [
+          "Y16_1",
+          "Y16_2",
+          "Y16_3",
+          "Y16_4"
+        ],
+        "reliability_alpha": 0.78,
+        "public": {
+          "mean": 2.89
+        },
+        "private": {
+          "mean": 3.26
+        },
+        "item_means": [
+          {
+            "id": "Y16_1",
+            "label": "16] 1) 내가 수행하는 전반적인 직무",
+            "public": 3.32,
+            "private": 3.54
+          },
+          {
+            "id": "Y16_2",
+            "label": "16] 2) 일하는 대가로 받는 보수",
+            "public": 2.26,
+            "private": 3.05
+          },
+          {
+            "id": "Y16_3",
+            "label": "16] 3) 내가 일하는 조직의 근무환경",
+            "public": 2.93,
+            "private": 3.29
+          },
+          {
+            "id": "Y16_4",
+            "label": "16] 4) 부서 내 나를 관리감독하는 상사",
+            "public": 3.03,
+            "private": 3.17
+          }
+        ]
+      },
+      {
+        "id": "organizational_justice",
+        "label": "조직공정성",
+        "variables": [
+          "Y6_1",
+          "Y6_2",
+          "Y6_3",
+          "Y6_4",
+          "Y6_5"
+        ],
+        "reliability_alpha": 0.92,
+        "public": {
+          "mean": 2.67
+        },
+        "private": {
+          "mean": 3.26
+        },
+        "item_means": [
+          {
+            "id": "Y6_1",
+            "label": "6] 1) 성과평가 절차에서 나의 의견과 감정을 표현할 수 있다",
+            "public": 2.66,
+            "private": 3.35
+          },
+          {
+            "id": "Y6_2",
+            "label": "6] 2) 성과평가 절차는 일관되게 적용되고 있다",
+            "public": 2.68,
+            "private": 3.19
+          },
+          {
+            "id": "Y6_3",
+            "label": "6] 3) 성과평가 절차는 편견 없이 공정하게 진행된다",
+            "public": 2.58,
+            "private": 3.2
+          },
+          {
+            "id": "Y6_4",
+            "label": "6] 4) 성과평가 결과는 내가 일에 투입한 노력을 반영한다",
+            "public": 2.73,
+            "private": 3.33
+          },
+          {
+            "id": "Y6_5",
+            "label": "6] 5) 성과평가 결과는 내가 완료한 일의 양과 질을 고려할 때 적절하다",
+            "public": 2.69,
+            "private": 3.22
+          }
+        ]
+      }
+    ]
+  },
+  "outcome_gap": {
+    "mean": 0.03,
+    "mean_p": 0.3835,
+    "high_share": 0.067,
+    "high_share_p": 0.0035
+  },
+  "outcome_reliability_alpha": 0.85,
+  "efa": {
+    "method": "주성분 요인추출·Kaiser 기준(고유값>1)·Varimax 직각회전",
+    "n": 2020,
+    "item_count": 32,
+    "expected_factor_count": 5,
+    "retained_factor_count": 5,
+    "eigenvalues": [
+      12.947,
+      3.723,
+      1.958,
+      1.484,
+      1.178,
+      0.832,
+      0.689,
+      0.641,
+      0.593,
+      0.573
+    ],
+    "variance_explained": 0.665,
+    "kmo": 0.962,
+    "bartlett_chi_square": 44077.5,
+    "bartlett_df": 496,
+    "bartlett_p": 0.0,
+    "minimum_primary_loading": 0.571,
+    "items_at_or_above_point_6": 31,
+    "matching_items": 32,
+    "all_items_match_expected": true,
+    "passes_factor_count_and_pattern": true,
+    "item_loadings": [
+      {
+        "variable": "Y2_1",
+        "expected_factor": "proactivity",
+        "primary_factor": "proactivity",
+        "primary_loading": 0.779,
+        "secondary_loading": 0.197,
+        "communality": 0.683,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y2_2",
+        "expected_factor": "proactivity",
+        "primary_factor": "proactivity",
+        "primary_loading": 0.769,
+        "secondary_loading": 0.151,
+        "communality": 0.64,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y2_3",
+        "expected_factor": "proactivity",
+        "primary_factor": "proactivity",
+        "primary_loading": 0.641,
+        "secondary_loading": 0.208,
+        "communality": 0.528,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y2_4",
+        "expected_factor": "proactivity",
+        "primary_factor": "proactivity",
+        "primary_loading": 0.734,
+        "secondary_loading": 0.159,
+        "communality": 0.598,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y2_5",
+        "expected_factor": "proactivity",
+        "primary_factor": "proactivity",
+        "primary_loading": 0.713,
+        "secondary_loading": 0.226,
+        "communality": 0.599,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y4_1",
+        "expected_factor": "autonomy",
+        "primary_factor": "autonomy",
+        "primary_loading": 0.788,
+        "secondary_loading": 0.234,
+        "communality": 0.754,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y4_2",
+        "expected_factor": "autonomy",
+        "primary_factor": "autonomy",
+        "primary_loading": 0.848,
+        "secondary_loading": 0.183,
+        "communality": 0.821,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y4_3",
+        "expected_factor": "autonomy",
+        "primary_factor": "autonomy",
+        "primary_loading": 0.831,
+        "secondary_loading": 0.233,
+        "communality": 0.801,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y5_1",
+        "expected_factor": "goal_clarity",
+        "primary_factor": "goal_clarity",
+        "primary_loading": 0.676,
+        "secondary_loading": 0.286,
+        "communality": 0.654,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y5_2",
+        "expected_factor": "goal_clarity",
+        "primary_factor": "goal_clarity",
+        "primary_loading": 0.769,
+        "secondary_loading": 0.246,
+        "communality": 0.709,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y5_3",
+        "expected_factor": "goal_clarity",
+        "primary_factor": "goal_clarity",
+        "primary_loading": 0.681,
+        "secondary_loading": 0.335,
+        "communality": 0.673,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y5_4",
+        "expected_factor": "goal_clarity",
+        "primary_factor": "goal_clarity",
+        "primary_loading": 0.729,
+        "secondary_loading": 0.248,
+        "communality": 0.674,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y10_1",
+        "expected_factor": "public_service_motivation",
+        "primary_factor": "public_service_motivation",
+        "primary_loading": 0.69,
+        "secondary_loading": 0.23,
+        "communality": 0.609,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y10_2",
+        "expected_factor": "public_service_motivation",
+        "primary_factor": "public_service_motivation",
+        "primary_loading": 0.737,
+        "secondary_loading": 0.237,
+        "communality": 0.643,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y10_3",
+        "expected_factor": "public_service_motivation",
+        "primary_factor": "public_service_motivation",
+        "primary_loading": 0.808,
+        "secondary_loading": 0.19,
+        "communality": 0.723,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y10_4",
+        "expected_factor": "public_service_motivation",
+        "primary_factor": "public_service_motivation",
+        "primary_loading": 0.79,
+        "secondary_loading": 0.202,
+        "communality": 0.694,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y10_5",
+        "expected_factor": "public_service_motivation",
+        "primary_factor": "public_service_motivation",
+        "primary_loading": 0.571,
+        "secondary_loading": 0.207,
+        "communality": 0.438,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y11_1",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.758,
+        "secondary_loading": 0.171,
+        "communality": 0.645,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y11_2",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.825,
+        "secondary_loading": 0.137,
+        "communality": 0.727,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y11_3",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.818,
+        "secondary_loading": 0.133,
+        "communality": 0.716,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y11_4",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.776,
+        "secondary_loading": 0.127,
+        "communality": 0.65,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y11_5",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.807,
+        "secondary_loading": 0.163,
+        "communality": 0.706,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y12_1",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.727,
+        "secondary_loading": 0.212,
+        "communality": 0.619,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y12_2",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.77,
+        "secondary_loading": 0.175,
+        "communality": 0.64,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y12_3",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.743,
+        "secondary_loading": 0.216,
+        "communality": 0.626,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y13_1",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.792,
+        "secondary_loading": 0.231,
+        "communality": 0.71,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y13_2",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.715,
+        "secondary_loading": 0.263,
+        "communality": 0.611,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y13_3",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.684,
+        "secondary_loading": 0.225,
+        "communality": 0.555,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y13_4",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.765,
+        "secondary_loading": 0.218,
+        "communality": 0.665,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y14_1",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.837,
+        "secondary_loading": 0.144,
+        "communality": 0.729,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y14_2",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.834,
+        "secondary_loading": 0.171,
+        "communality": 0.74,
+        "matches_expected": true
+      },
+      {
+        "variable": "Y14_3",
+        "expected_factor": "integrated_leadership",
+        "primary_factor": "integrated_leadership",
+        "primary_loading": 0.81,
+        "secondary_loading": 0.142,
+        "communality": 0.709,
+        "matches_expected": true
+      }
+    ]
+  },
+  "efa_by_group": {
+    "public": {
+      "method": "주성분 요인추출·Kaiser 기준(고유값>1)·Varimax 직각회전",
+      "n": 1012,
+      "item_count": 32,
+      "expected_factor_count": 5,
+      "retained_factor_count": 5,
+      "eigenvalues": [
+        12.819,
+        4.143,
+        1.823,
+        1.626,
+        1.207,
+        0.922,
+        0.703,
+        0.663,
+        0.635,
+        0.562
+      ],
+      "variance_explained": 0.676,
+      "kmo": 0.955,
+      "bartlett_chi_square": 23450.6,
+      "bartlett_df": 496,
+      "bartlett_p": 0.0,
+      "minimum_primary_loading": 0.566,
+      "items_at_or_above_point_6": 31,
+      "matching_items": 32,
+      "all_items_match_expected": true,
+      "passes_factor_count_and_pattern": true,
+      "item_loadings": [
+        {
+          "variable": "Y2_1",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.794,
+          "secondary_loading": 0.187,
+          "communality": 0.697,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y2_2",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.799,
+          "secondary_loading": 0.198,
+          "communality": 0.696,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y2_3",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.652,
+          "secondary_loading": 0.188,
+          "communality": 0.521,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y2_4",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.726,
+          "secondary_loading": 0.169,
+          "communality": 0.589,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y2_5",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.744,
+          "secondary_loading": 0.218,
+          "communality": 0.643,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y4_1",
+          "expected_factor": "autonomy",
+          "primary_factor": "autonomy",
+          "primary_loading": 0.804,
+          "secondary_loading": 0.254,
+          "communality": 0.781,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y4_2",
+          "expected_factor": "autonomy",
+          "primary_factor": "autonomy",
+          "primary_loading": 0.86,
+          "secondary_loading": 0.203,
+          "communality": 0.85,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y4_3",
+          "expected_factor": "autonomy",
+          "primary_factor": "autonomy",
+          "primary_loading": 0.847,
+          "secondary_loading": 0.217,
+          "communality": 0.821,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y5_1",
+          "expected_factor": "goal_clarity",
+          "primary_factor": "goal_clarity",
+          "primary_loading": 0.646,
+          "secondary_loading": 0.256,
+          "communality": 0.644,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y5_2",
+          "expected_factor": "goal_clarity",
+          "primary_factor": "goal_clarity",
+          "primary_loading": 0.763,
+          "secondary_loading": 0.231,
+          "communality": 0.691,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y5_3",
+          "expected_factor": "goal_clarity",
+          "primary_factor": "goal_clarity",
+          "primary_loading": 0.698,
+          "secondary_loading": 0.311,
+          "communality": 0.688,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y5_4",
+          "expected_factor": "goal_clarity",
+          "primary_factor": "goal_clarity",
+          "primary_loading": 0.754,
+          "secondary_loading": 0.241,
+          "communality": 0.692,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_1",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.688,
+          "secondary_loading": 0.259,
+          "communality": 0.643,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_2",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.762,
+          "secondary_loading": 0.236,
+          "communality": 0.679,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_3",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.818,
+          "secondary_loading": 0.18,
+          "communality": 0.743,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_4",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.792,
+          "secondary_loading": 0.152,
+          "communality": 0.696,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_5",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.566,
+          "secondary_loading": 0.187,
+          "communality": 0.416,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_1",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.767,
+          "secondary_loading": 0.173,
+          "communality": 0.657,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_2",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.839,
+          "secondary_loading": 0.128,
+          "communality": 0.744,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_3",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.828,
+          "secondary_loading": 0.152,
+          "communality": 0.727,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_4",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.787,
+          "secondary_loading": 0.111,
+          "communality": 0.657,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_5",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.821,
+          "secondary_loading": 0.156,
+          "communality": 0.724,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y12_1",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.709,
+          "secondary_loading": 0.259,
+          "communality": 0.599,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y12_2",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.775,
+          "secondary_loading": 0.182,
+          "communality": 0.642,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y12_3",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.732,
+          "secondary_loading": 0.204,
+          "communality": 0.602,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y13_1",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.798,
+          "secondary_loading": 0.225,
+          "communality": 0.709,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y13_2",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.735,
+          "secondary_loading": 0.241,
+          "communality": 0.633,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y13_3",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.698,
+          "secondary_loading": 0.223,
+          "communality": 0.582,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y13_4",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.782,
+          "secondary_loading": 0.179,
+          "communality": 0.678,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y14_1",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.837,
+          "secondary_loading": 0.15,
+          "communality": 0.729,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y14_2",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.839,
+          "secondary_loading": 0.165,
+          "communality": 0.74,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y14_3",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.812,
+          "secondary_loading": 0.148,
+          "communality": 0.706,
+          "matches_expected": true
+        }
+      ]
+    },
+    "private": {
+      "method": "주성분 요인추출·Kaiser 기준(고유값>1)·Varimax 직각회전",
+      "n": 1008,
+      "item_count": 32,
+      "expected_factor_count": 5,
+      "retained_factor_count": 5,
+      "eigenvalues": [
+        13.147,
+        3.379,
+        2.049,
+        1.21,
+        1.177,
+        0.728,
+        0.685,
+        0.65,
+        0.602,
+        0.583
+      ],
+      "variance_explained": 0.655,
+      "kmo": 0.964,
+      "bartlett_chi_square": 20940.4,
+      "bartlett_df": 496,
+      "bartlett_p": 0.0,
+      "minimum_primary_loading": 0.578,
+      "items_at_or_above_point_6": 31,
+      "matching_items": 32,
+      "all_items_match_expected": true,
+      "passes_factor_count_and_pattern": true,
+      "item_loadings": [
+        {
+          "variable": "Y2_1",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.748,
+          "secondary_loading": 0.207,
+          "communality": 0.663,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y2_2",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.731,
+          "secondary_loading": 0.189,
+          "communality": 0.589,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y2_3",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.664,
+          "secondary_loading": 0.199,
+          "communality": 0.562,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y2_4",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.717,
+          "secondary_loading": 0.233,
+          "communality": 0.6,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y2_5",
+          "expected_factor": "proactivity",
+          "primary_factor": "proactivity",
+          "primary_loading": 0.673,
+          "secondary_loading": 0.232,
+          "communality": 0.558,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y4_1",
+          "expected_factor": "autonomy",
+          "primary_factor": "autonomy",
+          "primary_loading": 0.751,
+          "secondary_loading": 0.262,
+          "communality": 0.709,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y4_2",
+          "expected_factor": "autonomy",
+          "primary_factor": "autonomy",
+          "primary_loading": 0.819,
+          "secondary_loading": 0.183,
+          "communality": 0.764,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y4_3",
+          "expected_factor": "autonomy",
+          "primary_factor": "autonomy",
+          "primary_loading": 0.795,
+          "secondary_loading": 0.261,
+          "communality": 0.754,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y5_1",
+          "expected_factor": "goal_clarity",
+          "primary_factor": "goal_clarity",
+          "primary_loading": 0.692,
+          "secondary_loading": 0.313,
+          "communality": 0.663,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y5_2",
+          "expected_factor": "goal_clarity",
+          "primary_factor": "goal_clarity",
+          "primary_loading": 0.757,
+          "secondary_loading": 0.271,
+          "communality": 0.708,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y5_3",
+          "expected_factor": "goal_clarity",
+          "primary_factor": "goal_clarity",
+          "primary_loading": 0.656,
+          "secondary_loading": 0.375,
+          "communality": 0.645,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y5_4",
+          "expected_factor": "goal_clarity",
+          "primary_factor": "goal_clarity",
+          "primary_loading": 0.693,
+          "secondary_loading": 0.289,
+          "communality": 0.642,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_1",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.69,
+          "secondary_loading": 0.239,
+          "communality": 0.592,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_2",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.704,
+          "secondary_loading": 0.248,
+          "communality": 0.605,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_3",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.781,
+          "secondary_loading": 0.268,
+          "communality": 0.7,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_4",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.783,
+          "secondary_loading": 0.277,
+          "communality": 0.699,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y10_5",
+          "expected_factor": "public_service_motivation",
+          "primary_factor": "public_service_motivation",
+          "primary_loading": 0.578,
+          "secondary_loading": 0.262,
+          "communality": 0.479,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_1",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.738,
+          "secondary_loading": 0.2,
+          "communality": 0.641,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_2",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.802,
+          "secondary_loading": 0.17,
+          "communality": 0.707,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_3",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.799,
+          "secondary_loading": 0.189,
+          "communality": 0.709,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_4",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.754,
+          "secondary_loading": 0.149,
+          "communality": 0.645,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y11_5",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.78,
+          "secondary_loading": 0.213,
+          "communality": 0.691,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y12_1",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.744,
+          "secondary_loading": 0.221,
+          "communality": 0.644,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y12_2",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.764,
+          "secondary_loading": 0.149,
+          "communality": 0.637,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y12_3",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.761,
+          "secondary_loading": 0.285,
+          "communality": 0.664,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y13_1",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.794,
+          "secondary_loading": 0.203,
+          "communality": 0.712,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y13_2",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.705,
+          "secondary_loading": 0.241,
+          "communality": 0.591,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y13_3",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.69,
+          "secondary_loading": 0.229,
+          "communality": 0.543,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y13_4",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.752,
+          "secondary_loading": 0.232,
+          "communality": 0.656,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y14_1",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.837,
+          "secondary_loading": 0.151,
+          "communality": 0.733,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y14_2",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.826,
+          "secondary_loading": 0.185,
+          "communality": 0.741,
+          "matches_expected": true
+        },
+        {
+          "variable": "Y14_3",
+          "expected_factor": "integrated_leadership",
+          "primary_factor": "integrated_leadership",
+          "primary_loading": 0.808,
+          "secondary_loading": 0.145,
+          "communality": 0.715,
+          "matches_expected": true
+        }
+      ]
+    }
+  },
+  "leadership_efa": {
+    "method": "주성분 요인추출·Kaiser 기준(고유값>1)·Varimax 직각회전",
+    "n": 2020,
+    "item_count": 15,
+    "expected_factor_count": 4,
+    "retained_factor_count": 1,
+    "eigenvalues": [
+      9.903,
+      0.777,
+      0.655,
+      0.547,
+      0.437,
+      0.355,
+      0.336,
+      0.3,
+      0.287,
+      0.276
+    ],
+    "variance_explained": 0.66,
+    "kmo": 0.97,
+    "bartlett_chi_square": 26570.9,
+    "bartlett_df": 105,
+    "bartlett_p": 0.0,
+    "minimum_primary_loading": 0.738,
+    "items_at_or_above_point_6": 15,
+    "matching_items": 0,
+    "all_items_match_expected": false,
+    "passes_factor_count_and_pattern": false,
+    "item_loadings": [
+      {
+        "variable": "Y11_1",
+        "expected_factor": "ethical",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.802,
+        "secondary_loading": null,
+        "communality": 0.643,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y11_2",
+        "expected_factor": "ethical",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.849,
+        "secondary_loading": null,
+        "communality": 0.72,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y11_3",
+        "expected_factor": "ethical",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.844,
+        "secondary_loading": null,
+        "communality": 0.712,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y11_4",
+        "expected_factor": "ethical",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.803,
+        "secondary_loading": null,
+        "communality": 0.645,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y11_5",
+        "expected_factor": "ethical",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.836,
+        "secondary_loading": null,
+        "communality": 0.698,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y12_1",
+        "expected_factor": "servant",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.782,
+        "secondary_loading": null,
+        "communality": 0.611,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y12_2",
+        "expected_factor": "servant",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.793,
+        "secondary_loading": null,
+        "communality": 0.629,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y12_3",
+        "expected_factor": "servant",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.777,
+        "secondary_loading": null,
+        "communality": 0.604,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y13_1",
+        "expected_factor": "charismatic",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.839,
+        "secondary_loading": null,
+        "communality": 0.704,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y13_2",
+        "expected_factor": "charismatic",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.773,
+        "secondary_loading": null,
+        "communality": 0.597,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y13_3",
+        "expected_factor": "charismatic",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.738,
+        "secondary_loading": null,
+        "communality": 0.544,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y13_4",
+        "expected_factor": "charismatic",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.813,
+        "secondary_loading": null,
+        "communality": 0.661,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y14_1",
+        "expected_factor": "inclusive",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.841,
+        "secondary_loading": null,
+        "communality": 0.707,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y14_2",
+        "expected_factor": "inclusive",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.851,
+        "secondary_loading": null,
+        "communality": 0.724,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y14_3",
+        "expected_factor": "inclusive",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.839,
+        "secondary_loading": null,
+        "communality": 0.703,
+        "matches_expected": false
+      }
+    ]
+  },
+  "control_efa": {
+    "workload": {
+      "method": "주성분 요인추출·Kaiser 기준(고유값>1)",
+      "n": 2020,
+      "item_count": 2,
+      "retained_factor_count": 1,
+      "first_eigenvalue": 1.721,
+      "variance_explained": 0.86,
+      "minimum_loading": 0.928,
+      "kmo": 0.5,
+      "bartlett_chi_square": 1478.0,
+      "bartlett_df": 1,
+      "bartlett_p": 0.0,
+      "label": "업무량",
+      "reliability_alpha": 0.84
+    },
+    "job_satisfaction": {
+      "method": "주성분 요인추출·Kaiser 기준(고유값>1)",
+      "n": 2020,
+      "item_count": 4,
+      "retained_factor_count": 1,
+      "first_eigenvalue": 2.417,
+      "variance_explained": 0.604,
+      "minimum_loading": 0.742,
+      "kmo": 0.767,
+      "bartlett_chi_square": 2197.6,
+      "bartlett_df": 6,
+      "bartlett_p": 0.0,
+      "label": "직무만족",
+      "reliability_alpha": 0.78
+    },
+    "organizational_justice": {
+      "method": "주성분 요인추출·Kaiser 기준(고유값>1)",
+      "n": 2020,
+      "item_count": 5,
+      "retained_factor_count": 1,
+      "first_eigenvalue": 3.77,
+      "variance_explained": 0.754,
+      "minimum_loading": 0.79,
+      "kmo": 0.879,
+      "bartlett_chi_square": 7281.7,
+      "bartlett_df": 10,
+      "bartlett_p": 0.0,
+      "label": "조직공정성",
+      "reliability_alpha": 0.92
+    }
+  },
+  "control_efa_joint": {
+    "method": "주성분 요인추출·Kaiser 기준(고유값>1)·Varimax 직각회전",
+    "n": 2020,
+    "item_count": 11,
+    "expected_factor_count": 3,
+    "retained_factor_count": 2,
+    "eigenvalues": [
+      5.204,
+      1.758,
+      0.977,
+      0.602,
+      0.59,
+      0.441,
+      0.384,
+      0.348,
+      0.276,
+      0.234
+    ],
+    "variance_explained": 0.633,
+    "kmo": 0.881,
+    "bartlett_chi_square": 12274.7,
+    "bartlett_df": 55,
+    "bartlett_p": 0.0,
+    "minimum_primary_loading": 0.592,
+    "items_at_or_above_point_6": 10,
+    "matching_items": 0,
+    "all_items_match_expected": false,
+    "passes_factor_count_and_pattern": false,
+    "item_loadings": [
+      {
+        "variable": "Y7_1",
+        "expected_factor": "workload",
+        "primary_factor": "factor_2",
+        "primary_loading": 0.903,
+        "secondary_loading": 0.005,
+        "communality": 0.815,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y7_2",
+        "expected_factor": "workload",
+        "primary_factor": "factor_2",
+        "primary_loading": 0.91,
+        "secondary_loading": 0.033,
+        "communality": 0.828,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y16_1",
+        "expected_factor": "job_satisfaction",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.592,
+        "secondary_loading": 0.252,
+        "communality": 0.413,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y16_2",
+        "expected_factor": "job_satisfaction",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.661,
+        "secondary_loading": 0.174,
+        "communality": 0.467,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y16_3",
+        "expected_factor": "job_satisfaction",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.648,
+        "secondary_loading": 0.32,
+        "communality": 0.522,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y16_4",
+        "expected_factor": "job_satisfaction",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.637,
+        "secondary_loading": 0.129,
+        "communality": 0.423,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y6_1",
+        "expected_factor": "organizational_justice",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.759,
+        "secondary_loading": 0.023,
+        "communality": 0.576,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y6_2",
+        "expected_factor": "organizational_justice",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.846,
+        "secondary_loading": 0.045,
+        "communality": 0.717,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y6_3",
+        "expected_factor": "organizational_justice",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.863,
+        "secondary_loading": 0.025,
+        "communality": 0.746,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y6_4",
+        "expected_factor": "organizational_justice",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.855,
+        "secondary_loading": 0.01,
+        "communality": 0.732,
+        "matches_expected": false
+      },
+      {
+        "variable": "Y6_5",
+        "expected_factor": "organizational_justice",
+        "primary_factor": "factor_1",
+        "primary_loading": 0.85,
+        "secondary_loading": 0.033,
+        "communality": 0.723,
+        "matches_expected": false
+      }
+    ]
+  },
+  "outcome_efa": {
+    "method": "주성분 요인추출·Kaiser 기준(고유값>1)",
+    "n": 2020,
+    "item_count": 3,
+    "retained_factor_count": 1,
+    "first_eigenvalue": 2.303,
+    "variance_explained": 0.768,
+    "minimum_loading": 0.863,
+    "kmo": 0.728,
+    "bartlett_chi_square": 2589.0,
+    "bartlett_df": 3,
+    "bartlett_p": 0.0
+  },
+  "outcome_items": [
+    {
+      "id": "Y15_7",
+      "label": "새로운 방법 시도",
+      "public": {
+        "mean": 3.69,
+        "high_share": 0.628
+      },
+      "private": {
+        "mean": 3.58,
+        "high_share": 0.567
+      },
+      "mean_gap": 0.11
+    },
+    {
+      "id": "Y15_8",
+      "label": "새로운 아이디어 구상",
+      "public": {
+        "mean": 3.64,
+        "high_share": 0.597
+      },
+      "private": {
+        "mean": 3.6,
+        "high_share": 0.563
+      },
+      "mean_gap": 0.04
+    },
+    {
+      "id": "Y15_9",
+      "label": "업무 방식 변화 실행",
+      "public": {
+        "mean": 3.49,
+        "high_share": 0.522
+      },
+      "private": {
+        "mean": 3.43,
+        "high_share": 0.481
+      },
+      "mean_gap": 0.06
+    }
+  ],
+  "factors": [
+    {
+      "id": "proactivity",
+      "label": "변화주도성",
+      "short": "스스로 더 나은 방법을 찾고 실행하려는 성향",
+      "lever": "개인",
+      "items": 5,
+      "variables": [
+        "Y2_1",
+        "Y2_2",
+        "Y2_3",
+        "Y2_4",
+        "Y2_5"
+      ],
+      "reliability_alpha": 0.84,
+      "public": {
+        "mean": 3.58,
+        "beta": 0.427,
+        "p": 0.0,
+        "significant": true,
+        "correlation": 0.578,
+        "raw_slope": 0.475
+      },
+      "private": {
+        "mean": 3.62,
+        "beta": 0.451,
+        "p": 0.0,
+        "significant": true,
+        "correlation": 0.618,
+        "raw_slope": 0.502
+      },
+      "beta_gap": -0.024,
+      "mean_gap": -0.04,
+      "mean_gap_p": 0.274,
+      "difference_p": 0.6888,
+      "difference_significant": false,
+      "item_means": [
+        {
+          "id": "Y2_1",
+          "label": "2] 1) 나는 내 아이디어에 대한 장애물을 찾아내고 극복하는 것을 좋아한다",
+          "public": 3.64,
+          "private": 3.58
+        },
+        {
+          "id": "Y2_2",
+          "label": "2] 2) 내 아이디어가 실현되는 것보다 더 흥미진진한 일은 없다",
+          "public": 3.59,
+          "private": 3.63
+        },
+        {
+          "id": "Y2_3",
+          "label": "2] 3) 내가 믿는 것이 있다면 무슨 일이 있어도 나는 그것을 실현시킬 것이다",
+          "public": 3.34,
+          "private": 3.48
+        },
+        {
+          "id": "Y2_4",
+          "label": "2] 4) 나는 항상 더 나은 방법을 찾으려고 노력한다",
+          "public": 3.97,
+          "private": 3.92
+        },
+        {
+          "id": "Y2_5",
+          "label": "2] 5) 나는 현 상태를 바꾸려고 도전하는 것을 좋아한다",
+          "public": 3.53,
+          "private": 3.48
+        }
+      ],
+      "public_opportunity_score": 100.0
+    },
+    {
+      "id": "autonomy",
+      "label": "업무 자율성",
+      "short": "업무 판단과 의사결정을 스스로 할 수 있는 여지",
+      "lever": "일하는 방식",
+      "items": 3,
+      "variables": [
+        "Y4_1",
+        "Y4_2",
+        "Y4_3"
+      ],
+      "reliability_alpha": 0.87,
+      "public": {
+        "mean": 3.14,
+        "beta": 0.145,
+        "p": 0.001,
+        "significant": true,
+        "correlation": 0.383,
+        "raw_slope": 0.127
+      },
+      "private": {
+        "mean": 3.55,
+        "beta": 0.109,
+        "p": 0.0064,
+        "significant": true,
+        "correlation": 0.427,
+        "raw_slope": 0.095
+      },
+      "beta_gap": 0.036,
+      "mean_gap": -0.4,
+      "mean_gap_p": 0.0,
+      "difference_p": 0.5483,
+      "difference_significant": false,
+      "item_means": [
+        {
+          "id": "Y4_1",
+          "label": "4] 1) 나는 직무를 수행하면서 주도적으로 업무에 대해 판단할 수 있는 기회가 있다",
+          "public": 3.37,
+          "private": 3.59
+        },
+        {
+          "id": "Y4_2",
+          "label": "4] 2) 나는 직무를 수행하면서 많은 의사결정을 스스로 내릴 수 있다",
+          "public": 3.22,
+          "private": 3.56
+        },
+        {
+          "id": "Y4_3",
+          "label": "4] 3) 내가 맡은 직무는 나의 의사결정에 있어 상당한 자율성을 제공한다",
+          "public": 3.06,
+          "private": 3.48
+        }
+      ],
+      "public_opportunity_score": 44.0
+    },
+    {
+      "id": "goal_clarity",
+      "label": "목표 명확성",
+      "short": "조직 목표·우선순위·업무 지침이 분명한 정도",
+      "lever": "조직 운영",
+      "items": 4,
+      "variables": [
+        "Y5_1",
+        "Y5_2",
+        "Y5_3",
+        "Y5_4"
+      ],
+      "reliability_alpha": 0.84,
+      "public": {
+        "mean": 3.16,
+        "beta": -0.005,
+        "p": 0.9126,
+        "significant": false,
+        "correlation": 0.322,
+        "raw_slope": -0.005
+      },
+      "private": {
+        "mean": 3.52,
+        "beta": 0.084,
+        "p": 0.0604,
+        "significant": false,
+        "correlation": 0.432,
+        "raw_slope": 0.081
+      },
+      "beta_gap": -0.089,
+      "mean_gap": -0.36,
+      "mean_gap_p": 0.0,
+      "difference_p": 0.1728,
+      "difference_significant": false,
+      "item_means": [
+        {
+          "id": "Y5_1",
+          "label": "5] 1) 나는 우리 기관의 조직목표를 명확히 알고 있다",
+          "public": 3.56,
+          "private": 3.72
+        },
+        {
+          "id": "Y5_2",
+          "label": "5] 2) 우리 기관에서는 조직목표 간 우선순위가 분명하다",
+          "public": 3.29,
+          "private": 3.55
+        },
+        {
+          "id": "Y5_3",
+          "label": "5] 3) 우리 기관의 조직목표는 담당업무 수행을 위한 명확한 지침을 제공한다",
+          "public": 2.99,
+          "private": 3.4
+        },
+        {
+          "id": "Y5_4",
+          "label": "5] 4) 지난 1년간 우리 기관의 목표 달성 정도를 객관적으로 측정할 수 있다",
+          "public": 3.04,
+          "private": 3.39
+        }
+      ],
+      "public_opportunity_score": 0.0
+    },
+    {
+      "id": "public_service_motivation",
+      "label": "공공봉사동기",
+      "short": "국민·사회에 기여하고 공익을 실현하려는 동기",
+      "lever": "동기 부여",
+      "items": 5,
+      "variables": [
+        "Y10_1",
+        "Y10_2",
+        "Y10_3",
+        "Y10_4",
+        "Y10_5"
+      ],
+      "reliability_alpha": 0.84,
+      "public": {
+        "mean": 3.14,
+        "beta": 0.143,
+        "p": 0.0038,
+        "significant": true,
+        "correlation": 0.427,
+        "raw_slope": 0.146
+      },
+      "private": {
+        "mean": 3.13,
+        "beta": 0.145,
+        "p": 0.0001,
+        "significant": true,
+        "correlation": 0.422,
+        "raw_slope": 0.148
+      },
+      "beta_gap": -0.002,
+      "mean_gap": 0.01,
+      "mean_gap_p": 0.838,
+      "difference_p": 0.9804,
+      "difference_significant": false,
+      "item_means": [
+        {
+          "id": "Y10_1",
+          "label": "10] 1) 국가와 국민을 위한 봉사는 나에게 매우 중요하다",
+          "public": 3.38,
+          "private": 3.13
+        },
+        {
+          "id": "Y10_2",
+          "label": "10] 2) 비록 웃음거리가 된다고 하더라도 나는 다른 사람들의 권리를 옹호하기 위해 나설 용의가 있다",
+          "public": 3.08,
+          "private": 3.11
+        },
+        {
+          "id": "Y10_3",
+          "label": "10] 3) 나에게는 사회에 바람직한 변화를 가져오는 것이 개인적인 성취보다 더욱 큰 의미가 있다",
+          "public": 3.21,
+          "private": 3.14
+        },
+        {
+          "id": "Y10_4",
+          "label": "10] 4) 나는 사회의 선(善)을 위해서라면 스스로 매우 큰 희생을 감수할 마음의 준비가 되어 있다",
+          "public": 2.75,
+          "private": 2.91
+        },
+        {
+          "id": "Y10_5",
+          "label": "10] 5) 나는 일상생활을 통해 우리가 얼마나 서로 의존적인 존재인지를 늘 되새기고 있다",
+          "public": 3.46,
+          "private": 3.37
+        }
+      ],
+      "public_opportunity_score": 44.0
+    },
+    {
+      "id": "integrated_leadership",
+      "label": "통합 리더십",
+      "short": "윤리적·서번트·카리스마·포용적 리더십 15문항의 통합지수",
+      "lever": "리더십",
+      "items": 15,
+      "variables": [
+        "Y11_1",
+        "Y11_2",
+        "Y11_3",
+        "Y11_4",
+        "Y11_5",
+        "Y12_1",
+        "Y12_2",
+        "Y12_3",
+        "Y13_1",
+        "Y13_2",
+        "Y13_3",
+        "Y13_4",
+        "Y14_1",
+        "Y14_2",
+        "Y14_3"
+      ],
+      "reliability_alpha": 0.96,
+      "public": {
+        "mean": 2.99,
+        "beta": 0.102,
+        "p": 0.0505,
+        "significant": false,
+        "correlation": 0.284,
+        "raw_slope": 0.09
+      },
+      "private": {
+        "mean": 3.18,
+        "beta": 0.005,
+        "p": 0.9146,
+        "significant": false,
+        "correlation": 0.343,
+        "raw_slope": 0.004
+      },
+      "beta_gap": 0.097,
+      "mean_gap": -0.19,
+      "mean_gap_p": 0.0,
+      "difference_p": 0.1581,
+      "difference_significant": false,
+      "item_means": [
+        {
+          "id": "Y11_1",
+          "label": "11] 1) 나의 상사는 업무처리에 있어서 공정하고 균형 잡힌 의사결정을 한다",
+          "public": 3.21,
+          "private": 3.22
+        },
+        {
+          "id": "Y11_2",
+          "label": "11] 2) 나의 상사는 믿고 따를 수 있는 사람이다",
+          "public": 3.27,
+          "private": 3.3
+        },
+        {
+          "id": "Y11_3",
+          "label": "11] 3) 나의 상사는 윤리적 관점에서 일을 어떻게 올바르게 처리해야 하는지에 대한 모범을 보여준다",
+          "public": 3.2,
+          "private": 3.21
+        },
+        {
+          "id": "Y11_4",
+          "label": "11] 4) 나의 상사는 어떠한 일의 성과를 논의할 때 결과뿐만 아니라 과정도 중요시 여긴다",
+          "public": 3.23,
+          "private": 3.22
+        },
+        {
+          "id": "Y11_5",
+          "label": "11] 5) 나의 상사는 ‘무엇이 올바른 것인가?’를 고려하여 결정을 내린다",
+          "public": 3.25,
+          "private": 3.22
+        },
+        {
+          "id": "Y12_1",
+          "label": "12] 1) 나의 상사는 나의 경력개발을 우선시한다",
+          "public": 2.87,
+          "private": 3.0
+        },
+        {
+          "id": "Y12_2",
+          "label": "12] 2) 나는 개인적인 문제가 생길 때 나의 상사에게 도움을 청할 것이다",
+          "public": 2.95,
+          "private": 3.14
+        },
+        {
+          "id": "Y12_3",
+          "label": "12] 3) 나의 상사는 본인의 이익보다 내 최선의 이익을 우선시한다.",
+          "public": 2.58,
+          "private": 2.83
+        },
+        {
+          "id": "Y13_1",
+          "label": "13] 1) 나의 상사는 나에게 진취적인 전략과 조직의 목표를 제시한다",
+          "public": 2.9,
+          "private": 3.14
+        },
+        {
+          "id": "Y13_2",
+          "label": "13] 2) 나의 상사는 기관의 목표달성을 위해 도움이 되는 새로운 기회를 놓치지 않는다",
+          "public": 3.02,
+          "private": 3.24
+        },
+        {
+          "id": "Y13_3",
+          "label": "13] 3) 나의 상사는 기관의 발전을 위해서라면 개인적 희생과 위험을 감수한다",
+          "public": 2.75,
+          "private": 3.03
+        },
+        {
+          "id": "Y13_4",
+          "label": "13] 4) 나의 상사는 달성 가능한 비전을 실현시키려 노력한다",
+          "public": 3.13,
+          "private": 3.29
+        },
+        {
+          "id": "Y14_1",
+          "label": "14] 1) 나의 상사는 내가 필요로 할 때 나의 애로사항을 들어줄 준비가 되어 있다",
+          "public": 3.21,
+          "private": 3.24
+        },
+        {
+          "id": "Y14_2",
+          "label": "14] 2) 나의 상사는 나에게 문제가 생기면 언제든지 의견을 구할 수 있다",
+          "public": 3.11,
+          "private": 3.21
+        },
+        {
+          "id": "Y14_3",
+          "label": "14] 3) 나의 상사는 조직에 문제가 생기면 언제든지 직원들과 함께 해결방안을 토론할 수 있다",
+          "public": 3.2,
+          "private": 3.26
+        }
+      ],
+      "public_opportunity_score": 34.0
+    }
+  ],
+  "leadership_profiles": {
+    "method": "네 유형은 각각 문항 산술평균으로 공공·민간 현황을 비교하고, 메인 완전통제 WLS(HC3)에는 15문항 전체 산술평균인 통합 리더십만 투입",
+    "efa_note": "15문항 공동 EFA에서 하나의 공통 리더십 요인이 유지됐으므로 회귀는 통합지수를 사용하고, 네 유형 막대는 공식 하위척도의 기술통계로 해석",
+    "profiles": [
+      {
+        "id": "ethical",
+        "label": "윤리적 리더십",
+        "short": "공정·균형 판단, 신뢰, 윤리적 모범과 과정 중시",
+        "variables": [
+          "Y11_1",
+          "Y11_2",
+          "Y11_3",
+          "Y11_4",
+          "Y11_5"
+        ],
+        "reliability_alpha": 0.93,
+        "in_main_regression": false,
+        "public": {
+          "mean": 3.15
+        },
+        "private": {
+          "mean": 3.24
+        },
+        "mean_gap": -0.09,
+        "mean_gap_p": 0.0489,
+        "item_means": [
+          {
+            "id": "Y11_1",
+            "label": "11] 1) 나의 상사는 업무처리에 있어서 공정하고 균형 잡힌 의사결정을 한다",
+            "public": 3.21,
+            "private": 3.22
+          },
+          {
+            "id": "Y11_2",
+            "label": "11] 2) 나의 상사는 믿고 따를 수 있는 사람이다",
+            "public": 3.27,
+            "private": 3.3
+          },
+          {
+            "id": "Y11_3",
+            "label": "11] 3) 나의 상사는 윤리적 관점에서 일을 어떻게 올바르게 처리해야 하는지에 대한 모범을 보여준다",
+            "public": 3.2,
+            "private": 3.21
+          },
+          {
+            "id": "Y11_4",
+            "label": "11] 4) 나의 상사는 어떠한 일의 성과를 논의할 때 결과뿐만 아니라 과정도 중요시 여긴다",
+            "public": 3.23,
+            "private": 3.22
+          },
+          {
+            "id": "Y11_5",
+            "label": "11] 5) 나의 상사는 ‘무엇이 올바른 것인가?’를 고려하여 결정을 내린다",
+            "public": 3.25,
+            "private": 3.22
+          }
+        ]
+      },
+      {
+        "id": "servant",
+        "label": "서번트 리더십",
+        "short": "구성원의 성장·도움·이익을 우선하는 리더십",
+        "variables": [
+          "Y12_1",
+          "Y12_2",
+          "Y12_3"
+        ],
+        "reliability_alpha": 0.84,
+        "in_main_regression": false,
+        "public": {
+          "mean": 2.74
+        },
+        "private": {
+          "mean": 3.0
+        },
+        "mean_gap": -0.25,
+        "mean_gap_p": 0.0,
+        "item_means": [
+          {
+            "id": "Y12_1",
+            "label": "12] 1) 나의 상사는 나의 경력개발을 우선시한다",
+            "public": 2.87,
+            "private": 3.0
+          },
+          {
+            "id": "Y12_2",
+            "label": "12] 2) 나는 개인적인 문제가 생길 때 나의 상사에게 도움을 청할 것이다",
+            "public": 2.95,
+            "private": 3.14
+          },
+          {
+            "id": "Y12_3",
+            "label": "12] 3) 나의 상사는 본인의 이익보다 내 최선의 이익을 우선시한다.",
+            "public": 2.58,
+            "private": 2.83
+          }
+        ]
+      },
+      {
+        "id": "charismatic",
+        "label": "카리스마 리더십",
+        "short": "진취적 전략, 기회 포착, 위험 감수와 비전 실현",
+        "variables": [
+          "Y13_1",
+          "Y13_2",
+          "Y13_3",
+          "Y13_4"
+        ],
+        "reliability_alpha": 0.89,
+        "in_main_regression": false,
+        "public": {
+          "mean": 2.89
+        },
+        "private": {
+          "mean": 3.18
+        },
+        "mean_gap": -0.29,
+        "mean_gap_p": 0.0,
+        "item_means": [
+          {
+            "id": "Y13_1",
+            "label": "13] 1) 나의 상사는 나에게 진취적인 전략과 조직의 목표를 제시한다",
+            "public": 2.9,
+            "private": 3.14
+          },
+          {
+            "id": "Y13_2",
+            "label": "13] 2) 나의 상사는 기관의 목표달성을 위해 도움이 되는 새로운 기회를 놓치지 않는다",
+            "public": 3.02,
+            "private": 3.24
+          },
+          {
+            "id": "Y13_3",
+            "label": "13] 3) 나의 상사는 기관의 발전을 위해서라면 개인적 희생과 위험을 감수한다",
+            "public": 2.75,
+            "private": 3.03
+          },
+          {
+            "id": "Y13_4",
+            "label": "13] 4) 나의 상사는 달성 가능한 비전을 실현시키려 노력한다",
+            "public": 3.13,
+            "private": 3.29
+          }
+        ]
+      },
+      {
+        "id": "inclusive",
+        "label": "포용적 리더십",
+        "short": "애로사항과 의견을 듣고 함께 문제를 해결하는 리더십",
+        "variables": [
+          "Y14_1",
+          "Y14_2",
+          "Y14_3"
+        ],
+        "reliability_alpha": 0.91,
+        "in_main_regression": false,
+        "public": {
+          "mean": 3.11
+        },
+        "private": {
+          "mean": 3.24
+        },
+        "mean_gap": -0.13,
+        "mean_gap_p": 0.0072,
+        "item_means": [
+          {
+            "id": "Y14_1",
+            "label": "14] 1) 나의 상사는 내가 필요로 할 때 나의 애로사항을 들어줄 준비가 되어 있다",
+            "public": 3.21,
+            "private": 3.24
+          },
+          {
+            "id": "Y14_2",
+            "label": "14] 2) 나의 상사는 나에게 문제가 생기면 언제든지 의견을 구할 수 있다",
+            "public": 3.11,
+            "private": 3.21
+          },
+          {
+            "id": "Y14_3",
+            "label": "14] 3) 나의 상사는 조직에 문제가 생기면 언제든지 직원들과 함께 해결방안을 토론할 수 있다",
+            "public": 3.2,
+            "private": 3.26
+          }
+        ]
+      }
+    ]
+  },
+  "paper": {
+    "title": "변화관리가 조직구성원 직무몰입에 미치는 영향에 관한 연구: 정부조직과 민간조직의 비교를 중심으로",
+    "author": "김창일",
+    "data_year": 2014,
+    "sample": "정부 1,000명·민간 1,050명",
+    "outcome": "직무몰입",
+    "method": "위계적 회귀분석",
+    "findings": [
+      {
+        "factor": "목표 명확성",
+        "private_beta": 0.091,
+        "public_beta": 0.242,
+        "difference": "공공에서 더 강함",
+        "difference_significant": true
+      },
+      {
+        "factor": "변혁적 리더십",
+        "private_beta": 0.095,
+        "public_beta": 0.173,
+        "difference": "두 조직 차이 없음",
+        "difference_significant": false
+      },
+      {
+        "factor": "의사결정 참여",
+        "private_beta": 0.115,
+        "public_beta": 0.108,
+        "difference": "두 조직 차이 없음",
+        "difference_significant": false
+      },
+      {
+        "factor": "교육훈련",
+        "private_beta": 0.109,
+        "public_beta": 0.016,
+        "difference": "민간만 유의",
+        "difference_significant": true
+      },
+      {
+        "factor": "공익 헌신",
+        "private_beta": 0.099,
+        "public_beta": 0.185,
+        "difference": "공공에서 더 강함",
+        "difference_significant": true
+      },
+      {
+        "factor": "연민",
+        "private_beta": 0.176,
+        "public_beta": 0.36,
+        "difference": "공공에서 더 강함",
+        "difference_significant": true
+      },
+      {
+        "factor": "자기희생",
+        "private_beta": -0.004,
+        "public_beta": -0.015,
+        "difference": "두 조직 모두 유의하지 않음",
+        "difference_significant": false
+      }
+    ],
+    "note": "논문은 혁신의 실행 기반인 직무몰입을 분석하며, 2024 SAV의 직접 혁신행동 분석과 종속변수가 다릅니다."
+  },
+  "operational_definition": {
+    "source": "2024 공사조직 구성원 인식 비교 조사 문항과 EFA 결과",
+    "outcome_variables": [
+      "Y15_7",
+      "Y15_8",
+      "Y15_9"
+    ],
+    "note": "리더십 15문항 공동 EFA에서 하나의 요인이 유지되어 혁신행동 회귀에는 15문항 통합지수를 투입하고, 공식 네 유형의 평균은 별도 막대로 모두 제시했습니다.",
+    "exact_cross_dataset_factors": [
+      "goal_clarity",
+      "public_service_motivation"
+    ]
+  }
+}

@@ -1,0 +1,6252 @@
+{
+  "datasets": [
+    {
+      "id": "kipa_jobs_2015",
+      "title": "직위분류제 확대와 연계한 공무원 인사관리 개선방안 조사",
+      "source_label": "한국행정연구원 KIPA 2015",
+      "years": [
+        2015
+      ],
+      "unit": "조사 응답자(공무원)",
+      "scope_type": "public_internal",
+      "status": "descriptive",
+      "publication_status": "approved",
+      "scope": "중앙정부 공무원 응답자 조사이며 민간부문 비교집단은 포함하지 않는다.",
+      "sample": {
+        "raw_n": 280,
+        "analysis_n": 280,
+        "excluded_n": 0,
+        "groups": [
+          {
+            "id": "all_respondents",
+            "label": "전체 응답자",
+            "n": 280
+          }
+        ]
+      },
+      "weight_note": "비가중 응답자 분포이며 설계가중치를 적용하지 않았다.",
+      "cautions": [
+        "사용자가 사용 허가와 이 집계 공개 진행을 2026-09-06에 확인하여 공개한 결과다. 별도의 추가 공개 허가가 필요하다는 확인되지 않은 전제를 두지 않는다.",
+        "횡단면 자기보고 분포는 제공 표본만 기술하며 인과효과를 식별하지 않는다.",
+        "이는 공공 내부 기술 분석이며 공공/민간 비교가 아니다.",
+        "응답자 행, 자유응답, 비공개 원자료 경로는 내보내지 않는다."
+      ],
+      "questions": [
+        {
+          "id": "kipa_jobs_2015_q2_1",
+          "label": "문2-1. 나는 현재의 소속 조직에서 기대감을 가지고 하루를 시작한다.",
+          "dimension": "직무만족",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 직무만족을 뜻한다.",
+          "source_code": "Q2_1",
+          "source_note": "직무만족 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 11,
+                  "share": 0.03928571
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 25,
+                  "share": 0.08928571
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 97,
+                  "share": 0.34642857
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 97,
+                  "share": 0.34642857
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 50,
+                  "share": 0.17857143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q2_2",
+          "label": "문2-2. 나는 지금 현재 수행하고 있는 직무에 만족한다.",
+          "dimension": "직무만족",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 직무만족을 뜻한다.",
+          "source_code": "Q2_2",
+          "source_note": "직무만족 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 8,
+                  "share": 0.02857143
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 22,
+                  "share": 0.07857143
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 76,
+                  "share": 0.27142857
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 123,
+                  "share": 0.43928571
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 51,
+                  "share": 0.18214286
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q2_3",
+          "label": "문2-3. 나의 직장에 만족한다.",
+          "dimension": "직무만족",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 직무만족을 뜻한다.",
+          "source_code": "Q2_3",
+          "source_note": "직무만족 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 8,
+                  "share": 0.02857143
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 20,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 90,
+                  "share": 0.32142857
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 118,
+                  "share": 0.42142857
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 44,
+                  "share": 0.15714286
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q2_4",
+          "label": "문2-4. 나는 현재 조직에서 자기 발전에 도움이 되는 좋은 경험을 하고 있다.",
+          "dimension": "직무만족",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 직무만족을 뜻한다.",
+          "source_code": "Q2_4",
+          "source_note": "직무만족 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 17,
+                  "share": 0.06071429
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 14,
+                  "share": 0.05
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 75,
+                  "share": 0.26785714
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 117,
+                  "share": 0.41785714
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 57,
+                  "share": 0.20357143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q2_5",
+          "label": "문2-5. 공무원으로서 일하는 것에 긍지를 느낀다.",
+          "dimension": "직무만족",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 직무만족을 뜻한다.",
+          "source_code": "Q2_5",
+          "source_note": "직무만족 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 14,
+                  "share": 0.05
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 13,
+                  "share": 0.04642857
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 42,
+                  "share": 0.15
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 126,
+                  "share": 0.45
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 85,
+                  "share": 0.30357143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q3_1",
+          "label": "문3-1. 나는 정년까지 지금의 직장에서 보내고 싶다.",
+          "dimension": "조직몰입",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 조직몰입을 뜻한다.",
+          "source_code": "Q3_1",
+          "source_note": "조직몰입 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 9,
+                  "share": 0.03214286
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 28,
+                  "share": 0.1
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 33,
+                  "share": 0.11785714
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 117,
+                  "share": 0.41785714
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 93,
+                  "share": 0.33214286
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q3_2",
+          "label": "문3-2. 내가 속해 있는 조직은 나에게 개인적으로 매우 커다란 의미를 가진다.",
+          "dimension": "조직몰입",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 조직몰입을 뜻한다.",
+          "source_code": "Q3_2",
+          "source_note": "조직몰입 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 5,
+                  "share": 0.01785714
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 16,
+                  "share": 0.05714286
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 43,
+                  "share": 0.15357143
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 133,
+                  "share": 0.475
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 83,
+                  "share": 0.29642857
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q3_3",
+          "label": "문3-3. 나는 우리 조직을 위해 주어진 역할 이외에 기꺼이 추가적인 노력을 기울이고 싶다.",
+          "dimension": "조직몰입",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 조직몰입을 뜻한다.",
+          "source_code": "Q3_3",
+          "source_note": "조직몰입 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 9,
+                  "share": 0.03214286
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 3,
+                  "share": 0.01071429
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 44,
+                  "share": 0.15714286
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 120,
+                  "share": 0.42857143
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 104,
+                  "share": 0.37142857
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q3_4",
+          "label": "문3-4. 나는 현재 근무하고 있는 직장에 대해 강한 애착을 느끼고 있다.",
+          "dimension": "조직몰입",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 조직몰입을 뜻한다.",
+          "source_code": "Q3_4",
+          "source_note": "조직몰입 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 12,
+                  "share": 0.04285714
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 17,
+                  "share": 0.06071429
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 56,
+                  "share": 0.2
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 94,
+                  "share": 0.33571429
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 101,
+                  "share": 0.36071429
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_jobs_2015_q3_5",
+          "label": "문3-5. 나는 조직의 업무수행을 통해 공익실현을 할 수 있다는 점에서 자긍심을 느낀다.",
+          "dimension": "조직몰입",
+          "period": 2015,
+          "universe": "조사 응답자(공무원)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 조직몰입을 뜻한다.",
+          "source_code": "Q3_5",
+          "source_note": "조직몰입 문항. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 280,
+              "valid_n": 280,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "전혀 그렇지 않다",
+                  "n": 3,
+                  "share": 0.01071429
+                },
+                {
+                  "code": "2",
+                  "label": "그렇지 않다",
+                  "n": 13,
+                  "share": 0.04642857
+                },
+                {
+                  "code": "3",
+                  "label": "보통",
+                  "n": 30,
+                  "share": 0.10714286
+                },
+                {
+                  "code": "4",
+                  "label": "그렇다",
+                  "n": 135,
+                  "share": 0.48214286
+                },
+                {
+                  "code": "5",
+                  "label": "매우 그렇다",
+                  "n": 99,
+                  "share": 0.35357143
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "action_questions": [
+        "직무만족·조직몰입 문항 중 무응답이 큰 문항은 무엇이며, 문서화된 공무원 역할에 따라 양상이 다른가?",
+        "개입 효과 주장에 사용하기 전에 원 척도 구성과 조사 표집 과정을 검증할 수 있는가?"
+      ],
+      "evidence": [
+        {
+          "label": "KOSSDA 자료 메타데이터",
+          "url": "https://kossda.snu.ac.kr/handle/20.500.12236/25650",
+          "note": "조사 메타데이터와 원 설문지 근거."
+        },
+        {
+          "label": "보완 선행연구 방법 검토",
+          "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002213550",
+          "note": "게재연구 초록 근거이며 모형을 재현한 것은 아님."
+        }
+      ],
+      "models": [],
+      "findings": []
+    },
+    {
+      "id": "kipa_data_2019",
+      "title": "데이터기반행정을 위한 공공데이터 정책 활용 실태조사",
+      "source_label": "한국행정연구원 KIPA 2019",
+      "years": [
+        2019
+      ],
+      "unit": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+      "scope_type": "public_internal",
+      "status": "descriptive",
+      "publication_status": "approved",
+      "scope": "국가기관·지방자치단체·국책연구기관의 공공부문 응답자만 포함하며 공공/민간 비교가 아니다.",
+      "sample": {
+        "raw_n": 330,
+        "analysis_n": 330,
+        "excluded_n": 0,
+        "groups": [
+          {
+            "id": "all_respondents",
+            "label": "전체 응답자",
+            "n": 330
+          },
+          {
+            "id": "central_government",
+            "label": "국가기관",
+            "n": 103
+          },
+          {
+            "id": "local_government",
+            "label": "지방자치단체",
+            "n": 124
+          },
+          {
+            "id": "national_policy_research",
+            "label": "국책연구기관",
+            "n": 103
+          }
+        ]
+      },
+      "weight_note": "비가중 응답자 분포이며 설계가중치를 적용하지 않았다.",
+      "cautions": [
+        "사용자가 사용 허가와 이 집계 공개 진행을 2026-09-06에 확인하여 공개한 결과다. 별도의 추가 공개 허가가 필요하다는 확인되지 않은 전제를 두지 않는다.",
+        "횡단면 자기보고 분포는 제공 표본만 기술하며 인과효과를 식별하지 않는다.",
+        "이는 공공 내부 기술 분석이며 공공/민간 비교가 아니다.",
+        "응답자 행, 자유응답, 비공개 원자료 경로는 내보내지 않는다."
+      ],
+      "questions": [
+        {
+          "id": "kipa_data_2019_q9_2",
+          "label": "데이터 기반 행정 활성화를 위한 중요도 - 데이터 관련 예산 확보",
+          "dimension": "지원조건 중요도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건을 더 중요하다고 평가했음을 뜻한다.",
+          "source_code": "Q9_2",
+          "source_note": "데이터기반행정 지원조건의 인식된 중요도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 2,
+                  "share": 0.00606061
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 3,
+                  "share": 0.00909091
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 77,
+                  "share": 0.23333333
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 107,
+                  "share": 0.32424242
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 141,
+                  "share": 0.42727273
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 29,
+                  "share": 0.2815534
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 37,
+                  "share": 0.3592233
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 35,
+                  "share": 0.33980583
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00806452
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01612903
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 39,
+                  "share": 0.31451613
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 42,
+                  "share": 0.33870968
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 40,
+                  "share": 0.32258065
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 9,
+                  "share": 0.08737864
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 28,
+                  "share": 0.27184466
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 66,
+                  "share": 0.6407767
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q9_3",
+          "label": "데이터 기반 행정 활성화를 위한 중요도 - 데이터 관련 전문인력 확보",
+          "dimension": "지원조건 중요도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건을 더 중요하다고 평가했음을 뜻한다.",
+          "source_code": "Q9_3",
+          "source_note": "데이터기반행정 지원조건의 인식된 중요도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 4,
+                  "share": 0.01212121
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 60,
+                  "share": 0.18181818
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 105,
+                  "share": 0.31818182
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 161,
+                  "share": 0.48787879
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01941748
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 25,
+                  "share": 0.24271845
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 34,
+                  "share": 0.33009709
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 42,
+                  "share": 0.40776699
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01612903
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 28,
+                  "share": 0.22580645
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 32,
+                  "share": 0.25806452
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 62,
+                  "share": 0.5
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 7,
+                  "share": 0.06796117
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 39,
+                  "share": 0.37864078
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 57,
+                  "share": 0.55339806
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q9_4",
+          "label": "데이터 기반 행정 활성화를 위한 중요도 - 데이터 관련 교육 강화",
+          "dimension": "지원조건 중요도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건을 더 중요하다고 평가했음을 뜻한다.",
+          "source_code": "Q9_4",
+          "source_note": "데이터기반행정 지원조건의 인식된 중요도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.0030303
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 4,
+                  "share": 0.01212121
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 87,
+                  "share": 0.26363636
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 134,
+                  "share": 0.40606061
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 104,
+                  "share": 0.31515152
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 29,
+                  "share": 0.2815534
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 47,
+                  "share": 0.45631068
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 26,
+                  "share": 0.25242718
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00806452
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01612903
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 32,
+                  "share": 0.25806452
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 51,
+                  "share": 0.41129032
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 38,
+                  "share": 0.30645161
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 26,
+                  "share": 0.25242718
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 36,
+                  "share": 0.34951456
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 40,
+                  "share": 0.38834951
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q9_7",
+          "label": "데이터 기반 행정 활성화를 위한 중요도 - 데이터 관련 조직 간 협력",
+          "dimension": "지원조건 중요도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건을 더 중요하다고 평가했음을 뜻한다.",
+          "source_code": "Q9_7",
+          "source_note": "데이터기반행정 지원조건의 인식된 중요도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.0030303
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 3,
+                  "share": 0.00909091
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 70,
+                  "share": 0.21212121
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 111,
+                  "share": 0.33636364
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 145,
+                  "share": 0.43939394
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 31,
+                  "share": 0.30097087
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 43,
+                  "share": 0.41747573
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 28,
+                  "share": 0.27184466
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00806452
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01612903
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 27,
+                  "share": 0.21774194
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 40,
+                  "share": 0.32258065
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 54,
+                  "share": 0.43548387
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 12,
+                  "share": 0.11650485
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 28,
+                  "share": 0.27184466
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 63,
+                  "share": 0.61165049
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q9_8",
+          "label": "데이터 기반 행정 활성화를 위한 중요도 - 조직 리더의 데이터 역량 강화",
+          "dimension": "지원조건 중요도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건을 더 중요하다고 평가했음을 뜻한다.",
+          "source_code": "Q9_8",
+          "source_note": "데이터기반행정 지원조건의 인식된 중요도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.0030303
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 5,
+                  "share": 0.01515152
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 96,
+                  "share": 0.29090909
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 116,
+                  "share": 0.35151515
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 112,
+                  "share": 0.33939394
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 29,
+                  "share": 0.2815534
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 42,
+                  "share": 0.40776699
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 31,
+                  "share": 0.30097087
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00806452
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01612903
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 42,
+                  "share": 0.33870968
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 38,
+                  "share": 0.30645161
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 41,
+                  "share": 0.33064516
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01941748
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 25,
+                  "share": 0.24271845
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 36,
+                  "share": 0.34951456
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 40,
+                  "share": 0.38834951
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q9_9",
+          "label": "데이터 기반 행정 활성화를 위한 중요도 - 일반 조직 구성원의 데이터 역량 강화",
+          "dimension": "지원조건 중요도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건을 더 중요하다고 평가했음을 뜻한다.",
+          "source_code": "Q9_9",
+          "source_note": "데이터기반행정 지원조건의 인식된 중요도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 2,
+                  "share": 0.00606061
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 8,
+                  "share": 0.02424242
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 79,
+                  "share": 0.23939394
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 135,
+                  "share": 0.40909091
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 106,
+                  "share": 0.32121212
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01941748
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 28,
+                  "share": 0.27184466
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 42,
+                  "share": 0.40776699
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 30,
+                  "share": 0.29126214
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00806452
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01612903
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 39,
+                  "share": 0.31451613
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 43,
+                  "share": 0.34677419
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 39,
+                  "share": 0.31451613
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 4,
+                  "share": 0.03883495
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 12,
+                  "share": 0.11650485
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 50,
+                  "share": 0.48543689
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 37,
+                  "share": 0.3592233
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q9_10",
+          "label": "데이터 기반 행정 활성화를 위한 중요도 - 데이터를 중시하는 조직 문화",
+          "dimension": "지원조건 중요도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건을 더 중요하다고 평가했음을 뜻한다.",
+          "source_code": "Q9_10",
+          "source_note": "데이터기반행정 지원조건의 인식된 중요도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 2,
+                  "share": 0.00606061
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 4,
+                  "share": 0.01212121
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 70,
+                  "share": 0.21212121
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 113,
+                  "share": 0.34242424
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 141,
+                  "share": 0.42727273
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 28,
+                  "share": 0.27184466
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 35,
+                  "share": 0.33980583
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 38,
+                  "share": 0.36893204
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 1,
+                  "share": 0.00806452
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 2,
+                  "share": 0.01612903
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 30,
+                  "share": 0.24193548
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 43,
+                  "share": 0.34677419
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 48,
+                  "share": 0.38709677
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 중요하지 않다 (1점)",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 중요하지 않다 (2점)",
+                  "n": 1,
+                  "share": 0.00970874
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 12,
+                  "share": 0.11650485
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 중요하다 (4점)",
+                  "n": 35,
+                  "share": 0.33980583
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 중요하다 (5점)",
+                  "n": 55,
+                  "share": 0.53398058
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q10_2",
+          "label": "데이터 기반 행정 활성화를 위한 충분정도 - 데이터 관련 예산 확보",
+          "dimension": "지원조건 충분도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건이 더 충분하다고 평가했음을 뜻한다.",
+          "source_code": "Q10_2",
+          "source_note": "데이터기반행정 지원조건의 인식된 충분도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 32,
+                  "share": 0.0969697
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 89,
+                  "share": 0.26969697
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 145,
+                  "share": 0.43939394
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 36,
+                  "share": 0.10909091
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 28,
+                  "share": 0.08484848
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 8,
+                  "share": 0.0776699
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 24,
+                  "share": 0.23300971
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 52,
+                  "share": 0.50485437
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 13,
+                  "share": 0.12621359
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 6,
+                  "share": 0.05825243
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 13,
+                  "share": 0.10483871
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 30,
+                  "share": 0.24193548
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 56,
+                  "share": 0.4516129
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 12,
+                  "share": 0.09677419
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 13,
+                  "share": 0.10483871
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 11,
+                  "share": 0.10679612
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 35,
+                  "share": 0.33980583
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 37,
+                  "share": 0.3592233
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 11,
+                  "share": 0.10679612
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 9,
+                  "share": 0.08737864
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q10_3",
+          "label": "데이터 기반 행정 활성화를 위한 충분정도 - 데이터 관련 전문인력 확보",
+          "dimension": "지원조건 충분도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건이 더 충분하다고 평가했음을 뜻한다.",
+          "source_code": "Q10_3",
+          "source_note": "데이터기반행정 지원조건의 인식된 충분도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 58,
+                  "share": 0.17575758
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 86,
+                  "share": 0.26060606
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 127,
+                  "share": 0.38484848
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 33,
+                  "share": 0.1
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 26,
+                  "share": 0.07878788
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 13,
+                  "share": 0.12621359
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 23,
+                  "share": 0.22330097
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 50,
+                  "share": 0.48543689
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 12,
+                  "share": 0.11650485
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 5,
+                  "share": 0.04854369
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 31,
+                  "share": 0.25
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 22,
+                  "share": 0.17741935
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 46,
+                  "share": 0.37096774
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 11,
+                  "share": 0.08870968
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 14,
+                  "share": 0.11290323
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 14,
+                  "share": 0.13592233
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 41,
+                  "share": 0.39805825
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 31,
+                  "share": 0.30097087
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 10,
+                  "share": 0.09708738
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 7,
+                  "share": 0.06796117
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q10_4",
+          "label": "데이터 기반 행정 활성화를 위한 충분정도 - 데이터 관련 교육 강화",
+          "dimension": "지원조건 충분도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건이 더 충분하다고 평가했음을 뜻한다.",
+          "source_code": "Q10_4",
+          "source_note": "데이터기반행정 지원조건의 인식된 충분도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 18,
+                  "share": 0.05454545
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 83,
+                  "share": 0.25151515
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 164,
+                  "share": 0.4969697
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 42,
+                  "share": 0.12727273
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 23,
+                  "share": 0.06969697
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 6,
+                  "share": 0.05825243
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 21,
+                  "share": 0.2038835
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 54,
+                  "share": 0.52427184
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 17,
+                  "share": 0.16504854
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 5,
+                  "share": 0.04854369
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 4,
+                  "share": 0.03225806
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 25,
+                  "share": 0.2016129
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 69,
+                  "share": 0.55645161
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 16,
+                  "share": 0.12903226
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 10,
+                  "share": 0.08064516
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 8,
+                  "share": 0.0776699
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 37,
+                  "share": 0.3592233
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 41,
+                  "share": 0.39805825
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 9,
+                  "share": 0.08737864
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 8,
+                  "share": 0.0776699
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q10_7",
+          "label": "데이터 기반 행정 활성화를 위한 충분정도 - 데이터 관련 조직 간 협력",
+          "dimension": "지원조건 충분도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건이 더 충분하다고 평가했음을 뜻한다.",
+          "source_code": "Q10_7",
+          "source_note": "데이터기반행정 지원조건의 인식된 충분도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 50,
+                  "share": 0.15151515
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 105,
+                  "share": 0.31818182
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 120,
+                  "share": 0.36363636
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 29,
+                  "share": 0.08787879
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 26,
+                  "share": 0.07878788
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 10,
+                  "share": 0.09708738
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 27,
+                  "share": 0.26213592
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 50,
+                  "share": 0.48543689
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 12,
+                  "share": 0.11650485
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 4,
+                  "share": 0.03883495
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 13,
+                  "share": 0.10483871
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 39,
+                  "share": 0.31451613
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 46,
+                  "share": 0.37096774
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 12,
+                  "share": 0.09677419
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 14,
+                  "share": 0.11290323
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 27,
+                  "share": 0.26213592
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 39,
+                  "share": 0.37864078
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 24,
+                  "share": 0.23300971
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 5,
+                  "share": 0.04854369
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 8,
+                  "share": 0.0776699
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q10_8",
+          "label": "데이터 기반 행정 활성화를 위한 충분정도 - 조직 리더의 데이터 역량 강화",
+          "dimension": "지원조건 충분도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건이 더 충분하다고 평가했음을 뜻한다.",
+          "source_code": "Q10_8",
+          "source_note": "데이터기반행정 지원조건의 인식된 충분도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 38,
+                  "share": 0.11515152
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 87,
+                  "share": 0.26363636
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 148,
+                  "share": 0.44848485
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 34,
+                  "share": 0.1030303
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 23,
+                  "share": 0.06969697
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 10,
+                  "share": 0.09708738
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 20,
+                  "share": 0.19417476
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 53,
+                  "share": 0.51456311
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 14,
+                  "share": 0.13592233
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 6,
+                  "share": 0.05825243
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 11,
+                  "share": 0.08870968
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 29,
+                  "share": 0.23387097
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 62,
+                  "share": 0.5
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 11,
+                  "share": 0.08870968
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 11,
+                  "share": 0.08870968
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 17,
+                  "share": 0.16504854
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 38,
+                  "share": 0.36893204
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 33,
+                  "share": 0.32038835
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 9,
+                  "share": 0.08737864
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 6,
+                  "share": 0.05825243
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q10_9",
+          "label": "데이터 기반 행정 활성화를 위한 충분정도 - 일반 조직 구성원의 데이터 역량 강화",
+          "dimension": "지원조건 충분도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건이 더 충분하다고 평가했음을 뜻한다.",
+          "source_code": "Q10_9",
+          "source_note": "데이터기반행정 지원조건의 인식된 충분도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 29,
+                  "share": 0.08787879
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 97,
+                  "share": 0.29393939
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 144,
+                  "share": 0.43636364
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 39,
+                  "share": 0.11818182
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 21,
+                  "share": 0.06363636
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 12,
+                  "share": 0.11650485
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 21,
+                  "share": 0.2038835
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 53,
+                  "share": 0.51456311
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 14,
+                  "share": 0.13592233
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 3,
+                  "share": 0.02912621
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 9,
+                  "share": 0.07258065
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 37,
+                  "share": 0.2983871
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 53,
+                  "share": 0.42741935
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 13,
+                  "share": 0.10483871
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 12,
+                  "share": 0.09677419
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 8,
+                  "share": 0.0776699
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 39,
+                  "share": 0.37864078
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 38,
+                  "share": 0.36893204
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 12,
+                  "share": 0.11650485
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 6,
+                  "share": 0.05825243
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_data_2019_q10_10",
+          "label": "데이터 기반 행정 활성화를 위한 충분정도 - 데이터를 중시하는 조직 문화",
+          "dimension": "지원조건 충분도",
+          "period": 2019,
+          "universe": "조사 응답자(공공부문 데이터 정책 담당자·연구자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 평점은 응답자가 해당 지원조건이 더 충분하다고 평가했음을 뜻한다.",
+          "source_code": "Q10_10",
+          "source_note": "데이터기반행정 지원조건의 인식된 충분도. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 330,
+              "valid_n": 330,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 36,
+                  "share": 0.10909091
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 83,
+                  "share": 0.25151515
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 134,
+                  "share": 0.40606061
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 47,
+                  "share": 0.14242424
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 30,
+                  "share": 0.09090909
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "국가기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 11,
+                  "share": 0.10679612
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 20,
+                  "share": 0.19417476
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 49,
+                  "share": 0.47572816
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 15,
+                  "share": 0.14563107
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 8,
+                  "share": 0.0776699
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방자치단체",
+              "eligible_n": 124,
+              "valid_n": 124,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 16,
+                  "share": 0.12903226
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 33,
+                  "share": 0.26612903
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 48,
+                  "share": 0.38709677
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 14,
+                  "share": 0.11290323
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 13,
+                  "share": 0.10483871
+                }
+              ]
+            },
+            {
+              "id": "national_policy_research",
+              "label": "국책연구기관",
+              "eligible_n": 103,
+              "valid_n": 103,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "① 전혀 충분하지 않다 (1점)",
+                  "n": 9,
+                  "share": 0.08737864
+                },
+                {
+                  "code": "2",
+                  "label": "② 별로 충분하지 않다 (2점)",
+                  "n": 30,
+                  "share": 0.29126214
+                },
+                {
+                  "code": "3",
+                  "label": "③ 보통이다 (3점)",
+                  "n": 37,
+                  "share": 0.3592233
+                },
+                {
+                  "code": "4",
+                  "label": "④ 약간 충분하다 (4점)",
+                  "n": 18,
+                  "share": 0.17475728
+                },
+                {
+                  "code": "5",
+                  "label": "⑤ 매우 충분하다 (5점)",
+                  "n": 9,
+                  "share": 0.08737864
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "action_questions": [
+        "예산·전문인력·교육·조직 간 협력·리더 역량·구성원 역량·데이터 중시 문화에서 중요도와 충분도는 어디에서 차이 나는가?",
+        "국가기관·지방자치단체·국책연구기관의 다른 표본 구성을 명시했을 때, 보고된 병목은 다른가?"
+      ],
+      "evidence": [
+        {
+          "label": "KIPA 조사 메타데이터",
+          "url": "https://sky.kipa.re.kr/%26/10220/contents/7139582",
+          "note": "공식 조사 메타데이터·파일 안내."
+        },
+        {
+          "label": "보완 선행연구 방법 검토",
+          "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002673186",
+          "note": "게재연구 초록 근거이며 논문의 정확한 모형을 재현한 것은 아님."
+        }
+      ],
+      "models": [],
+      "findings": []
+    },
+    {
+      "id": "kipa_cloud_2022",
+      "title": "클라우드 전환 시대 데이터기반행정 추진 전략 조사",
+      "source_label": "한국행정연구원 KIPA 2022",
+      "years": [
+        2022
+      ],
+      "unit": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+      "scope_type": "public_internal",
+      "status": "descriptive",
+      "publication_status": "approved",
+      "scope": "중앙정부·지방정부 및 기관 비공개 응답자를 포함하며, 민간부문 비교나 기관 패널은 아니다.",
+      "sample": {
+        "raw_n": 500,
+        "analysis_n": 500,
+        "excluded_n": 0,
+        "groups": [
+          {
+            "id": "all_respondents",
+            "label": "전체 응답자",
+            "n": 500
+          },
+          {
+            "id": "central_government",
+            "label": "중앙정부",
+            "n": 247
+          },
+          {
+            "id": "local_government",
+            "label": "지방정부",
+            "n": 225
+          },
+          {
+            "id": "institution_not_disclosed",
+            "label": "기관 비공개",
+            "n": 28
+          }
+        ]
+      },
+      "weight_note": "비가중 응답자 분포이며 설계가중치를 적용하지 않았다.",
+      "cautions": [
+        "사용자가 사용 허가와 이 집계 공개 진행을 2026-09-06에 확인하여 공개한 결과다. 별도의 추가 공개 허가가 필요하다는 확인되지 않은 전제를 두지 않는다.",
+        "횡단면 자기보고 분포는 제공 표본만 기술하며 인과효과를 식별하지 않는다.",
+        "이는 공공 내부 기술 분석이며 공공/민간 비교가 아니다.",
+        "응답자 행, 자유응답, 비공개 원자료 경로는 내보내지 않는다."
+      ],
+      "questions": [
+        {
+          "id": "kipa_cloud_2022_q12_1",
+          "label": "Q12. 1)우리 부처/기관의 기관장은 데이터기반행정을 장려하며 적극적인 의지를 가지고 있다.",
+          "dimension": "조직 지원",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 강한 자기보고 리더십 장려를 뜻한다.",
+          "source_code": "Q12_1",
+          "source_note": "기관장의 데이터기반행정 장려. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 22,
+                  "share": 0.044
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 61,
+                  "share": 0.122
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 180,
+                  "share": 0.36
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 185,
+                  "share": 0.37
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 52,
+                  "share": 0.104
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 6,
+                  "share": 0.0242915
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 17,
+                  "share": 0.06882591
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 83,
+                  "share": 0.33603239
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 106,
+                  "share": 0.4291498
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 35,
+                  "share": 0.1417004
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 13,
+                  "share": 0.05777778
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 42,
+                  "share": 0.18666667
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 86,
+                  "share": 0.38222222
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 72,
+                  "share": 0.32
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 12,
+                  "share": 0.05333333
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 3,
+                  "share": 0.10714286
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 11,
+                  "share": 0.39285714
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 7,
+                  "share": 0.25
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 5,
+                  "share": 0.17857143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q12_4",
+          "label": "Q12. 4)우리조직은 업무수행 시 데이터 분석, 활용 결과를 바탕으로 의사결정을 하도록 장려한다.",
+          "dimension": "조직 지원",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 강한 자기보고 장려를 뜻한다.",
+          "source_code": "Q12_4",
+          "source_note": "데이터 분석·활용 결과 기반 의사결정 장려. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 24,
+                  "share": 0.048
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 64,
+                  "share": 0.128
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 189,
+                  "share": 0.378
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 189,
+                  "share": 0.378
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 34,
+                  "share": 0.068
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 6,
+                  "share": 0.0242915
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 22,
+                  "share": 0.08906883
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 93,
+                  "share": 0.37651822
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 106,
+                  "share": 0.4291498
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 20,
+                  "share": 0.08097166
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 16,
+                  "share": 0.07111111
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 40,
+                  "share": 0.17777778
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 84,
+                  "share": 0.37333333
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 73,
+                  "share": 0.32444444
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 12,
+                  "share": 0.05333333
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 12,
+                  "share": 0.42857143
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 10,
+                  "share": 0.35714286
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 2,
+                  "share": 0.07142857
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q12_7",
+          "label": "Q12. 7)우리조직은 구성원들에게 데이터 과학과 관련한 교육 훈련을 실시하고 있다.",
+          "dimension": "역량 지원",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 강한 자기보고 역량 지원을 뜻한다.",
+          "source_code": "Q12_7",
+          "source_note": "데이터 과학 교육·훈련 실시. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 37,
+                  "share": 0.074
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 84,
+                  "share": 0.168
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 202,
+                  "share": 0.404
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 138,
+                  "share": 0.276
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 39,
+                  "share": 0.078
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 14,
+                  "share": 0.05668016
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 38,
+                  "share": 0.15384615
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 98,
+                  "share": 0.39676113
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 68,
+                  "share": 0.27530364
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 29,
+                  "share": 0.11740891
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 20,
+                  "share": 0.08888889
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 41,
+                  "share": 0.18222222
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 95,
+                  "share": 0.42222222
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 62,
+                  "share": 0.27555556
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 7,
+                  "share": 0.03111111
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 3,
+                  "share": 0.10714286
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 5,
+                  "share": 0.17857143
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 9,
+                  "share": 0.32142857
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 8,
+                  "share": 0.28571429
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 3,
+                  "share": 0.10714286
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q12_8",
+          "label": "Q12. 8)우리조직의 데이터기반행정 활성화를 위한 업무가이드라인/매뉴얼은 구성원이 데이터를 분석·활용하는 데에 유용하다.",
+          "dimension": "조직 지원",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 유용한 자기보고 지침을 뜻한다.",
+          "source_code": "Q12_8",
+          "source_note": "데이터기반행정 업무 가이드라인·매뉴얼의 유용성. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 36,
+                  "share": 0.072
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 112,
+                  "share": 0.224
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 239,
+                  "share": 0.478
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 93,
+                  "share": 0.186
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 20,
+                  "share": 0.04
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 14,
+                  "share": 0.05668016
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 50,
+                  "share": 0.20242915
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 120,
+                  "share": 0.48582996
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 48,
+                  "share": 0.19433198
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 15,
+                  "share": 0.06072874
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 20,
+                  "share": 0.08888889
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 56,
+                  "share": 0.24888889
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 103,
+                  "share": 0.45777778
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 44,
+                  "share": 0.19555556
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 2,
+                  "share": 0.00888889
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 6,
+                  "share": 0.21428571
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 16,
+                  "share": 0.57142857
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 1,
+                  "share": 0.03571429
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 3,
+                  "share": 0.10714286
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q12_17",
+          "label": "Q12. 17)우리조직은 기관 내 부서간 데이터 공유 및 협조가 잘 이루어지는 편이다.",
+          "dimension": "소통·협업",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 원활한 자기보고 부서 간 협조를 뜻한다.",
+          "source_code": "Q12_17",
+          "source_note": "기관 내 부서 간 데이터 공유 및 협조. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 32,
+                  "share": 0.064
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 86,
+                  "share": 0.172
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 231,
+                  "share": 0.462
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 134,
+                  "share": 0.268
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 17,
+                  "share": 0.034
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 17,
+                  "share": 0.06882591
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 32,
+                  "share": 0.12955466
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 107,
+                  "share": 0.43319838
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 81,
+                  "share": 0.32793522
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 10,
+                  "share": 0.04048583
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 13,
+                  "share": 0.05777778
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 49,
+                  "share": 0.21777778
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 110,
+                  "share": 0.48888889
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 48,
+                  "share": 0.21333333
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 5,
+                  "share": 0.02222222
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 5,
+                  "share": 0.17857143
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 14,
+                  "share": 0.5
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 5,
+                  "share": 0.17857143
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 2,
+                  "share": 0.07142857
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q12_18",
+          "label": "Q12. 18)우리조직은 데이터 소유 및 관리책임 등에도 불구하고 타 기관/부서의 데이터 제공 요구에 협조적으로 대응한다.",
+          "dimension": "소통·협업",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 협조적인 자기보고 대응을 뜻한다.",
+          "source_code": "Q12_18",
+          "source_note": "타 기관·부서 데이터 제공 요구에 대한 협조적 대응. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 26,
+                  "share": 0.052
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 62,
+                  "share": 0.124
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 230,
+                  "share": 0.46
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 154,
+                  "share": 0.308
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 28,
+                  "share": 0.056
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 13,
+                  "share": 0.05263158
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 23,
+                  "share": 0.09311741
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 109,
+                  "share": 0.44129555
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 86,
+                  "share": 0.34817814
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 16,
+                  "share": 0.06477733
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 12,
+                  "share": 0.05333333
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 30,
+                  "share": 0.13333333
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 114,
+                  "share": 0.50666667
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 61,
+                  "share": 0.27111111
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 8,
+                  "share": 0.03555556
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 1,
+                  "share": 0.03571429
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 9,
+                  "share": 0.32142857
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 7,
+                  "share": 0.25
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 7,
+                  "share": 0.25
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 4,
+                  "share": 0.14285714
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q12_21",
+          "label": "Q12. 21)우리조직은 데이터 분석, 활용을 독려하기 위해 데이터기반 행정을 성과관리에 반영하고 있다.",
+          "dimension": "성과 지원",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 강한 자기보고 성과관리 지원을 뜻한다.",
+          "source_code": "Q12_21",
+          "source_note": "성과관리에 데이터기반행정 반영. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 41,
+                  "share": 0.082
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 108,
+                  "share": 0.216
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 205,
+                  "share": 0.41
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 122,
+                  "share": 0.244
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 24,
+                  "share": 0.048
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 10,
+                  "share": 0.04048583
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 39,
+                  "share": 0.15789474
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 123,
+                  "share": 0.49797571
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 65,
+                  "share": 0.26315789
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 10,
+                  "share": 0.04048583
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 25,
+                  "share": 0.11111111
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 66,
+                  "share": 0.29333333
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 72,
+                  "share": 0.32
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 52,
+                  "share": 0.23111111
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 10,
+                  "share": 0.04444444
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 6,
+                  "share": 0.21428571
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 3,
+                  "share": 0.10714286
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 10,
+                  "share": 0.35714286
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 5,
+                  "share": 0.17857143
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 4,
+                  "share": 0.14285714
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q12_22",
+          "label": "Q12. 22)우리조직은 데이터 분석, 활용을 독려하기 위해 관련 실적을 인센티브 인정 근거로 반영하고 있다.",
+          "dimension": "성과 지원",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 강한 자기보고 인센티브 인정을 뜻한다.",
+          "source_code": "Q12_22",
+          "source_note": "인센티브 인정 근거에 데이터 관련 실적 반영. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 66,
+                  "share": 0.132
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 133,
+                  "share": 0.266
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 206,
+                  "share": 0.412
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 76,
+                  "share": 0.152
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 19,
+                  "share": 0.038
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 17,
+                  "share": 0.06882591
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 57,
+                  "share": 0.23076923
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 118,
+                  "share": 0.47773279
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 45,
+                  "share": 0.18218623
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 10,
+                  "share": 0.04048583
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 42,
+                  "share": 0.18666667
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 71,
+                  "share": 0.31555556
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 76,
+                  "share": 0.33777778
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 29,
+                  "share": 0.12888889
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 7,
+                  "share": 0.03111111
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 7,
+                  "share": 0.25
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 5,
+                  "share": 0.17857143
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 12,
+                  "share": 0.42857143
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 2,
+                  "share": 0.07142857
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_7",
+          "label": "Q15. 7) 나는 업무수행 및 의사결정 과정에서 필요한 다양한 정형/비정형 데이터를 적극적으로 활용하고 있다.",
+          "dimension": "데이터 활용 역량",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 많은 자기보고 데이터 활용을 뜻한다.",
+          "source_code": "Q15_7",
+          "source_note": "업무·의사결정에서 다양한 데이터 활용. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 9,
+                  "share": 0.018
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 57,
+                  "share": 0.114
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 227,
+                  "share": 0.454
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 177,
+                  "share": 0.354
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 30,
+                  "share": 0.06
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.00809717
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 26,
+                  "share": 0.10526316
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 109,
+                  "share": 0.44129555
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 97,
+                  "share": 0.39271255
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 13,
+                  "share": 0.05263158
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 5,
+                  "share": 0.02222222
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 29,
+                  "share": 0.12888889
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 107,
+                  "share": 0.47555556
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 71,
+                  "share": 0.31555556
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 13,
+                  "share": 0.05777778
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 11,
+                  "share": 0.39285714
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 9,
+                  "share": 0.32142857
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 4,
+                  "share": 0.14285714
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_8",
+          "label": "Q15. 8) 나는 업무수행 및 의사결정에 필요한 다양한 데이터 분석 방법 및 S/W를 활용할 수 있다.",
+          "dimension": "데이터 활용 역량",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 높은 자기보고 분석 역량을 뜻한다.",
+          "source_code": "Q15_8",
+          "source_note": "데이터 분석 방법 및 소프트웨어 활용 가능. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 17,
+                  "share": 0.034
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 105,
+                  "share": 0.21
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 218,
+                  "share": 0.436
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 119,
+                  "share": 0.238
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 41,
+                  "share": 0.082
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 5,
+                  "share": 0.02024291
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 47,
+                  "share": 0.1902834
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 105,
+                  "share": 0.42510121
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 70,
+                  "share": 0.28340081
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 20,
+                  "share": 0.08097166
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 9,
+                  "share": 0.04
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 54,
+                  "share": 0.24
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 103,
+                  "share": 0.45777778
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 42,
+                  "share": 0.18666667
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 17,
+                  "share": 0.07555556
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 3,
+                  "share": 0.10714286
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 4,
+                  "share": 0.14285714
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 10,
+                  "share": 0.35714286
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 7,
+                  "share": 0.25
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 4,
+                  "share": 0.14285714
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_3",
+          "label": "Q15. 3) 나는 새롭고 독창적인 업무수행 방식을 창안·적용하도록 노력한다.",
+          "dimension": "혁신 행동",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 많은 자기보고 혁신 업무행동을 뜻한다.",
+          "source_code": "Q15_3",
+          "source_note": "새롭고 독창적인 업무수행 방식 창안·적용 노력. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.004
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 52,
+                  "share": 0.104
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 214,
+                  "share": 0.428
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 193,
+                  "share": 0.386
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 39,
+                  "share": 0.078
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 21,
+                  "share": 0.08502024
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 109,
+                  "share": 0.44129555
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 103,
+                  "share": 0.41700405
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 14,
+                  "share": 0.05668016
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.00888889
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 27,
+                  "share": 0.12
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 96,
+                  "share": 0.42666667
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 80,
+                  "share": 0.35555556
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 20,
+                  "share": 0.08888889
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 4,
+                  "share": 0.14285714
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 9,
+                  "share": 0.32142857
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 10,
+                  "share": 0.35714286
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 5,
+                  "share": 0.17857143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_4",
+          "label": "Q15. 4) 나는 업무수행 중 발생하는 문제해결을 위해 새로운 아이디어를 개발한다.",
+          "dimension": "혁신 행동",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 많은 자기보고 문제해결 아이디어 개발을 뜻한다.",
+          "source_code": "Q15_4",
+          "source_note": "업무 문제해결을 위한 새로운 아이디어 개발. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 5,
+                  "share": 0.01
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 49,
+                  "share": 0.098
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 220,
+                  "share": 0.44
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 186,
+                  "share": 0.372
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 40,
+                  "share": 0.08
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.00809717
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 15,
+                  "share": 0.06072874
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 113,
+                  "share": 0.45748988
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 99,
+                  "share": 0.40080972
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 18,
+                  "share": 0.07287449
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 3,
+                  "share": 0.01333333
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 30,
+                  "share": 0.13333333
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 98,
+                  "share": 0.43555556
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 79,
+                  "share": 0.35111111
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 15,
+                  "share": 0.06666667
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 4,
+                  "share": 0.14285714
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 9,
+                  "share": 0.32142857
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 8,
+                  "share": 0.28571429
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 7,
+                  "share": 0.25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_21",
+          "label": "Q15. 21) 나는 업무 내용에 영향을 미치는 결정에 참여할 수 있다.",
+          "dimension": "자율성",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 많은 자기보고 의사결정 참여를 뜻한다.",
+          "source_code": "Q15_21",
+          "source_note": "업무 내용에 영향을 미치는 결정 참여. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 8,
+                  "share": 0.016
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 39,
+                  "share": 0.078
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 181,
+                  "share": 0.362
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 244,
+                  "share": 0.488
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 28,
+                  "share": 0.056
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 3,
+                  "share": 0.01214575
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 15,
+                  "share": 0.06072874
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 91,
+                  "share": 0.36842105
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 122,
+                  "share": 0.49392713
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 16,
+                  "share": 0.06477733
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 4,
+                  "share": 0.01777778
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 17,
+                  "share": 0.07555556
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 84,
+                  "share": 0.37333333
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 111,
+                  "share": 0.49333333
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 9,
+                  "share": 0.04
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 1,
+                  "share": 0.03571429
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 7,
+                  "share": 0.25
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 6,
+                  "share": 0.21428571
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 11,
+                  "share": 0.39285714
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 3,
+                  "share": 0.10714286
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_22",
+          "label": "Q15. 22) 나는 업무수행 방식·절차에 대한 선택권을 가지고 있다.",
+          "dimension": "자율성",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 많은 자기보고 절차 재량을 뜻한다.",
+          "source_code": "Q15_22",
+          "source_note": "업무수행 방식·절차 선택권. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 9,
+                  "share": 0.018
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 55,
+                  "share": 0.11
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 197,
+                  "share": 0.394
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 216,
+                  "share": 0.432
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 23,
+                  "share": 0.046
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.00809717
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 27,
+                  "share": 0.10931174
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 94,
+                  "share": 0.3805668
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 110,
+                  "share": 0.44534413
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 14,
+                  "share": 0.05668016
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 5,
+                  "share": 0.02222222
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 20,
+                  "share": 0.08888889
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 97,
+                  "share": 0.43111111
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 97,
+                  "share": 0.43111111
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 6,
+                  "share": 0.02666667
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 8,
+                  "share": 0.28571429
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 6,
+                  "share": 0.21428571
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 9,
+                  "share": 0.32142857
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 3,
+                  "share": 0.10714286
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_25",
+          "label": "Q15. 25) 우리 기관에서는 업무상 협조가 필요한 경우 부서 간 협업이 대체로 원활하다",
+          "dimension": "소통·협업",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 원활한 자기보고 협업을 뜻한다.",
+          "source_code": "Q15_25",
+          "source_note": "부서 간 협업의 전반적 원활성. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 12,
+                  "share": 0.024
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 57,
+                  "share": 0.114
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 218,
+                  "share": 0.436
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 191,
+                  "share": 0.382
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 22,
+                  "share": 0.044
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 4,
+                  "share": 0.01619433
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 26,
+                  "share": 0.10526316
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 96,
+                  "share": 0.38866397
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 107,
+                  "share": 0.43319838
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 14,
+                  "share": 0.05668016
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 6,
+                  "share": 0.02666667
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 31,
+                  "share": 0.13777778
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 108,
+                  "share": 0.48
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 74,
+                  "share": 0.32888889
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 6,
+                  "share": 0.02666667
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 14,
+                  "share": 0.5
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 10,
+                  "share": 0.35714286
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 2,
+                  "share": 0.07142857
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_26",
+          "label": "Q15. 26) 우리 기관에서는 부서의 업무를 수행함에 있어 상하 간(수직적) 의사소통이 원활하다",
+          "dimension": "소통·협업",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 원활한 자기보고 수직적 의사소통을 뜻한다.",
+          "source_code": "Q15_26",
+          "source_note": "상하 간 수직적 의사소통의 원활성. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 12,
+                  "share": 0.024
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 53,
+                  "share": 0.106
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 194,
+                  "share": 0.388
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 212,
+                  "share": 0.424
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 29,
+                  "share": 0.058
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 5,
+                  "share": 0.02024291
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 22,
+                  "share": 0.08906883
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 85,
+                  "share": 0.34412955
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 115,
+                  "share": 0.46558704
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 20,
+                  "share": 0.08097166
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 6,
+                  "share": 0.02666667
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 29,
+                  "share": 0.12888889
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 98,
+                  "share": 0.43555556
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 85,
+                  "share": 0.37777778
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 7,
+                  "share": 0.03111111
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 1,
+                  "share": 0.03571429
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 11,
+                  "share": 0.39285714
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 12,
+                  "share": 0.42857143
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 2,
+                  "share": 0.07142857
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_27",
+          "label": "Q15. 27) 우리 기관에서는 부서의 업무를 수행함에 있어 직원 간(수평적) 의사소통이 원활하다",
+          "dimension": "소통·협업",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 원활한 자기보고 수평적 의사소통을 뜻한다.",
+          "source_code": "Q15_27",
+          "source_note": "직원 간 수평적 의사소통의 원활성. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 9,
+                  "share": 0.018
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 28,
+                  "share": 0.056
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 192,
+                  "share": 0.384
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 230,
+                  "share": 0.46
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 41,
+                  "share": 0.082
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.00809717
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 15,
+                  "share": 0.06072874
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 85,
+                  "share": 0.34412955
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 115,
+                  "share": 0.46558704
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 30,
+                  "share": 0.12145749
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 7,
+                  "share": 0.03111111
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 10,
+                  "share": 0.04444444
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 98,
+                  "share": 0.43555556
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 101,
+                  "share": 0.44888889
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 9,
+                  "share": 0.04
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 0,
+                  "share": 0.0
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 3,
+                  "share": 0.10714286
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 9,
+                  "share": 0.32142857
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 14,
+                  "share": 0.5
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 2,
+                  "share": 0.07142857
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kipa_cloud_2022_q15_28",
+          "label": "Q15. 28) 우리 조직은 내외부환경 및 정부정책의 변화에 혁신적으로 대응하고자 한다.",
+          "dimension": "혁신 분위기",
+          "period": 2022,
+          "universe": "조사 응답자(공공부문 데이터기반행정 역할 담당자)",
+          "scale": "원 1~5 서열형 응답 범주; 합성지수 없이 문항별 분포만 제시.",
+          "direction": "높은 동의는 더 혁신지향적인 자기보고 조직 분위기를 뜻하며, 실현된 혁신과 같지 않다.",
+          "source_code": "Q15_28",
+          "source_note": "환경·정부정책 변화에 혁신적으로 대응하려는 조직. 문서화된 1~5 응답 범주 밖의 값은 SPSS 값 라벨에 따라 결측 또는 모름으로 분류한다.",
+          "groups": [
+            {
+              "id": "all_respondents",
+              "label": "전체 응답자",
+              "eligible_n": 500,
+              "valid_n": 500,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 13,
+                  "share": 0.026
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 49,
+                  "share": 0.098
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 190,
+                  "share": 0.38
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 221,
+                  "share": 0.442
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 27,
+                  "share": 0.054
+                }
+              ]
+            },
+            {
+              "id": "central_government",
+              "label": "중앙정부",
+              "eligible_n": 247,
+              "valid_n": 247,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 3,
+                  "share": 0.01214575
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 16,
+                  "share": 0.06477733
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 83,
+                  "share": 0.33603239
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 127,
+                  "share": 0.51417004
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 18,
+                  "share": 0.07287449
+                }
+              ]
+            },
+            {
+              "id": "local_government",
+              "label": "지방정부",
+              "eligible_n": 225,
+              "valid_n": 225,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 8,
+                  "share": 0.03555556
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 32,
+                  "share": 0.14222222
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 96,
+                  "share": 0.42666667
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 83,
+                  "share": 0.36888889
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 6,
+                  "share": 0.02666667
+                }
+              ]
+            },
+            {
+              "id": "institution_not_disclosed",
+              "label": "기관 비공개",
+              "eligible_n": 28,
+              "valid_n": 28,
+              "missing_n": 0,
+              "unknown_n": 0,
+              "responses": [
+                {
+                  "code": "1",
+                  "label": "  1) 전혀 그렇지 않다",
+                  "n": 2,
+                  "share": 0.07142857
+                },
+                {
+                  "code": "2",
+                  "label": "  2) 그렇지 않다",
+                  "n": 1,
+                  "share": 0.03571429
+                },
+                {
+                  "code": "3",
+                  "label": "  3) 보통이다",
+                  "n": 11,
+                  "share": 0.39285714
+                },
+                {
+                  "code": "4",
+                  "label": "  4) 그렇다",
+                  "n": 11,
+                  "share": 0.39285714
+                },
+                {
+                  "code": "5",
+                  "label": "  5) 매우 그렇다",
+                  "n": 3,
+                  "share": 0.10714286
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "action_questions": [
+        "지원·역량·자율성·소통·혁신행동 문항 중 중앙/지방의 기술적 차이가 가장 큰 것은 무엇이며, 분모와 결측은 함께 제시되었는가?",
+        "Q15_3과 Q15_4는 조직 혁신 성과가 아니라 서로 구분되는 자기보고 혁신행동 측정치인가?",
+        "향후 회귀 전에 상관된 지원 요인을 분리하고 역할·직급·재직기간·표집·횡단면 한계를 문서화할 수 있는가?"
+      ],
+      "evidence": [
+        {
+          "label": "KIPA 연구자료 아카이브",
+          "url": "https://sky.kipa.re.kr/",
+          "note": "공식 KIPA 아카이브이며 SPSS 사전과 활용 문구는 로컬에서 점검함."
+        }
+      ],
+      "models": [],
+      "findings": []
+    }
+  ]
+}

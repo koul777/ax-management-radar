@@ -1,0 +1,541 @@
+{
+  "wps": {
+    "perceptions": [
+      {
+        "id": "employment",
+        "column": "ai045",
+        "label": "전체 고용 변화 인식",
+        "usage": "descriptive_only",
+        "note": "2023년 현재 AI 활용 사업체의 주관적 영향 인식이다. 회귀변수로 사용하지 않고 응답분포로만 제시한다. 모름(99)을 별도 범주로 유지하며, 가중 비율은 양의 유효 가중치가 있는 응답을 기준으로 계산한다.",
+        "categories": [
+          {
+            "code": 1,
+            "label": "증가"
+          },
+          {
+            "code": 2,
+            "label": "감소"
+          },
+          {
+            "code": 3,
+            "label": "영향 없음"
+          },
+          {
+            "code": 99,
+            "label": "모름"
+          }
+        ],
+        "public": {
+          "raw_n": 21,
+          "valid_n": 21,
+          "informative_n": 5,
+          "weighted_n": 21,
+          "weighted_effective_n": 21,
+          "responses": [
+            {
+              "code": 1,
+              "label": "증가",
+              "n": 0,
+              "share": 0,
+              "weighted_n": 0,
+              "weighted_share": 0
+            },
+            {
+              "code": 2,
+              "label": "감소",
+              "n": 2,
+              "share": 0.09523809523809523,
+              "weighted_n": 2,
+              "weighted_share": 0.09523809523809523
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 3,
+              "share": 0.14285714285714285,
+              "weighted_n": 3,
+              "weighted_share": 0.14285714285714285
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 16,
+              "share": 0.7619047619047619,
+              "weighted_n": 16,
+              "weighted_share": 0.7619047619047619
+            }
+          ]
+        },
+        "private": {
+          "raw_n": 150,
+          "valid_n": 150,
+          "informative_n": 31,
+          "weighted_n": 148,
+          "weighted_effective_n": 51.1,
+          "responses": [
+            {
+              "code": 1,
+              "label": "증가",
+              "n": 0,
+              "share": 0,
+              "weighted_n": 0,
+              "weighted_share": 0
+            },
+            {
+              "code": 2,
+              "label": "감소",
+              "n": 12,
+              "share": 0.08,
+              "weighted_n": 12,
+              "weighted_share": 0.04175532756163052
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 19,
+              "share": 0.12666666666666668,
+              "weighted_n": 18,
+              "weighted_share": 0.1632150932779046
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 119,
+              "share": 0.7933333333333333,
+              "weighted_n": 118,
+              "weighted_share": 0.7950295791604649
+            }
+          ]
+        }
+      },
+      {
+        "id": "productivity",
+        "column": "ai046",
+        "label": "근로자 생산성 변화 인식",
+        "usage": "descriptive_only",
+        "note": "2023년 현재 AI 활용 사업체의 주관적 영향 인식이다. 회귀변수로 사용하지 않고 응답분포로만 제시한다. 모름(99)을 별도 범주로 유지하며, 가중 비율은 양의 유효 가중치가 있는 응답을 기준으로 계산한다.",
+        "categories": [
+          {
+            "code": 1,
+            "label": "증가"
+          },
+          {
+            "code": 2,
+            "label": "감소"
+          },
+          {
+            "code": 3,
+            "label": "영향 없음"
+          },
+          {
+            "code": 99,
+            "label": "모름"
+          }
+        ],
+        "public": {
+          "raw_n": 21,
+          "valid_n": 21,
+          "informative_n": 11,
+          "weighted_n": 21,
+          "weighted_effective_n": 21,
+          "responses": [
+            {
+              "code": 1,
+              "label": "증가",
+              "n": 4,
+              "share": 0.19047619047619047,
+              "weighted_n": 4,
+              "weighted_share": 0.19047619047619047
+            },
+            {
+              "code": 2,
+              "label": "감소",
+              "n": 6,
+              "share": 0.2857142857142857,
+              "weighted_n": 6,
+              "weighted_share": 0.2857142857142857
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 1,
+              "share": 0.047619047619047616,
+              "weighted_n": 1,
+              "weighted_share": 0.047619047619047616
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 10,
+              "share": 0.47619047619047616,
+              "weighted_n": 10,
+              "weighted_share": 0.47619047619047616
+            }
+          ]
+        },
+        "private": {
+          "raw_n": 150,
+          "valid_n": 150,
+          "informative_n": 82,
+          "weighted_n": 148,
+          "weighted_effective_n": 51.1,
+          "responses": [
+            {
+              "code": 1,
+              "label": "증가",
+              "n": 68,
+              "share": 0.4533333333333333,
+              "weighted_n": 66,
+              "weighted_share": 0.2914602266431251
+            },
+            {
+              "code": 2,
+              "label": "감소",
+              "n": 5,
+              "share": 0.03333333333333333,
+              "weighted_n": 5,
+              "weighted_share": 0.052975023582279235
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 9,
+              "share": 0.06,
+              "weighted_n": 9,
+              "weighted_share": 0.09644041281433716
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 68,
+              "share": 0.4533333333333333,
+              "weighted_n": 68,
+              "weighted_share": 0.5591243369602585
+            }
+          ]
+        }
+      },
+      {
+        "id": "satisfaction",
+        "column": "ai047",
+        "label": "근로자 만족도 변화 인식",
+        "usage": "descriptive_only",
+        "note": "2023년 현재 AI 활용 사업체의 주관적 영향 인식이다. 회귀변수로 사용하지 않고 응답분포로만 제시한다. 모름(99)을 별도 범주로 유지하며, 가중 비율은 양의 유효 가중치가 있는 응답을 기준으로 계산한다.",
+        "categories": [
+          {
+            "code": 1,
+            "label": "증가"
+          },
+          {
+            "code": 2,
+            "label": "감소"
+          },
+          {
+            "code": 3,
+            "label": "영향 없음"
+          },
+          {
+            "code": 99,
+            "label": "모름"
+          }
+        ],
+        "public": {
+          "raw_n": 21,
+          "valid_n": 21,
+          "informative_n": 9,
+          "weighted_n": 21,
+          "weighted_effective_n": 21,
+          "responses": [
+            {
+              "code": 1,
+              "label": "증가",
+              "n": 1,
+              "share": 0.047619047619047616,
+              "weighted_n": 1,
+              "weighted_share": 0.047619047619047616
+            },
+            {
+              "code": 2,
+              "label": "감소",
+              "n": 1,
+              "share": 0.047619047619047616,
+              "weighted_n": 1,
+              "weighted_share": 0.047619047619047616
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 7,
+              "share": 0.3333333333333333,
+              "weighted_n": 7,
+              "weighted_share": 0.3333333333333333
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 12,
+              "share": 0.5714285714285714,
+              "weighted_n": 12,
+              "weighted_share": 0.5714285714285714
+            }
+          ]
+        },
+        "private": {
+          "raw_n": 150,
+          "valid_n": 150,
+          "informative_n": 80,
+          "weighted_n": 148,
+          "weighted_effective_n": 51.1,
+          "responses": [
+            {
+              "code": 1,
+              "label": "증가",
+              "n": 11,
+              "share": 0.07333333333333333,
+              "weighted_n": 10,
+              "weighted_share": 0.021665662978680257
+            },
+            {
+              "code": 2,
+              "label": "감소",
+              "n": 9,
+              "share": 0.06,
+              "weighted_n": 8,
+              "weighted_share": 0.06755810235868921
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 60,
+              "share": 0.4,
+              "weighted_n": 60,
+              "weighted_share": 0.5111556273114761
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 70,
+              "share": 0.4666666666666667,
+              "weighted_n": 70,
+              "weighted_share": 0.3996206073511544
+            }
+          ]
+        }
+      },
+      {
+        "id": "safety",
+        "column": "ai048",
+        "label": "건강·안전 영향 인식",
+        "usage": "descriptive_only",
+        "note": "2023년 현재 AI 활용 사업체의 주관적 영향 인식이다. 회귀변수로 사용하지 않고 응답분포로만 제시한다. 모름(99)을 별도 범주로 유지하며, 가중 비율은 양의 유효 가중치가 있는 응답을 기준으로 계산한다.",
+        "categories": [
+          {
+            "code": 1,
+            "label": "긍정"
+          },
+          {
+            "code": 2,
+            "label": "부정"
+          },
+          {
+            "code": 3,
+            "label": "영향 없음"
+          },
+          {
+            "code": 99,
+            "label": "모름"
+          }
+        ],
+        "public": {
+          "raw_n": 21,
+          "valid_n": 21,
+          "informative_n": 8,
+          "weighted_n": 21,
+          "weighted_effective_n": 21,
+          "responses": [
+            {
+              "code": 1,
+              "label": "긍정",
+              "n": 6,
+              "share": 0.2857142857142857,
+              "weighted_n": 6,
+              "weighted_share": 0.2857142857142857
+            },
+            {
+              "code": 2,
+              "label": "부정",
+              "n": 0,
+              "share": 0,
+              "weighted_n": 0,
+              "weighted_share": 0
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 2,
+              "share": 0.09523809523809523,
+              "weighted_n": 2,
+              "weighted_share": 0.09523809523809523
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 13,
+              "share": 0.6190476190476191,
+              "weighted_n": 13,
+              "weighted_share": 0.6190476190476191
+            }
+          ]
+        },
+        "private": {
+          "raw_n": 150,
+          "valid_n": 150,
+          "informative_n": 50,
+          "weighted_n": 148,
+          "weighted_effective_n": 51.1,
+          "responses": [
+            {
+              "code": 1,
+              "label": "긍정",
+              "n": 35,
+              "share": 0.23333333333333334,
+              "weighted_n": 35,
+              "weighted_share": 0.25643716511482023
+            },
+            {
+              "code": 2,
+              "label": "부정",
+              "n": 0,
+              "share": 0,
+              "weighted_n": 0,
+              "weighted_share": 0
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 15,
+              "share": 0.1,
+              "weighted_n": 14,
+              "weighted_share": 0.1217455892547924
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 100,
+              "share": 0.6666666666666666,
+              "weighted_n": 99,
+              "weighted_share": 0.6218172456303873
+            }
+          ]
+        }
+      },
+      {
+        "id": "measurement",
+        "column": "ai049",
+        "label": "성과측정 능력 변화 인식",
+        "usage": "descriptive_only",
+        "note": "2023년 현재 AI 활용 사업체의 주관적 영향 인식이다. 회귀변수로 사용하지 않고 응답분포로만 제시한다. 모름(99)을 별도 범주로 유지하며, 가중 비율은 양의 유효 가중치가 있는 응답을 기준으로 계산한다.",
+        "categories": [
+          {
+            "code": 1,
+            "label": "증가"
+          },
+          {
+            "code": 2,
+            "label": "감소"
+          },
+          {
+            "code": 3,
+            "label": "영향 없음"
+          },
+          {
+            "code": 99,
+            "label": "모름"
+          }
+        ],
+        "public": {
+          "raw_n": 21,
+          "valid_n": 21,
+          "informative_n": 14,
+          "weighted_n": 21,
+          "weighted_effective_n": 21,
+          "responses": [
+            {
+              "code": 1,
+              "label": "증가",
+              "n": 6,
+              "share": 0.2857142857142857,
+              "weighted_n": 6,
+              "weighted_share": 0.2857142857142857
+            },
+            {
+              "code": 2,
+              "label": "감소",
+              "n": 1,
+              "share": 0.047619047619047616,
+              "weighted_n": 1,
+              "weighted_share": 0.047619047619047616
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 7,
+              "share": 0.3333333333333333,
+              "weighted_n": 7,
+              "weighted_share": 0.3333333333333333
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 7,
+              "share": 0.3333333333333333,
+              "weighted_n": 7,
+              "weighted_share": 0.3333333333333333
+            }
+          ]
+        },
+        "private": {
+          "raw_n": 150,
+          "valid_n": 150,
+          "informative_n": 83,
+          "weighted_n": 148,
+          "weighted_effective_n": 51.1,
+          "responses": [
+            {
+              "code": 1,
+              "label": "증가",
+              "n": 43,
+              "share": 0.2866666666666667,
+              "weighted_n": 43,
+              "weighted_share": 0.31309820058084215
+            },
+            {
+              "code": 2,
+              "label": "감소",
+              "n": 8,
+              "share": 0.05333333333333334,
+              "weighted_n": 8,
+              "weighted_share": 0.07383927477977772
+            },
+            {
+              "code": 3,
+              "label": "영향 없음",
+              "n": 32,
+              "share": 0.21333333333333335,
+              "weighted_n": 30,
+              "weighted_share": 0.181906827544736
+            },
+            {
+              "code": 99,
+              "label": "모름",
+              "n": 67,
+              "share": 0.44666666666666666,
+              "weighted_n": 67,
+              "weighted_share": 0.43115569709464413
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

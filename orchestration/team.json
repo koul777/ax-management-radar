@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "purpose": "Public/private AX organizational-management research and dashboard",
+  "execution": "Native conversation subagents, routed and supervised by the primary agent",
+  "is_native_codex_agent_registry": false,
+  "is_background_service": false,
+  "user_contact": "primary_agent_only",
+  "concurrency_budget_including_lead": 4,
+  "lead": {
+    "model_policy": "preserve_user_selected_chat_model",
+    "user_reported_selection": "Astra Ultra",
+    "selection_changed_by_this_configuration": false,
+    "responsibilities": ["scope", "task_routing", "evidence_synthesis", "conflict_resolution", "final_review", "user_communication"]
+  },
+  "roles": [
+    {
+      "id": "data_audit",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "purpose": "Dictionaries, questionnaire mapping, panel IDs, weights, reproducible data checks",
+      "initial_assignment": "Audit newly supplied Korean Media Panel archives",
+      "owned_paths": [".tmp/media_panel_audit/", "KMP_AX_SUITABILITY.md"]
+    },
+    {
+      "id": "literature_review",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "xhigh",
+      "purpose": "Extract variables and methods from primary studies using the supplied datasets",
+      "initial_assignment": "KIPA 2015 and 2019 matched studies; bounded KMP study search",
+      "owned_paths": ["orchestration/reports/SUPPLEMENTAL_STUDIES.md", ".tmp/team_literature/"]
+    },
+    {
+      "id": "causal_review",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "purpose": "Identification, timing, comparison validity, control selection and claim review",
+      "initial_assignment": "Audit current WPS/HCCP design and complementary datasets",
+      "owned_paths": ["orchestration/reports/CAUSAL_REVIEW.md", ".tmp/team_causal/"]
+    },
+    {
+      "id": "dashboard_engineering",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "purpose": "Implement approved specifications and reproducible analysis code",
+      "activation": "Implementation phase only; lead assigns specific files before launch"
+    },
+    {
+      "id": "verification",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "purpose": "Narrow schema, citation-link, label and test-output checks",
+      "activation": "Verification phase only",
+      "must_escalate": ["causal claims", "statistical specifications", "scale validity", "unexplained numerical differences"]
+    }
+  ],
+  "workflow": ["lead_scopes", "parallel_evidence_work", "causal_review", "lead_integration", "authorized_implementation", "independent_checks", "lead_handoff"],
+  "publication_gate": ["questionnaire_mapping", "source_support", "sample_and_missingness_audit", "statistical_review", "implementation_tests", "scope_and_privacy_check"],
+  "fallback": "Report unavailable model/effort or capacity; use an explicitly disclosed supported alternative or do the task in the lead thread"
+}

@@ -1,0 +1,97 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/.vinext/
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+/dist/
+/.wrangler/
+/outputs/
+/work/
+
+# Local source-analysis intermediates (never publish survey microdata or PDF extracts)
+/.tmp/
+/tmp/
+/tools/
+*.dta
+*.DTA
+*.sav
+*.SAV
+*.zip
+*.xlsx
+*.xls
+*.pdf
+
+# Survey source documents, private work products and local caches
+*.DTA
+*.ZIP
+*.XLSX
+*.XLS
+*.PDF
+*.csv
+*.CSV
+*.tsv
+*.TSV
+*.hwp
+*.HWP
+*.hwpx
+*.HWPX
+*.doc
+*.DOC
+*.docx
+*.DOCX
+__pycache__/
+*.pyc
+*.pyo
+*.tsbuildinfo
+/.agents/
+/.codex/
+/reports/
+/orchestration/reports/
+
+# Retained legacy analyses are not part of the active application
+/app/data/hccp-innovation-analysis.json
+/app/data/workforce-ai-analysis.json
+/HCCP_*.md
+
+# Reproducible video source is public; renders, vendor installations and raw media are local
+**/node_modules/
+/promo/**/out/
+/promo/**/public/audio/
+/promo/**/reference-media/
+/promo/**/analysis/*.wav
+/promo/**/.cache/
+/promo/workbench/
+
+.vercel
+.env*
