@@ -1,4 +1,5 @@
 import framework from "./data/ax-management-framework.json";
+import { AxPilotCanvas } from "./ax-pilot-canvas";
 
 function words(value: unknown): string {
   if (Array.isArray(value)) return value.map(words).filter(Boolean).join(" · ");
@@ -46,6 +47,7 @@ export function AxCausalResearch() {
       <div className="ax-causal-limits"><article><h3>자동으로 통제하지 않는 변수</h3><ul>{design.excluded_controls.map((item) => <li key={item}>{item}</li>)}</ul></article><article><h3>인과해석에 필요한 가정</h3><ul>{design.assumptions.map((item) => <li key={item}>{item}</li>)}</ul></article><article><h3>인과를 검증하려면 다음에 필요한 설계</h3><ul>{design.next_design.map((item) => <li key={item}>{item}</li>)}</ul></article></div>
       <p className="ai-model-caution">통제변수를 많이 넣거나 이전 차수의 변수를 사용했다는 이유만으로 인과효과가 되지는 않습니다. 실제 포함한 변수·누락된 교란·매개 및 사후변수를 모형별로 확인해야 합니다.</p>
     </section>
+    <AxPilotCanvas />
     <AxManagementActions />
     <section className="ai-panel ax-research-sources"><div className="ai-panel-heading"><div><span>FULL MODEL AUDIT</span><div><h2>선행연구의 전체 변수와 전이 가능한 근거</h2><p>설명·종속·기제·통제·설계를 함께 검토하고, 관측되지 않은 구성개념을 새 변수처럼 만들지 않습니다.</p></div></div></div><div className="ax-source-grid">{framework.sources.map((source) => <article key={source.id} id={`research-${source.id}`}><header><span>{words(source.authors)} · {source.year}</span><h3><a href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a></h3><p>{words(source.design)}</p></header><dl><div><dt>설명변수 X</dt><dd>{words(source.x)}</dd></div><div><dt>종속변수 Y</dt><dd>{words(source.y)}</dd></div><div><dt>매개·조절·기제</dt><dd>{words(source.mechanism)}</dd></div><div><dt>통제변수</dt><dd>{words(source.controls)}</dd></div><div><dt>확인된 내용</dt><dd>{words(source.finding)}</dd></div><div><dt>이번 연구에 적용</dt><dd>{words(source.application)}</dd></div><div><dt>적용 한계</dt><dd>{words(source.limit)}</dd></div></dl></article>)}</div></section>
   </>;

@@ -313,14 +313,14 @@ function PairLegend({ a, b }: { a: string; b: string }) {
 }
 
 const itemRoleLabels: Record<DescriptiveItemGroup["role"], string> = {
-  driver: "핵심 영향요인",
+  driver: "관찰한 관리요인",
   outcome: "혁신행동",
   control: "연속형 통제척도",
   culture: "조직문화 CVF",
 };
 
 function gapLabel(gap: number, a: string, b: string) {
-  if (Math.abs(gap) < 0.005) return "두 집단 동일";
+  if (Math.abs(gap) < 0.005) return "표시 자릿수에서 평균 차이 0.00";
   return `${gap > 0 ? a : b} +${Math.abs(gap).toFixed(2)}`;
 }
 
@@ -635,13 +635,13 @@ function OverallRegressionSection({ config }: { config: ComparisonDashboardConfi
     <section className="dashboard-panel overall-regression-panel" aria-labelledby={`overall-regression-${config.variant}`}>
       <div className="panel-heading overall-regression-heading">
         <div><span className="panel-number">ALL</span><div><h2 id={`overall-regression-${config.variant}`}>{model.title}</h2><p>{model.description}</p></div></div>
-        <span className="method-pill">전체표본 · 유효 기준 p&lt;.05</span>
+        <span className="method-pill">전체표본 · p&lt;.05 연관</span>
       </div>
 
       <div className="overall-model-kpis" aria-label="통합 회귀모형 핵심 지표">
         <div><span>분석 인원</span><strong>{model.n.toLocaleString("ko-KR")}명</strong><small>중앙·광역·기초 전체</small></div>
         <div><span>설명력 R²</span><strong>{model.r2.toFixed(3)}</strong><small>수정 R² {model.adjustedR2.toFixed(3)}</small></div>
-        <div><span>유효 핵심요인</span><strong>{significant.length}개</strong><small>전체 {model.factors.length}개 중 p&lt;.05</small></div>
+        <div><span>p&lt;.05 연관 요인</span><strong>{significant.length}개</strong><small>전체 {model.factors.length}개 중</small></div>
         <div><span>통제항</span><strong>{model.controlTerms}개</strong><small>기관유형 포함</small></div>
       </div>
 
@@ -649,7 +649,7 @@ function OverallRegressionSection({ config }: { config: ComparisonDashboardConfi
         <div className="overall-coefficient-list" aria-label="전체표본 표준화 회귀계수">
           {ranked.map((factor, index) => (
             <div className="overall-coefficient-row" key={factor.id}>
-              <div><span>{String(index + 1).padStart(2, "0")}</span><strong>{factor.label}</strong><small className={factor.significant ? "confirmed" : "not-confirmed"}>{factor.significant ? "유효" : "확인 안 됨"}</small></div>
+              <div><span>{String(index + 1).padStart(2, "0")}</span><strong>{factor.label}</strong><small className={factor.significant ? "confirmed" : "not-confirmed"}>{factor.significant ? "p<.05 연관" : "p≥.05"}</small></div>
               <i className="coefficient-track"><em className="zero-line" style={{ left: `${zeroPosition}%` }} /><b className={`coefficient-fill ${factor.significant ? "overall-significant" : "muted"}`} style={barGeometry(factor.beta, coefficientMin, coefficientMax, zeroPosition)} /></i>
               <strong>{signed(factor.beta)}</strong>
               <small>{formatP(factor.p)}</small>
@@ -659,9 +659,9 @@ function OverallRegressionSection({ config }: { config: ComparisonDashboardConfi
 
         <aside className="overall-reading-card">
           <span>전체를 합쳐 보면</span>
-          <h3>{strongest.label}이 가장 큰 공통 동력입니다.</h3>
+          <h3>{strongest.label}이 모형에서 가장 큰 양의 계수입니다.</h3>
           <p>{model.interpretation}</p>
-          <div><span>통계적으로 확인된 요인</span>{significant.map((factor) => <strong key={factor.id}>{factor.label} <b>β={factor.beta.toFixed(3)}</b></strong>)}</div>
+          <div><span>p&lt;.05인 조정 후 연관</span>{significant.map((factor) => <strong key={factor.id}>{factor.label} <b>β={factor.beta.toFixed(3)}</b></strong>)}</div>
           <small>{model.caution}</small>
         </aside>
       </div>
@@ -902,9 +902,10 @@ export default function ComparisonDashboard({ config, requestedYear }: { config:
       <section className="executive-readout">
         <span>핵심 해석</span>
         <strong>{config.headline}</strong>
-        <div><b>{significantCount}개</b> 집단 내 유의 요인 <i /> <b>{config.differenceStory.shortValue}</b> {config.differenceStory.shortLabel}</div>
+        <div><b>{significantCount}개</b> 집단 내 p&lt;.05 연관 <i /> <b>{config.differenceStory.shortValue}</b> {config.differenceStory.shortLabel}</div>
       </section>
 
+      <section className="scope-banner" aria-label="실행안 해석 범위"><strong>아래 90일 실행안은 효과가 검증된 처방이 아니라 시범·측정·중단 기준을 갖춘 검증 계획입니다.</strong> 집단별 p값이나 계수의 크기만으로 공공·민간 또는 중앙·지방의 효과 차이를 선언하지 않습니다.</section>
       <ChangeManagementSection config={config} onFactorSelect={setSelectedId} />
 
       <section className="kpi-grid" aria-label="혁신행동 핵심 지표">
@@ -947,7 +948,7 @@ export default function ComparisonDashboard({ config, requestedYear }: { config:
         <article className="dashboard-panel effect-panel">
           <div className="panel-heading">
             <div><span className="panel-number">01</span><div><h2>조직관리와 혁신행동의 통제 후 관계</h2><p>{config.factorSourceNote} · 명시된 통제 후 표준화 β</p></div></div>
-            <span className="method-pill">집단 내 기준 p&lt;.05</span>
+            <span className="method-pill">집단 내 p&lt;.05 연관</span>
           </div>
           <div className="coefficient-axis" aria-hidden="true"><span>−.10</span><span>0</span><span>.10</span><span>.20</span><span>.30</span><span>.40</span><span>.50</span></div>
           <div className="coefficient-table">
@@ -966,12 +967,12 @@ export default function ComparisonDashboard({ config, requestedYear }: { config:
         </article>
 
         <aside className="dashboard-panel valid-panel">
-          <div className="panel-heading compact"><div><span className="panel-number">02</span><div><h2>유효 요인 요약</h2><p>통제 후에도 남은 연결</p></div></div></div>
-          <div className="valid-summary-number"><strong>{significantCount}</strong><span>개 요인</span></div>
-          <div className="valid-block shared"><span>두 집단 공통</span><NameList items={shared} /></div>
-          <div className="valid-block group-a-block"><span>{config.groupA.label}에서 유효</span><NameList items={aOnly} /></div>
-          <div className="valid-block group-b-block"><span>{config.groupB.label}에서 유효</span><NameList items={bOnly} /></div>
-          <div className="difference-callout"><span>비교해서 읽는 법</span><strong>{shared.length ? `양쪽에서 유의한 관계 ${shared.length}개` : "양쪽 모두 유의한 관계 없음"}</strong><p>유의하지 않다는 결과는 관계가 없다는 증명이 아닙니다. 계수 순위는 관리 개입의 효과 순위가 아니며, 집단별 제안은 현장 검증을 위한 가설입니다.</p></div>
+          <div className="panel-heading compact"><div><span className="panel-number">02</span><div><h2>집단별 연관 요약</h2><p>통제 후 p&lt;.05인 관찰연관</p></div></div></div>
+          <div className="valid-summary-number"><strong>{significantCount}</strong><span>개 p&lt;.05 연관</span></div>
+          <div className="valid-block shared"><span>두 집단 모두 p&lt;.05</span><NameList items={shared} /></div>
+          <div className="valid-block group-a-block"><span>{config.groupA.label}에서 p&lt;.05</span><NameList items={aOnly} /></div>
+          <div className="valid-block group-b-block"><span>{config.groupB.label}에서 p&lt;.05</span><NameList items={bOnly} /></div>
+          <div className="difference-callout"><span>비교해서 읽는 법</span><strong>{shared.length ? `양쪽에서 p<.05인 관찰연관 ${shared.length}개` : "양쪽 모두 p<.05인 관찰연관 없음"}</strong><p>유의하지 않다는 결과는 관계가 없다는 증명이 아닙니다. 계수 순위는 관리 개입의 효과 순위가 아니며, 집단별 제안은 현장 검증을 위한 가설입니다.</p></div>
         </aside>
       </section>
 

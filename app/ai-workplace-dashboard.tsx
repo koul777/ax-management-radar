@@ -161,6 +161,42 @@ function DescriptiveView({ slice, sizeGroup, kind, onView }: { slice: Slice; siz
 function FixedPeriodNotice({ view }: { view: View }) {
   return <section className="wps-fixed-period"><strong>{view === "framework" ? "분석틀·선행연구의 측정기간은 근거별로 다릅니다." : "현황의 연도·민간 규모 선택을 회귀에 적용하지 않습니다."}</strong><span>{view === "models" ? "혁신 보조 분석은 2023년입니다." : view === "adoption" ? "주 분석은 2021 관리 → 2023 AI이며, 2023 동시점 보조모형은 아래에서 별도로 구분합니다." : "문헌의 연도와 우리 자료의 측정기간을 구분해 표시합니다."} 모형을 새로 추정하거나 필터링한 결과가 아닙니다.</span></section>;
 }
+function PrimaryReadinessContrastSummary() {
+  const model = readinessModels.find((item) => item.priority === "primary");
+  if (!model) return null;
+  const publicSample = model.groups?.public;
+  const comparisons = [
+    { key: "hr_change", label: "HR 변화 주도·사업 파트너 역할", increment: "1점 증가" },
+    { key: "suggestion", label: "근로자 제안제도 운영", increment: "없음→있음" },
+    { key: "training_plan", label: "비법정 교육훈련 사전 계획", increment: "없음→있음" },
+  ].map((item) => ({
+    ...item,
+    privateSlope: model.contrasts.find((term) => term.id === `${item.key}_private`),
+    publicSlope: model.contrasts.find((term) => term.id === `${item.key}_public`),
+    difference: model.contrasts.find((term) => term.id === `${item.key}_public_private_difference`),
+  }));
+  return <section className="ai-panel ax-direct-contrast" aria-labelledby="primary-readiness-contrast-title">
+    <h2 id="primary-readiness-contrast-title">공공−민간 직접 대비: 세 관리조건 모두 불확실성이 큽니다</h2>
+    <p>2021년 관리조건과 2023년 말 AI 현재 활용의 <strong>조건부 연관</strong>을 같은 모형의 상호작용으로 비교했습니다. 세 직접 대비는 Holm 보정 뒤 공공−민간 기울기 차이를 뒷받침하지 못했습니다. 이는 두 부문이 같다는 증거가 아니며, 관리 처방의 효과를 뜻하지도 않습니다.</p>
+    <p className="ai-perception-note">분석 표본 {model.n.toLocaleString("ko-KR")}곳 · 공공 {publicSample?.n.toLocaleString("ko-KR")}곳 중 AI 활용 {publicSample?.adopters?.toLocaleString("ko-KR")}곳. 공공 AI 활용 사건이 적어 공공 기울기와 부문 차이의 구간이 넓습니다. 95% 구간은 개별·미보정 구간입니다.</p>
+    <div className="ai-panel-coefficients">
+      {comparisons.map((item) => {
+        const difference = item.difference;
+        const holm = difference?.p_holm ?? null;
+        const differenceConclusion = holm !== null && holm < 0.05
+          ? "Holm 보정 뒤 부문별 기울기 차이가 관측되었습니다. 그래도 인과효과는 아닙니다."
+          : "Holm 보정 뒤 부문별 기울기 차이를 뒷받침할 근거가 부족합니다. 동등성의 증거는 아닙니다.";
+        return <article key={item.key}>
+          <strong>{item.label}<small>{item.increment}</small></strong>
+          <div><span>민간 기울기</span><b>{formatEffect(item.privateSlope?.beta ?? null, model.unit)}%p</b><small>95% [{formatEffect(item.privateSlope?.ci_low ?? null, model.unit, false)}, {formatEffect(item.privateSlope?.ci_high ?? null, model.unit, false)}]</small></div>
+          <div><span>공공 기울기</span><b>{formatEffect(item.publicSlope?.beta ?? null, model.unit)}%p</b><small>95% [{formatEffect(item.publicSlope?.ci_low ?? null, model.unit, false)}, {formatEffect(item.publicSlope?.ci_high ?? null, model.unit, false)}]</small></div>
+          <div><span>공공−민간 기울기 차이</span><b>{formatEffect(difference?.beta ?? null, model.unit)}%p</b><small>95% [{formatEffect(difference?.ci_low ?? null, model.unit, false)}, {formatEffect(difference?.ci_high ?? null, model.unit, false)}] · Holm p {formatP(holm)}</small></div>
+          <p>{differenceConclusion}</p>
+        </article>;
+      })}
+    </div>
+  </section>;
+}
 function ModelExplorer({ modelList, purpose }: { modelList: WpsModel[]; purpose: "adoption" | "innovation" }) {
   const [selected, setSelected] = useState(modelList[0]?.id ?? "");
   const model = modelList.find((item) => item.id === selected) ?? modelList[0];
@@ -214,13 +250,14 @@ export default function AiWorkplaceDashboard({ initialView = "overview", onViewC
   return <div className="ai-dashboard ax-dashboard wps-study">
     <header className="ai-dashboard-header"><div><p>PUBLIC AX NETWORK · WPS EVIDENCE</p><h1>AX를 위한 조직관리, 공공과 민간은 무엇이 다른가</h1><span>도입·운영의 차이를 함께 보고, 조직에서 점검할 질문을 찾습니다.</span></div>{descriptive && slice ? <aside><span>{slice.year} 원표본 · {privateName(sizeGroup)}</span><strong>{(slice.public_n + slice.private_n).toLocaleString("ko-KR")}개 사업체</strong><small>공공 {slice.public_n.toLocaleString("ko-KR")} · 민간 {slice.private_n.toLocaleString("ko-KR")}</small><small>{slice.public_ai_n === null ? "직접 AI 문항 미조사" : "AI 활용: 공공 " + slice.public_ai_n + " · 민간 " + slice.private_ai_n}</small></aside> : null}</header>
     <section className="ai-scope-banner"><strong>비교 범위</strong><span>{descriptive ? "WPS " + year + "년 응답표본 · sep=5 공공, sep=1~4 민간" : "각 모형·문헌에 표시된 측정기간과 표본"}</span><small>민간 규모는 기업의 법정 중소·중견·대기업 분류가 아니라 해당 사업체의 전체 근로자 수 기준입니다.</small></section>
+    <section className="ax-reading-callout wps-scope-limit"><strong>이 화면의 ‘공공 전체’는 법정 공공기관·중앙정부·지방정부 전체를 뜻하지 않습니다.</strong><p>{descriptive ? `현재 선택은 WPS ${year}년 응답 사업체의 원표본입니다. ` : `${meta.scope} `}여기서 공공은 WPS의 sep=5로 분류된 사업체 응답표본이며, 공공기관 유형이나 중앙·지방 행정조직 전체를 포괄하는 대표 표본으로 일반화하지 않습니다.</p></section>
     {descriptive ? <section className="wps-explorer-controls" aria-label="WPS 연도·민간 규모 선택"><YearSelector id="wps-year" years={explorer.years} value={year} onChange={(nextYear) => updateExplorer(nextYear, privateSize)} note="확인된 해당 연도의 문항만 표시합니다." /><label>민간 근로자 수 구간<select id="wps-private-size" value={privateSize} onChange={(event) => updateExplorer(year, event.target.value)}>{explorer.size_groups.map((group) => <option key={group.id} value={group.id}>{group.label}</option>)}</select></label><p>{sizeGroup?.definition}</p>{invalidNotice ? <span role="status">요청한 연도 또는 규모 구간을 사용할 수 없어, 지원되지 않는 선택만 최신 연도 또는 민간 전체로 바꿨습니다.</span> : null}</section> : <FixedPeriodNotice view={view} />}
     {descriptive ? <p className="wps-year-note">기업 구분 변수도 확인했습니다. 2015~2023년의 SB는 ‘중소기업 / 중소기업 아님’ 두 범주이며, 중견기업과 대기업을 나누는 변수는 아닙니다. 이 화면의 세 규모 구간은 근로자 수로 구분합니다.</p> : null}
     <div className="ai-view-tabs" role="tablist" aria-label="WPS 분석 보기" aria-orientation="horizontal">{tabs.map((tab, index) => <button key={tab.id} type="button" id={"wps-tab-" + tab.id} aria-controls="wps-view" aria-selected={view === tab.id} className={view === tab.id ? "active" : ""} data-tab-id={tab.id} onClick={() => selectView(tab.id)} onFocus={() => wpsTabs.onTabFocus(tab.id)} onBlur={wpsTabs.onTabBlur} onKeyDown={wpsTabs.onTabKeyDown} ref={wpsTabs.registerTab(tab.id)} role="tab" tabIndex={wpsTabs.focusedTabId === tab.id ? 0 : -1}><span>{String(index + 1).padStart(2, "0")}</span><strong>{tab.label}</strong><small>{tab.note}</small></button>)}</div>
     {view === "overview" ? <SizeComparison year={Number(year)} selectedSize={privateSize} onSize={(size) => updateExplorer(year, size)} /> : null}
     <div id="wps-view" role="tabpanel" aria-labelledby={"wps-tab-" + view}>
       {descriptive && slice ? <DescriptiveView key={year + "-" + privateSize + "-" + view} slice={slice} sizeGroup={sizeGroup} kind={view} onView={selectView} /> : null}
-      {view === "adoption" ? <ModelExplorer modelList={readinessModels} purpose="adoption" /> : view === "models" ? <InnovationSupplement /> : view === "framework" ? <AxCausalResearch /> : null}
+      {view === "adoption" ? <><PrimaryReadinessContrastSummary /><ModelExplorer modelList={readinessModels} purpose="adoption" /></> : view === "models" ? <InnovationSupplement /> : view === "framework" ? <AxCausalResearch /> : null}
       {descriptive && !slice ? <p className="ax-empty-state">선택한 조건의 집계가 없습니다.</p> : null}
     </div>
     {descriptive ? <p className="wps-year-note">{explorer.year_notes.find((note) => note.year === Number(year))?.reason}</p> : null}

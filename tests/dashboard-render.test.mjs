@@ -72,8 +72,15 @@ test("WPS regression pages retain fixed periods and do not inherit descriptive f
   assert.doesNotMatch(html, /id="wps-year"|id="wps-private-size"/);
   assert.match(text, /선택 모형 측정기간: 2021 관리 → 2023 AI 활용/);
   assert.match(text, /2,137/);
+  assert.match(text, /공공−민간 직접 대비: 세 관리조건 모두 불확실성이 큽니다/);
+  assert.match(text, /Holm 보정 뒤 공공−민간 기울기 차이를 뒷받침하지 못했습니다/);
+  assert.match(text, /공공 86곳 중 AI 활용 18곳/);
+  assert.match(text, /동등성의 증거는 아닙니다/);
+  assert.match(text, /이 화면의 ‘공공 전체’는 법정 공공기관·중앙정부·지방정부 전체를 뜻하지 않습니다/);
   assert.match(text, /현황의 연도·민간 규모 선택을 회귀에 적용하지 않습니다/);
   const source = await readFile(new URL("../app/ai-workplace-dashboard.tsx", import.meta.url), "utf8");
+  assert.match(source, /readinessModels\.find\(\(item\) => item\.priority === "primary"\)/);
+  assert.match(source, /p_holm/);
   assert.match(source, /model\?\.predictor_year === 2023/);
   assert.match(source, /<DescriptiveView key=\{year \+ "-" \+ privateSize \+ "-" \+ view\}/);
   assert.doesNotMatch(source, /distribution\.suppressed \|\| distribution\.small_sample/);
@@ -294,6 +301,8 @@ test("central-local view limits subgroup coefficient comparisons to non-causal i
   assert.match(html, /현재 수준의 차이와 관리요인의 효과 차이는 다릅니다/);
   assert.match(html, /아래 관리요인의 검증된 집단 간 직접 대비는 표시하지 않으며/);
   assert.match(html, /조직관리와 혁신행동의 통제 후 관계/);
+  assert.match(html, /90일 실행안은 효과가 검증된 처방이 아니라/);
+  assert.match(html, /직접 계수차 검정이 없어/);
   assert.match(html, /인과/);
   assert.doesNotMatch(html, /기존 분석 설명 — 재현 미확인|생성 코드·가중치 처리·표준화 상수의 재현 검증은 미완료/);
 });
@@ -310,6 +319,7 @@ test("AX dashboard retains WPS estimates while excluding HCCP from active analys
   assert.doesNotMatch(source, /hccpAnalysis|HCCP/);
   assert.match(source, /2023 관측보다 앞선 2021 관리특성; AI 최초 도입 전임은 미보장/);
   assert.match(source, /가중 민감도에서는 민간의 AI–혁신 연관도/);
+  assert.match(source, /법정 공공기관·중앙정부·지방정부 전체를 뜻하지 않습니다/);
   assert.match(modelSource, /공공·민간의 차이를 직접 검정/);
   assert.match(modelSource, /95% 신뢰구간/);
   assert.doesNotMatch(source, /새 종속변수는 아직 확정하지 않았습니다|민간 장기 벤치마크|OR 2\.04|90일 로드맵/);
@@ -334,6 +344,15 @@ test("AX dashboard retains WPS estimates while excluding HCCP from active analys
       assert.ok(term.ci_low <= term.beta && term.beta <= term.ci_high);
     }
   }
+});
+
+test("public-private copy keeps unreproduced associations distinct from effects and contrasts", async () => {
+  const html = await (await render("public-private")).text();
+  const text = plainText(html);
+  assert.match(text, /직접 계수차의 재현 검증은 미완료/);
+  assert.match(text, /효과가 검증된 처방이 아니라/);
+  assert.match(text, /재현 미완료 상태/);
+  assert.doesNotMatch(text, /공통 핵심은 변화주도성입니다/);
 });
 
 test("default page leads with four prespecified public-private management profiles and operating questions", async () => {
@@ -540,6 +559,31 @@ test("causal framework deep link renders study designs, full variable roles and 
   assert.match(html, /Jöhnk/);
   assert.match(html, /Hernán/);
   assert.match(html, /가설적 분석틀/);
+});
+
+test("causal framework server-renders the local-only 90-day pilot evaluation card", async () => {
+  const [response, source] = await Promise.all([
+    render("ax", "framework"),
+    readFile(new URL("../app/ax-pilot-canvas.tsx", import.meta.url), "utf8"),
+  ]);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const text = plainText(html);
+  assert.match(text, /AI 업무 한 건의 90일 시범운영·평가 카드/);
+  assert.match(text, /브라우저 안에서만 작성/);
+  assert.match(text, /새로고침하면 초기화/);
+  assert.match(text, /개인·민감정보나 식별 가능한 사례는 입력하지 마세요/);
+  assert.match(text, /최소 평가 계약/);
+  assert.match(text, /0~30일 점검/);
+  assert.match(text, /31~60일 점검/);
+  assert.match(text, /61~90일 점검/);
+  assert.match(text, /단순 전후 비교만으로 인과효과가 입증되는 것은 아닙니다/);
+  assert.match(html, /for="ax-pilot-task"/);
+  assert.match(html, /id="ax-pilot-task"/);
+  assert.match(html, /입력 초기화/);
+  assert.match(source, /setFields\(initialFields\)/);
+  assert.match(source, /useState<PilotFields>\(initialFields\)/);
+  assert.doesNotMatch(source, /localStorage|fetch\(|XMLHttpRequest|navigator\.clipboard/);
 });
 
 test("AI-to-innovation estimates are retained in the explicitly supplementary section", async () => {
