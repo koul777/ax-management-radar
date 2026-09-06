@@ -16,7 +16,9 @@ const checks = [];
 const browser = await puppeteer.launch({
   headless: true,
   executablePath: process.env.AX_QA_CHROME_PATH || 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
-  userDataDir: path.join(out, 'chrome-profile'),
+  // A per-run profile prevents a crashed/parallel QA session from holding the
+  // shared Chrome profile lock and turning the next run into a launch timeout.
+  userDataDir: path.join(out, `chrome-profile-${process.pid}`),
 });
 const page = await browser.newPage();
 const errors = [];

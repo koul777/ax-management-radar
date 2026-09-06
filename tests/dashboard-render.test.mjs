@@ -66,6 +66,56 @@ test("WPS overview compares all approved size bands with item-specific AI denomi
   assert.doesNotMatch(past, /21.9% \(21\/96\)/);
 });
 
+test("every rendered WPS question has an accessible five-group employment-size matrix", async () => {
+  const [currentResponse, pastResponse, governanceResponse, perceptionResponse, source, raw] = await Promise.all([
+    render("ax", "overview", { year: 2023, private_size: "under300" }),
+    render("ax", "catalog", { year: 2021, private_size: "1000_plus" }),
+    render("ax", "governance", { year: 2023, private_size: "all" }),
+    render("ax", "perceptions", { year: 2023, private_size: "all" }),
+    readFile(new URL("../app/ai-workplace-dashboard.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/data/wps-explorer.json", import.meta.url), "utf8"),
+  ]);
+  const [currentHtml, pastHtml, governanceHtml, perceptionHtml] = await Promise.all([currentResponse.text(), pastResponse.text(), governanceResponse.text(), perceptionResponse.text()]);
+  const currentText = plainText(currentHtml);
+  const explorer = JSON.parse(raw);
+  const allYearCatalogs = await Promise.all(explorer.years.map(async (year) => {
+    const html = await (await render("ax", "catalog", { year, private_size: "all" })).text();
+    return { year, html, itemCount: explorer.slices.find((slice) => slice.year === year && slice.private_size_id === "all").key_items.length };
+  }));
+  const slices = explorer.slices.filter((slice) => slice.year === 2023);
+  const aiValues = [
+    slices.find((slice) => slice.private_size_id === "all").key_items.find((item) => item.column === "ai001").public,
+    ...explorer.size_groups.map((group) => slices.find((slice) => slice.private_size_id === group.id).key_items.find((item) => item.column === "ai001").private),
+  ];
+
+  assert.equal((currentHtml.match(/class="wps-item-size-matrix"/g) ?? []).length, 7, "overview has 4 foundation + 3 operations matrices");
+  for (const label of ["공공 전체", "민간 전체", "민간 300명 미만", "민간 300~999명", "민간 1,000명 이상"]) assert.match(currentText, new RegExp(label));
+  for (const stats of aiValues) assert.match(currentText, new RegExp("유효 n " + stats.valid_n.toLocaleString("ko-KR")));
+  for (const stats of aiValues) {
+    const yes = stats.responses.find((response) => response.code === 1);
+    assert.match(currentText, new RegExp((yes.share * 100).toFixed(1) + "%"));
+  }
+  assert.match(currentText, /원 응답 범주/);
+  assert.match(currentText, /민간 전체는 모든 민간 사업체 기준/);
+  assert.match(currentText, /근로자 수 미확인 0곳/);
+  assert.match(pastHtml, /class="wps-item-size-matrix"/);
+  assert.match(plainText(pastHtml), /2021년 공공 전체와 민간 근로자 수 구간별 전체 응답 범주/);
+  assert.match(plainText(pastHtml), /미조사/);
+  assert.ok((governanceHtml.match(/class="wps-item-size-matrix"/g) ?? []).length >= 3);
+  assert.equal((perceptionHtml.match(/class="wps-item-size-matrix"/g) ?? []).length, 5);
+  assert.match(perceptionHtml, /AI 영향 귀인형 문항\(ai045~ai049\).*기술분포로만/);
+  assert.match(source, /weighted \? response\?\.weighted_share : response\?\.share/);
+  assert.match(source, /가중 분모/);
+  assert.match(source, /matrixUnavailableReason/);
+  assert.match(source, /wps-item-size-matrix-scroll/);
+  assert.equal(explorer.slices.length, 40);
+  for (const catalog of allYearCatalogs) {
+    assert.equal((catalog.html.match(/class="wps-item-size-matrix"/g) ?? []).length, catalog.itemCount, `${catalog.year}: every catalog item has one matrix`);
+    const text = plainText(catalog.html);
+    for (const label of ["공공 전체", "민간 전체", "민간 300명 미만", "민간 300~999명", "민간 1,000명 이상"]) assert.match(text, new RegExp(label), `${catalog.year}: ${label}`);
+  }
+});
+
 test("WPS regression pages retain fixed periods and do not inherit descriptive filters", async () => {
   const html = await (await render("ax", "adoption", { year: 2005, private_size: "under300" })).text();
   const text = plainText(html);

@@ -104,6 +104,65 @@ function DistributionCard({ item, privateLabel, weighted }: { item: KeyItem; pri
     })}</div>
   </article>;
 }
+type MatrixGroup = { id: string; label: string; stats?: Distribution; unavailableReason?: string };
+
+function matrixUnavailableReason(slice: Slice | undefined, column: string) {
+  const reason = slice?.unavailable_items.find((candidate) => candidate.column === column)?.reason;
+  if (reason) return reason;
+  return slice ? "미제공: 이 연도·집단 조합에서 문항 집계를 제공하지 않습니다." : "미제공: 선택한 연도의 집계를 찾지 못했습니다.";
+}
+
+function matrixUnavailableLabel(reason?: string) {
+  if (reason?.startsWith("미조사")) return "미조사";
+  if (reason?.includes("비공개")) return "비공개";
+  return "미제공";
+}
+
+function matrixNumber(value: number) {
+  return value.toLocaleString("ko-KR", { maximumFractionDigits: Number.isInteger(value) ? 0 : 1 });
+}
+
+function matrixCellValue(stats: Distribution | undefined, responseCode: number, weighted: boolean, unavailableReason?: string) {
+  if (!stats) return <span className="wps-matrix-unavailable" aria-label={unavailableReason ?? "미제공"}>{matrixUnavailableLabel(unavailableReason)}</span>;
+  if (isSuppressed(stats)) return <span className="wps-matrix-unavailable" aria-label="비공개: 소표본 보호">비공개<br />(소표본)</span>;
+  if (stats.valid_n === 0) return <span className="wps-matrix-unavailable" aria-label="유효응답 없음">유효응답 없음</span>;
+  const response = stats.responses.find((candidate) => candidate.code === responseCode);
+  const share = weighted ? response?.weighted_share : response?.share;
+  if (!response || share === null) return <span className="wps-matrix-unavailable">산출 불가</span>;
+  return <><strong>{percent(share)}</strong><small>{weighted ? "원 n " : "n "}{response.n === null ? "—" : response.n.toLocaleString("ko-KR")}</small></>;
+}
+
+function ItemSizeMatrix({ item, year, weighted }: { item: KeyItem; year: number; weighted: boolean }) {
+  const reference = explorer.slices.find((slice) => slice.year === year && slice.private_size_id === "all");
+  const publicItem = reference?.key_items.find((candidate) => candidate.column === item.column);
+  const privateItem = reference?.key_items.find((candidate) => candidate.column === item.column);
+  const groups: MatrixGroup[] = [
+    { id: "public", label: "공공 전체", stats: publicItem?.public, unavailableReason: matrixUnavailableReason(reference, item.column) },
+    { id: "private-all", label: "민간 전체", stats: privateItem?.private, unavailableReason: matrixUnavailableReason(reference, item.column) },
+    ...explorer.size_groups.filter((group) => group.id !== "all").map((group) => {
+      const slice = explorer.slices.find((candidate) => candidate.year === year && candidate.private_size_id === group.id);
+      const sizeItem = slice?.key_items.find((candidate) => candidate.column === item.column);
+      return { id: group.id, label: "민간 " + group.label, stats: sizeItem?.private, unavailableReason: matrixUnavailableReason(slice, item.column) };
+    }),
+  ];
+  const sizeMissing = reference?.private_size_missing_n ?? 0;
+  const captionId = "wps-size-matrix-" + item.id;
+  return <section className="wps-item-size-matrix" aria-labelledby={captionId}>
+    <div className="wps-item-size-matrix-heading">
+      <strong id={captionId}>문항별 공공·민간 규모 비교</strong>
+      <span>{weighted ? "가중 비율 · 원표본 응답 n 병기" : "원표본 비율 · n은 해당 응답 범주의 원표본 수"}</span>
+    </div>
+    <p>같은 {year}년 문항의 공공 전체·민간 전체·민간 근로자 수 구간을 함께 표시합니다. 헤더의 유효 n은 기존 분포와 동일한 질문 대상·결측·모름 분모 규칙입니다. 민간 전체는 모든 민간 사업체 기준이며, 근로자 수 미확인 {sizeMissing.toLocaleString("ko-KR")}곳은 구간 합계와 별도로 남을 수 있습니다.</p>
+    <div className="wps-item-size-matrix-scroll" role="region" aria-label={item.label + " 민간 규모별 응답표 표 영역"}>
+      <table>
+        <caption>{item.label} · {year}년 공공 전체와 민간 근로자 수 구간별 전체 응답 범주</caption>
+        <thead><tr><th scope="col">원 응답 범주</th>{groups.map((group) => <th key={group.id} scope="col"><span>{group.label}</span>{group.stats && !isSuppressed(group.stats) ? <><small>유효 n {matrixNumber(group.stats.valid_n)}{weighted ? " · 가중 분모 " + matrixNumber(group.stats.weighted_n) : ""}</small>{group.stats.valid_n >= 5 && group.stats.valid_n < 30 ? <em>소표본 주의</em> : null}</> : <small>{group.stats && isSuppressed(group.stats) ? "비공개(소표본)" : matrixUnavailableLabel(group.unavailableReason)}</small>}</th>)}</tr></thead>
+        <tbody>{item.categories.map((category) => <tr key={category.code}><th scope="row">{category.label}</th>{groups.map((group) => <td key={group.id}>{matrixCellValue(group.stats, category.code, weighted, group.unavailableReason)}</td>)}</tr>)}</tbody>
+      </table>
+    </div>
+    <small className="wps-item-size-matrix-rule">AI 영향 귀인형 문항(ai045~ai049)은 이 표에서도 기술분포로만 제시하며, 회귀의 종속·설명·매개·조절변수로 사용하지 않습니다.</small>
+  </section>;
+}
 function DistributionGap({ item, weighted, privateLabel }: { item: KeyItem; weighted: boolean; privateLabel: string }) {
   if (item.scale_type !== "ordinal" && item.scale_type !== "binary") return null;
   const value = (group: Group) => {
@@ -125,10 +184,10 @@ function ItemMetadata({ item, privateLabel }: { item: KeyItem; privateLabel: str
     <div><dt>원자료·설문 근거</dt><dd>{item.source.file} · {item.source.section}<br />{item.source.columns.join(" · ")}</dd></div>
   </dl><div className="ax-item-missing">{(["public", "private"] as Group[]).map((group) => <p key={group}><strong>{group === "public" ? "공공 전체" : privateLabel}</strong> 원표본 {item[group].source_n} · 질문 비대상 {item[group].excluded_n} · 모름/불명 {item[group].unknown_n} · 무응답 {item[group].nonresponse_n} · 허용범위 밖 {item[group].invalid_n} · 가중치 제외 {item[group].weighted_excluded_n}곳<br />가중 유효표본크기(Kish) {item[group].weighted_effective_n === null ? "—" : item[group].weighted_effective_n.toFixed(1)} · 실제 응답 수와 다른 정밀도 지표</p>)}</div></details>;
 }
-function ItemBlock({ item, weighted, privateLabel }: { item: KeyItem; weighted: boolean; privateLabel: string }) {
+function ItemBlock({ item, weighted, privateLabel, year }: { item: KeyItem; weighted: boolean; privateLabel: string; year: number }) {
   return <><div className="ax-item-role"><span>{item.category_label}</span><small>{item.period}</small></div>
     {item.category === "attributed_perceptions" ? <p className="ai-model-caution">AI 영향 귀인형 인식 · 종속·설명·매개·조절변수로 사용하지 않습니다. 실제 생산성·직무만족·성과 변화가 아닙니다.</p> : null}
-    <DistributionCard item={item} weighted={weighted} privateLabel={privateLabel} /><DistributionGap item={item} weighted={weighted} privateLabel={privateLabel} /><ItemMetadata item={item} privateLabel={privateLabel} /></>;
+    <DistributionCard item={item} weighted={weighted} privateLabel={privateLabel} /><ItemSizeMatrix item={item} year={year} weighted={weighted} /><DistributionGap item={item} weighted={weighted} privateLabel={privateLabel} /><ItemMetadata item={item} privateLabel={privateLabel} /></>;
 }
 function DescriptiveView({ slice, sizeGroup, kind, onView }: { slice: Slice; sizeGroup?: SizeGroup; kind: "overview" | "catalog" | "governance" | "perceptions"; onView: (view: View) => void }) {
   const [weighted, setWeighted] = useState(false);
@@ -147,13 +206,13 @@ function DescriptiveView({ slice, sizeGroup, kind, onView }: { slice: Slice; siz
       <DescriptiveContext slice={slice} sizeGroup={sizeGroup} /><WeightToggle weighted={weighted} onChange={setWeighted} slice={slice} />
       <p className="ai-perception-note">모름·불명은 문항 정의에 따라 막대와 분모에 포함합니다. 질문 비대상·결측을 ‘아니요’로 바꾸지 않습니다. 빈도가 높다는 것과 좋은 관리라는 판단도 다릅니다.</p>
       {kind === "catalog" ? <><div className="ax-filter-row" role="group" aria-label="핵심 문항 범주 선택"><button type="button" aria-pressed={category === "all"} onClick={() => setCategory("all")}>전체 {candidates.length}</button>{categories.map(([id, label]) => <button key={id} type="button" aria-pressed={category === id} onClick={() => setCategory(id)}>{label}</button>)}</div><label className="ax-catalog-search">문항·변수코드 검색<input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="예: 훈련, 협의, dq1029" /></label><p className="ai-perception-note" role="status">{selected.length} / {slice.key_items.length}개 문항 표시</p></> : null}
-      {kind === "overview" ? <div className="ax-foundation-grid">{foundations.map((item) => <article key={item.id} className="ax-foundation-card"><div className="ax-public-question"><span>공공 AX 실무 질문</span><h3>{foundationQuestions[item.column].question}</h3></div><ItemBlock item={item} weighted={weighted} privateLabel={privateLabel} /><p className="ax-measurement-guard">{foundationQuestions[item.column].limit}</p></article>)}</div> : <div className="ai-perception-list">{selected.map((item) => <section key={item.id} className={"ax-key-item " + (item.category === "attributed_perceptions" ? "perception-only" : "")}><ItemBlock item={item} weighted={weighted} privateLabel={privateLabel} /></section>)}</div>}
+      {kind === "overview" ? <div className="ax-foundation-grid">{foundations.map((item) => <article key={item.id} className="ax-foundation-card"><div className="ax-public-question"><span>공공 AX 실무 질문</span><h3>{foundationQuestions[item.column].question}</h3></div><ItemBlock item={item} weighted={weighted} privateLabel={privateLabel} year={slice.year} /><p className="ax-measurement-guard">{foundationQuestions[item.column].limit}</p></article>)}</div> : <div className="ai-perception-list">{selected.map((item) => <section key={item.id} className={"ax-key-item " + (item.category === "attributed_perceptions" ? "perception-only" : "")}><ItemBlock item={item} weighted={weighted} privateLabel={privateLabel} year={slice.year} /></section>)}</div>}
       {kind !== "overview" && selected.length === 0 ? <p className="ax-empty-state">{candidates.length ? "검색어·범주에 맞는 문항이 없습니다. 필터를 바꿔 주세요." : "이 연도에는 해당 문항의 공개 집계가 없습니다. 미조사와 문항 검증 전 상태는 아래 근거를 확인하세요. 0을 뜻하지 않습니다."}</p> : null}
       {unavailable.length ? <details className="wps-unavailable-items"><summary>선택 연도에 제공하지 않는 문항과 이유 ({unavailable.length})</summary><ul>{unavailable.map((item) => <li key={item.column}><strong>{item.label}</strong> ({item.column}): {item.reason}</li>)}</ul></details> : null}
       {kind === "overview" ? <button className="ax-text-button" type="button" onClick={() => onView("catalog")}>선택 연도 핵심 {slice.key_items.length}개 문항 전체 비교 →</button> : null}
     </section>
     {kind === "overview" ? <>
-      {operations.length ? <section className="ai-panel ai-perception-panel"><SectionHeading kicker="OPERATING AX" title="도입한 뒤에는 어떻게 운영하고 있는가" note="AI 활용 사업체의 협의·가이드라인·재교육 현황입니다. 문항별 실제 질문 대상이 다릅니다." /><div className="ax-operations-question"><strong>공공 AX 실무 질문</strong><p>직원과 무엇을 논의하고, 그 논의가 운영 규칙과 재교육으로 연결되고 있는가?</p><span>협의의 효과·참여의 질·규칙의 적절성을 입증하는 결과는 아닙니다.</span></div><div className="ai-perception-list">{operations.map((item) => <section className="ax-key-item" key={item.id}><ItemBlock item={item} weighted={weighted} privateLabel={privateLabel} /></section>)}</div></section> : <section className="ax-reading-callout"><strong>직접 AI 운영 문항은 2023년에만 있습니다.</strong><p>이전 연도의 일반 관리 여건은 볼 수 있지만, 과거 AI 활용·협의·재교육 여부를 0으로 채워 비교하지 않습니다.</p></section>}
+      {operations.length ? <section className="ai-panel ai-perception-panel"><SectionHeading kicker="OPERATING AX" title="도입한 뒤에는 어떻게 운영하고 있는가" note="AI 활용 사업체의 협의·가이드라인·재교육 현황입니다. 문항별 실제 질문 대상이 다릅니다." /><div className="ax-operations-question"><strong>공공 AX 실무 질문</strong><p>직원과 무엇을 논의하고, 그 논의가 운영 규칙과 재교육으로 연결되고 있는가?</p><span>협의의 효과·참여의 질·규칙의 적절성을 입증하는 결과는 아닙니다.</span></div><div className="ai-perception-list">{operations.map((item) => <section className="ax-key-item" key={item.id}><ItemBlock item={item} weighted={weighted} privateLabel={privateLabel} year={slice.year} /></section>)}</div></section> : <section className="ax-reading-callout"><strong>직접 AI 운영 문항은 2023년에만 있습니다.</strong><p>이전 연도의 일반 관리 여건은 볼 수 있지만, 과거 AI 활용·협의·재교육 여부를 0으로 채워 비교하지 않습니다.</p></section>}
       <AxManagementActions /><div className="ax-deeper-links"><button type="button" onClick={() => onView("adoption")}><strong>관리조건과 AI 활용의 관계</strong><span>2021 관리 → 2023 AI · 고정된 시차 회귀와 한계 →</span></button><button type="button" onClick={() => onView("framework")}><strong>문헌 근거와 인과관계 검토</strong><span>선행연구의 변수·통제·추가로 필요한 관측 →</span></button></div>
     </> : null}
   </>;

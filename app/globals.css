@@ -1336,6 +1336,27 @@ button:focus-visible, summary:focus-visible { outline: 3px solid color-mix(in sr
 .wps-unavailable-items ul { margin: 10px 0 0; padding-left: 18px; color: #766f63; font-size: 10px; line-height: 1.7; }
 .wps-unavailable-items li + li { margin-top: 4px; }
 .wps-missingness { display: grid; gap: 5px; margin-top: 10px; color: #778694; font-size: 9px; line-height: 1.5; }
+.wps-item-size-matrix { min-width: 0; margin-top: 14px; padding: 12px; border: 1px solid #d7e2ea; border-radius: 8px; background: #fbfdff; }
+.wps-item-size-matrix-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 5px 12px; }
+.wps-item-size-matrix-heading > strong { color: #385c78; font-size: 11px; }
+.wps-item-size-matrix-heading > span, .wps-item-size-matrix > p, .wps-item-size-matrix-rule { color: #6f8090; font-size: 9px; line-height: 1.55; }
+.wps-item-size-matrix > p { margin: 7px 0 9px; }
+.wps-item-size-matrix-rule { display: block; margin-top: 8px; }
+.wps-item-size-matrix-scroll { min-width: 0; overflow-x: auto; overscroll-behavior-inline: contain; contain: inline-size paint; border: 1px solid #dce5ec; border-radius: 6px; background: #fff; }
+.wps-item-size-matrix-scroll:focus-visible { outline: 3px solid #8868b4; outline-offset: 3px; }
+.wps-item-size-matrix table { width: 100%; min-width: 760px; border-collapse: separate; border-spacing: 0; font-variant-numeric: tabular-nums; }
+.wps-item-size-matrix caption { padding: 8px 10px; color: #516d84; font-size: 10px; font-weight: 750; text-align: left; }
+.wps-item-size-matrix th, .wps-item-size-matrix td { min-width: 116px; padding: 9px 8px; border-top: 1px solid #e2e9ef; text-align: center; vertical-align: top; }
+.wps-item-size-matrix thead th { position: sticky; z-index: 2; top: 0; background: #eff5f9; color: #4d6579; font-size: 10px; line-height: 1.4; }
+.wps-item-size-matrix thead th > span, .wps-item-size-matrix thead th > small, .wps-item-size-matrix td > strong, .wps-item-size-matrix td > small { display: block; }
+.wps-item-size-matrix thead th > small { margin-top: 3px; color: #718494; font-size: 8px; font-weight: 650; }
+.wps-item-size-matrix thead th > em { display: block; margin-top: 3px; color: #9a6523; font-size: 8px; font-style: normal; font-weight: 800; }
+.wps-item-size-matrix tbody th { position: sticky; z-index: 1; left: 0; min-width: 145px; max-width: 180px; background: #fff; color: #526779; font-size: 9px; font-weight: 700; line-height: 1.45; text-align: left; box-shadow: 1px 0 #dce5ec; }
+.wps-item-size-matrix thead th:first-child { z-index: 3; left: 0; min-width: 145px; max-width: 180px; text-align: left; box-shadow: 1px 0 #dce5ec; }
+.wps-item-size-matrix td > strong { color: #284c68; font-size: 11px; }
+.wps-item-size-matrix td > small { margin-top: 2px; color: #798996; font-size: 8px; }
+.wps-matrix-unavailable { display: block; color: #8a7048; font-size: 9px; line-height: 1.45; }
+@media (max-width: 440px) { .wps-item-size-matrix { padding: 10px; } .wps-item-size-matrix table { min-width: 700px; } .wps-item-size-matrix th, .wps-item-size-matrix td { min-width: 108px; padding: 8px 6px; } .wps-item-size-matrix tbody th, .wps-item-size-matrix thead th:first-child { min-width: 126px; max-width: 148px; } }
 @media (max-width: 640px) { .wps-explorer-controls { align-items: stretch; } .wps-explorer-controls label, .wps-explorer-controls select { width: 100%; } }
 
 /* Public AX network: management questions, complete item catalogue, evidence. */
