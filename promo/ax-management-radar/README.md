@@ -2,6 +2,8 @@
 
 실제 공개 대시보드를 캡처한 52.67초, 1920×1080, 30fps 영상입니다. BGM·효과음 버전과 효과음 전용 버전은 동일한 영상 스트림을 사용합니다. 화면의 그래프는 클릭 가능한 화면이 아니라 촬영한 화면입니다.
 
+최종본 다운로드: [BGM 포함](https://github.com/koul777/ax-management-radar/releases/download/ax-radar-promo-20260907/ax-management-radar.mp4) · [효과음 전용](https://github.com/koul777/ax-management-radar/releases/download/ax-radar-promo-20260907/ax-management-radar-no-bgm.mp4). [게시 페이지](https://github.com/koul777/ax-management-radar/releases/tag/ax-radar-promo-20260907)에 해석 범위와 제작 출처를 함께 표시했습니다.
+
 ## 제작·검증 기록
 
 - [기획과 디자인](PRODUCTION_BRIEF.md), [최종 분경](STORYBOARD.md)

@@ -6,13 +6,17 @@
 
 공개 저장소: [koul777/ax-management-radar](https://github.com/koul777/ax-management-radar)
 
+홍보영상: [BGM 포함 MP4](https://github.com/koul777/ax-management-radar/releases/download/ax-radar-promo-20260907/ax-management-radar.mp4) · [효과음 전용 MP4](https://github.com/koul777/ax-management-radar/releases/download/ax-radar-promo-20260907/ax-management-radar-no-bgm.mp4) · [영상 소개·출처](https://github.com/koul777/ax-management-radar/releases/tag/ax-radar-promo-20260907)
+
+두 영상 모두 52.67초 · 1080p · 30fps · 약 9.24 MB입니다.
+
 WPS는 기본 화면입니다. HCCP는 사용자 요청으로 활성 화면과 배포 파일에서 제외했으며 기존 주소에는 제외 안내만 남깁니다. 실제 배포 상태와 검증 범위는 `DEPLOYMENT_STATUS.md`를 기준으로 확인합니다.
 
 ## 변경사항 — 2026-09-07
 
 - **키보드·반응형:** 메인 메뉴와 WPS 탭의 방향키·Home/End 포커스 이동, Enter/Space 선택, 탭 목록 재진입 동작을 보완했습니다. 중간 화면 폭에서 공공·민간 및 중앙·지방 비교 카드가 가로로 넘치던 레이아웃을 수정했습니다.
 - **분석 표현:** KIPA 2024의 ‘영향·공통 동력·완전 통제’ 표현을 조건부 연관성과 현장 검증용 제안으로 정돈했습니다. 생성기·WT·표준화 상수의 재현 미확인을 화면에도 명시했습니다. **기존 회귀계수·분모·조사 집계는 변경하지 않았고 새 인과효과를 추정하지 않았습니다.** [후속 직접 비교 명세](KIPA_COMPARISON_METHODS.md)를 추가했습니다.
-- **홍보영상:** 실제 집계 화면 기반 52.67초 영상의 가독성·분모 가림·문헌 설명·장면 이동을 수정했습니다. BGM 버전과 효과음 전용 버전, 편집용 장면·자막·음향 명세, 출처·라이선스·재현 안내를 준비했습니다. [제작 안내](promo/ax-management-radar/README.md).
+- **홍보영상:** 실제 집계 화면 기반 52.67초 영상의 가독성·분모 가림·문헌 설명·장면 이동을 수정했습니다. BGM 버전과 효과음 전용 버전을 [공개 게시](https://github.com/koul777/ax-management-radar/releases/tag/ax-radar-promo-20260907)했으며, 편집용 장면·자막·음향 명세와 출처·라이선스·재현 안내를 포함했습니다. [제작 안내](promo/ax-management-radar/README.md).
 - **공개 범위:** 촬영한 공개 집계 PNG와 제작 코드는 포함하되 원자료, 개인별 응답, 음원 원본, 설치된 편집 도구, 임시 산출물은 Git·웹 배포에서 제외합니다. 실제 청취 및 KIPA 결과물 제출은 완료했다고 표시하지 않습니다.
 
 검증 결과: 웹 빌드·회귀 검사 47개, Python 검사 78개 통과. 실제 Chrome에서 8개 화면 × 4개 폭(320·375·768·1,280px)의 가로 넘침 검사와 키보드·필터 조작을 통과했고, 실행 중 발생한 클라이언트 오류는 0건입니다. 공개 집계 검사는 WPS 40개 연도·규모 조합, 기존 수치 모형 16개, 활성 문헌 10편, 보완 문항 166개의 계약을 확인했습니다. 이는 인과 타당성의 자동 인증이 아닙니다.
@@ -176,7 +180,7 @@ WPS·KLIPS 원자료의 특정 고정 인용 문구는 이번에 확인한 가�
 
 ## 홍보영상 제작 도구와 크레딧
 
-사용자가 지정한 [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)의 자율 제작 방식으로 **52.67초, 1080p/30fps** 최종본을 렌더링했습니다. BGM·효과음 버전과 효과음 전용 버전의 영상 스트림은 동일합니다. 현재 파일은 로컬에서 완성했으며 외부 게시 링크는 게시 확인 후 추가합니다.
+사용자가 지정한 [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)의 자율 제작 방식으로 **52.67초, 1080p/30fps** 최종본을 제작·[공개 게시](https://github.com/koul777/ax-management-radar/releases/tag/ax-radar-promo-20260907)했습니다. BGM·효과음 버전과 효과음 전용 버전의 영상 스트림은 동일합니다. 업로드된 두 파일의 SHA-256이 독립 검토한 최종본과 일치하고, 공개 다운로드 HTTP 200을 확인했습니다.
 
 [제작 소스·재현 안내](promo/ax-management-radar/README.md), [독립 최종 검토](promo/FINAL_REVIEW.md#9-v2-재검토--현재-최종본)를 제공합니다. 시각·수치·전체 디코드 검사는 통과했으며 실제 청취는 미검증입니다. 음원 원본과 원자료는 저장소에 포함하지 않습니다.
 

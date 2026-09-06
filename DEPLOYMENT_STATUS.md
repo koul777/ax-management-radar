@@ -1,6 +1,6 @@
 # 배포 및 검증 기록
 
-검증일: 2026-09-06 (KST)
+검증일: 2026-09-07 (KST)
 
 ## 운영 배포
 
@@ -8,23 +8,35 @@
 - 운영 주소: https://public-private-innovation-dashboard.vercel.app
 - 공개 저장소: https://github.com/koul777/ax-management-radar
 - Vercel 프로젝트: `hrkim/public-private-innovation-dashboard`
-- 배포 ID: `dpl_4PFWpnUMgqeD32jxsgTTLMav3ihi`
-- 고유 주소: https://public-private-innovation-dashboard-p74jr3qr5-hrkim.vercel.app
+- 배포 ID: `dpl_AhrWZVwq8DH3WupJ14h8V7ZtegPj`
+- 고유 주소: https://public-private-innovation-dashboard-64noekhx9-hrkim.vercel.app
+- 배포 소스: `d177f486044d421a0c72071f08d2a7a106e0637a` (이후 문서 링크·배포 기록 변경은 실행 코드 변경이 아님)
 - 상태: `READY`, `production`, 운영 도메인 연결 완료
 - 사용자의 명시적 요청으로 공개 GitHub 저장소를 생성했다. 배포 보호 설정이나 인증정보는 변경하지 않았다.
 
 ## 검증 결과
 
-- `npm test`: 배포용 로컬 빌드 및 서버 렌더링 **27개 통과**.
+- `npm test`: 로컬 빌드와 회귀·탐색·정책 검사 **47개 통과**.
 - Python 분석·입력경로 검사 **78개 통과**. 보존된 HCCP 검사는 활성 앱 포함을 뜻하지 않는다.
 - `npm run lint`, `npx tsc --noEmit`: 통과.
 - `node scripts/verify_release.mjs`: WPS 연도·규모 **40개 집계**, 수치 모형 **16개**, 활성 근거 **10편**, 추가 자료 **166문항**의 스키마·공개 승인·분모·억제 규칙 통과.
 - 운영 URL의 **18개 경로**에서 HTTP 200, 화면별 본문, 새 브랜드, AI 미조사 연도, 규모 구간, KIPA 사용허가·이용조건 전문을 확인했다. HCCP 옛 링크는 제외 안내다.
 - 운영 JS/CSS **6개**와 OG/X 이미지의 HTTP 응답·Content-Type·요청 호스트 기반 절대 주소를 확인했다.
-- 실제 업로드 목록: **45개 파일, 5,603,735바이트**. 원자료·개인 환경파일·내부 기록·영상 제작 폴더를 제외했다. 응답자별 행을 배포하지 않았다.
+- 실제 배포 수신 목록: **46개 파일**. 업로드 전 dry-run에서 원자료·개인 환경파일·내부 기록·영상 제작 폴더 제외를 확인했다. 응답자별 행을 배포하지 않았다.
 - 공개 저장소 검사는 원자료/비밀파일 이름, 알려진 인증정보 패턴, 개인 절대 경로, 큰 파일을 검사한다. 정해진 패턴 검사이며 모든 형태의 비식별성을 수학적으로 보장하지 않는다.
 - 독립 통계 검토(Astra Ultra): 40개 WPS 집계와 규모 비교표, 신규 KIPA 39문항의 코딩·분모·표시에서 최종 차단 사유 없음. 새 인과효과나 신규 회귀모형을 승인한 것은 아니다.
-- 이 배포 검증은 HTTP·서버 렌더링 검사다. 전면적 브라우저 상호작용 검사를 수행했다고 주장하지 않는다. 홍보영상의 화면 캡처·편집 검수는 별도 제작 기록에 남긴다.
+- 별도 실제 로컬 Chrome/Puppeteer 검사 **47건 통과**: 8개 메뉴 × 320·375·768·1,280px의 32개 가로 넘침 검사, 필터·URL·고정 분석기간, 방향키·Home/End·순환 이동·Enter/Space 선택·Tab 재진입. 클라이언트 오류 0건. 768px 비교 카드 넘침과 키보드 동작을 수정했다. 모바일 실기기 전체 검증을 뜻하지 않는다.
+- `npm audit --omit=dev`: 보고된 운영 의존성 취약점 0건. 개발 의존성·미공개 취약점까지 안전하다는 보장은 아니다.
+- KIPA 2024 집계 생성기·WT·표준화 상수의 재현 미확인을 확인하여 화면 문구와 [후속 직접 대비 명세](KIPA_COMPARISON_METHODS.md)에 명시했다. 기존 회귀·집계 수치는 변경하지 않았다.
+
+## 홍보영상 게시
+
+- 공개 페이지: https://github.com/koul777/ax-management-radar/releases/tag/ax-radar-promo-20260907
+- `ax-management-radar.mp4`: BGM·효과음, 9,243,233바이트, SHA-256 `0931099e59ce12d0ba0eb3d9c9bd28bb09277998b74db239ddb74f6de35d0bc6`.
+- `ax-management-radar-no-bgm.mp4`: 효과음 전용, 9,243,233바이트, SHA-256 `f9029dd7da859add9ff92ede4f1044fb280bf219a3aefe7ca207ac4dc0199955`.
+- GitHub의 업로드 완료 상태·파일 해시와 두 공개 다운로드 HTTP 200을 확인했다. 두 파일 모두 52.6667초 영상, 1,580프레임, 1920×1080, 30fps. 동일한 H.264 스트림이다.
+- [독립 검토](promo/FINAL_REVIEW.md#9-v2-재검토--현재-최종본): v2의 시각·수치·파일 기술 검증 범위에서 필수 수정 없음. 실제 청취 미검증을 전체 AV 승인으로 바꾸지 않았다.
+- 제작 소스와 공개 집계 캡처만 Git에 포함했다. MP4는 별도 게시 파일이며 원본 음원·설치 도구·원자료는 Git 및 Vercel 업로드에 포함하지 않았다.
 
 ## 공개된 분석 범위
 
@@ -52,6 +64,6 @@ node scripts/verify_release.mjs
 node scripts/verify_repository.mjs
 ```
 
-현재 클라이언트 대시보드 청크는 약 1,790.69 kB(gzip 245.64 kB)로 크기 경고가 있다. `headers()` 경로의 빌드 분류 `Unknown`은 운영 응답 검증과 구분한다.
+현재 클라이언트 대시보드 청크는 약 1,793.50 kB(gzip 246.86 kB)로 크기 경고가 있다. `headers()` 경로의 빌드 분류 `Unknown`은 운영 응답 검증과 구분한다.
 
-직전 배포 `dpl_AFuhBjQRAnTLxoJM7PfCste2z1xG`는 연도·규모 및 추가 KIPA 자료를 반영한 버전이고, 현재 배포는 여기에 새 프로그램 이름을 반영했다. 그 이전 `dpl_GvdQVnWP4bu6Pmw366j2ttQHXSn8`은 사용허가 확인 전 공공 추가자료 숫자를 보류하던 버전이다.
+직전 배포 `dpl_4PFWpnUMgqeD32jxsgTTLMav3ihi`는 새 프로그램 이름을 반영한 버전이다. 현재 배포는 키보드·반응형 수정과 KIPA 해석·재현성 안내를 추가했다. 이전 `dpl_AFuhBjQRAnTLxoJM7PfCste2z1xG`는 연도·규모 및 추가 KIPA 자료를 반영했고, 그 이전 `dpl_GvdQVnWP4bu6Pmw366j2ttQHXSn8`은 사용허가 확인 전 공공 추가자료 숫자를 보류하던 버전이다.
