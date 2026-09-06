@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "mode": "lead_delegated_project_approval",
+  "authority": "User delegated ordinary project HITL decisions on 2026-09-07",
+  "runtime_permissions_unchanged": true,
+  "user_contact": "team_lead_only",
+  "default_for_unknown_actions": "lead_review",
+  "allowed_actions": {
+    "inspect": "data_audit",
+    "test": "verification",
+    "implement_in_scope": "dashboard_engineering",
+    "choose_visual": "dashboard_engineering",
+    "repair_failed_work": "dashboard_engineering",
+    "update_docs": "dashboard_engineering",
+    "verify_literature": "literature_review",
+    "review_statistical_claim": "causal_review",
+    "reassign_task": "lead",
+    "commit": "lead",
+    "push": "lead",
+    "deploy_existing_site": "lead",
+    "publish_approved_aggregates": "lead",
+    "publish_promo": "lead"
+  },
+  "publication_actions": ["commit", "push", "deploy_existing_site", "publish_approved_aggregates", "publish_promo"],
+  "requires_user_authority": ["new_cost", "external_contact_not_authorized", "destructive_outside_request", "material_scope_expansion"],
+  "requires_runtime_approval": ["runtime_permission_required"],
+  "prohibited": ["bypass_permissions", "expose_credentials", "publish_respondent_data"],
+  "completion_evidence": ["artifacts", "checks", "unresolved_findings", "independent_review_when_required"]
+}

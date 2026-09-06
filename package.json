@@ -9,7 +9,9 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vinext start",
-    "test": "npm run build && node --test tests/dashboard-render.test.mjs",
+    "test": "npm run build && node --test tests/dashboard-render.test.mjs tests/dashboard-navigation.test.mjs tests/orchestration-policy.test.mjs",
+    "test:orchestration": "node --test tests/orchestration-policy.test.mjs",
+    "test:browser": "node scripts/qa_browser.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .vercel",
     "db:generate": "drizzle-kit generate"
   },

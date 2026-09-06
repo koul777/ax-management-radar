@@ -6,7 +6,7 @@ const localDevelopment = ["localhost", "127.0.0.1", "[::1]"].includes(new URL(ba
 const checks = [
   ["/", /AX 조직관리 레이더/, /AX Management Radar/, /AX를 위한 조직관리, 공공과 민간은 무엇이 다른가/, /AI 활용/],
   ["/?view=hccp", /인적자본패널/, /제외/],
-  ["/?view=public-private", /공공·민간 혁신행동 영향 대시보드/, /KIPA/],
+  ["/?view=public-private", /공공·민간 혁신행동 연관성 비교/, /KIPA/],
   ["/?view=central-local", /중앙정부/, /지방자치단체/],
   ["/?view=research", /근거·자료/, /핵심 연구/, /김동배·이인재/, /오주현/],
   ["/?view=ax&section=catalog", /핵심 문항/, /dq1029/, /ai049/],
@@ -37,7 +37,7 @@ for (const [route, ...patterns] of checks) {
   assert.ok(!/C7A01_07|C7A02_02|HCCPⅠ은 민간 조직관리/.test(html), `${route}: old HCCP analysis leaked`);
   if (!localDevelopment) assert.ok(!/(?:["'\s])[a-z]:[\\/](?:Users|workspace)|\.tmp[\\/]/i.test(html), `${route}: local private path exposed`);
   if (route.includes("public-private") || route.includes("central-local")) {
-    assert.ok(html.includes("이 화면에는 직접 상호작용 검정이 없으며"), `${route}: subgroup inference warning missing`);
+    assert.ok(html.includes("아래 관리요인의 검증된 집단 간 직접 대비는 표시하지 않으며"), `${route}: subgroup inference warning missing`);
   }
   if (route.includes("view=public-data")) assert.doesNotMatch(plain, /자료 이용 조건 확인 후 공개|기술 분포/);
   if (route === "/") rootHtml = html;

@@ -571,8 +571,8 @@ button { color: inherit; }
 .concept-overview-heading strong, .concept-overview-heading small, .concept-detail-heading strong, .concept-detail-heading small { display: block; }
 .concept-overview-heading strong, .concept-detail-heading strong { font-size: 11px; }
 .concept-overview-heading small, .concept-detail-heading small { margin-top: 2px; color: var(--muted); font-size: 7px; }
-.concept-mean-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 9px; }
-.concept-mean-grid > button { display: grid; grid-template-columns: minmax(125px, 0.75fr) minmax(175px, 1.25fr) 67px; align-items: center; gap: 10px; min-height: 76px; padding: 9px 10px; border: 1px solid var(--line-soft); border-radius: 8px; background: #fff; text-align: left; cursor: pointer; }
+.concept-mean-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 7px; margin-top: 9px; }
+.concept-mean-grid > button { display: grid; grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr) 67px; align-items: center; gap: 10px; min-width: 0; min-height: 76px; padding: 9px 10px; border: 1px solid var(--line-soft); border-radius: 8px; background: #fff; text-align: left; cursor: pointer; }
 .concept-mean-grid > button:hover { background: #f8fbfb; }
 .concept-mean-grid > button.selected { border-color: color-mix(in srgb, var(--group-a) 55%, #d9e1e6); background: var(--group-a-soft); box-shadow: inset 3px 0 var(--group-a); }
 .concept-mean-label { min-width: 0; }

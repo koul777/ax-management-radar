@@ -5,6 +5,11 @@
   "is_native_codex_agent_registry": false,
   "is_background_service": false,
   "user_contact": "primary_agent_only",
+  "project_approval_policy": "decision-policy.json",
+  "project_approval_checker": "decision-policy.mjs",
+  "ordinary_hitl_delegate": "primary_agent",
+  "missed_work_recovery_owner": "primary_agent",
+  "runtime_permission_override": false,
   "concurrency_budget_including_lead": 4,
   "lead": {
     "model_policy": "preserve_user_selected_chat_model",

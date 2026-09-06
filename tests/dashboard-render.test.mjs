@@ -156,7 +156,7 @@ test("renders the dashboard shell with public-private leadership and no moderati
   const html = await response.text();
   assert.match(html, /AX 조직관리 레이더 \/ AX Management Radar/);
   assert.match(html, /공공·민간 비교로 찾는 AX 조직관리 인사이트/);
-  assert.match(html, /공공·민간 혁신행동 영향 대시보드/);
+  assert.match(html, /공공·민간 혁신행동 연관성 비교/);
   assert.match(html, /공공·민간 리더십 4유형 비교/);
   assert.match(html, /조직공정성과 혁신행동의 통제 후 관계/);
   assert.match(html, /32문항 EFA 5요인 · 회귀 리더십은 15문항 통합지수/);
@@ -166,7 +166,7 @@ test("renders the dashboard shell with public-private leadership and no moderati
   assert.match(html, /-0\.059/);
   assert.match(html, /리더십 평균 격차는 크지만, 리더 교육 하나만으로 혁신이 늘어난다고 보기는 어렵습니다/);
   assert.match(html, /현재 수준의 차이와 관리요인의 효과 차이는 다릅니다/);
-  assert.match(html, /이 화면에는 직접 상호작용 검정이 없으며/);
+  assert.match(html, /아래 관리요인의 검증된 집단 간 직접 대비는 표시하지 않으며/);
   assert.match(html, /통제 후 관계/);
   assert.match(html, /46<\/strong><span>개 문항<\/span>/);
   assert.doesNotMatch(html, /증폭|조절효과|요인 × 소속 상호작용/);
@@ -230,6 +230,22 @@ test("public-private analysis payload uses four leadership bars and one integrat
   );
 });
 
+test("KIPA comparison exposes reproducibility limits without claiming causal or equivalent group effects", async () => {
+  const response = await render("public-private");
+  const text = plainText(await response.text());
+  assert.match(text, /생성 코드·가중치 처리·표준화 상수의 재현 검증은 미완료/);
+  assert.match(text, /효과가 없다는 증명은 아닙니다/);
+  assert.match(text, /계수의 동일성이나 공통 인과 원리를 입증한 결과는 아닙니다/);
+  assert.match(text, /유의성·계수 크기에 따른 표시 순서이며 개입 효과 순위가 아닙니다/);
+  assert.match(text, /시범운영 후보 선정/);
+  assert.match(text, /기존 집계에 기재된 모형/);
+  assert.match(text, /기존 분석 설명 — 재현 미확인/);
+  assert.match(text, /전체표본 표준화의 대상·상수, WT의 실제 처리/);
+  assert.doesNotMatch(text, /공통 동력은 비슷|가장 큰 영향요인은|완전 통제모형/);
+  const source = await readFile(new URL("../app/public-private-dashboard.tsx", import.meta.url), "utf8");
+  assert.doesNotMatch(source, /factor\.difference_p|factor\.difference_significant/);
+});
+
 test("central-local analysis payload includes transactional leadership and pooled regression", async () => {
   const raw = await readFile(new URL("../app/data/central-local-analysis.json", import.meta.url), "utf8");
   const data = JSON.parse(raw);
@@ -276,9 +292,10 @@ test("central-local view limits subgroup coefficient comparisons to non-causal i
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /현재 수준의 차이와 관리요인의 효과 차이는 다릅니다/);
-  assert.match(html, /이 화면에는 직접 상호작용 검정이 없으며/);
+  assert.match(html, /아래 관리요인의 검증된 집단 간 직접 대비는 표시하지 않으며/);
   assert.match(html, /조직관리와 혁신행동의 통제 후 관계/);
   assert.match(html, /인과/);
+  assert.doesNotMatch(html, /기존 분석 설명 — 재현 미확인|생성 코드·가중치 처리·표준화 상수의 재현 검증은 미완료/);
 });
 
 test("AX dashboard retains WPS estimates while excluding HCCP from active analysis", async () => {

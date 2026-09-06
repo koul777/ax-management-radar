@@ -36,3 +36,13 @@ Lightweight QA does not approve causal claims, statistical specifications, or su
 ## Handoff contract
 
 Each specialist returns: findings, exact evidence locations, checks performed, uncertainties, files changed, and a recommended next action. The lead distinguishes completed actions from plans and running work. Require independent review of substantive findings before publishing dashboard claims.
+
+## Delegated project approvals (2026-09-07)
+
+The user delegated ordinary human-in-the-loop project decisions to the team lead. Do not stop to ask the user to approve each plan, visual choice, retry, test, correction, or in-scope handoff. The lead chooses reasonable defaults, handles omissions, and continues the approved six-hour work plan. Notify the user of material decisions without turning the notification into a permission question.
+
+- Apply `orchestration/decision-policy.json` and its executable checks in `orchestration/decision-policy.mjs` for project-level routing. These are workflow controls, not runtime permission overrides or an agent-spawning service.
+- Within this task, the user already authorized a public repository, aggregate-only publication, the existing Vercel deployment, promotional video, and final commit/push. Do not ask for the same project authorization again; the final publication checks still apply.
+- A specialist's claim of completion is not enough: the lead checks required artifacts, test evidence, unresolved findings and independent-review requirements. Missing evidence goes back to the lead for repair or reassignment, not back to the user as an ordinary question.
+- New costs, unapproved external communications, materially expanded scope and destructive operations outside the request require new authority. Never treat the lead's delegated project authority as a way to bypass sandbox, approval, privacy, credential or deployment protections.
+- If runtime approval is required, use the actual approval mechanism. Do not simulate consent, click it on the user's behalf, alter protected settings, or switch tools to evade that requirement.

@@ -219,6 +219,7 @@ export type ComparisonDashboardConfig = {
   overallRegression?: OverallRegressionConfig;
   leadershipProfile?: LeadershipProfileConfig;
   operationalNote: string;
+  reproducibilityNote?: string;
   warnings: string[];
   footer: string;
   culture?: CultureConfig;
@@ -811,7 +812,7 @@ function CultureSection({ culture, config }: { culture: CultureConfig; config: C
 
       <aside className="dashboard-panel culture-effect-panel">
         <div className="panel-heading compact">
-          <div><span className="panel-number">07</span><div><h2>조직문화와 혁신행동</h2><p>완전 통제모형의 문화유형 계수</p></div></div>
+          <div><span className="panel-number">07</span><div><h2>조직문화와 혁신행동</h2><p>명시된 통제모형의 문화유형 계수</p></div></div>
         </div>
         <div className="reference-chip">기준범주 · {culture.referenceLabel}</div>
         <p className="culture-effect-explainer">같은 모형에서 기준문화보다 혁신행동이 얼마나 높거나 낮은지를 봅니다. 문화 평균 비교와는 다른 지표입니다.</p>
@@ -885,7 +886,7 @@ export default function ComparisonDashboard({ config, requestedYear }: { config:
         <div className="header-meta">
           <span>{config.source}</span>
           <strong>{config.sampleLabel}</strong>
-          <small>완전 통제모형 · 통제개념 {config.controls.length}개</small>
+          <small>명시된 통제모형 · 통제개념 {config.controls.length}개</small>
         </div>
       </header>
 
@@ -895,7 +896,7 @@ export default function ComparisonDashboard({ config, requestedYear }: { config:
       <section className="scope-banner" aria-label="집단별 회귀 해석 범위">
         <strong>현재 수준의 차이와 관리요인의 효과 차이는 다릅니다.</strong>{" "}
         아래 β는 집단별 통제 후 연관성입니다. 한쪽만 p&lt;.05이거나 계수가 더 크다는 사실은 집단 간 효과 차이의 검정이 아닙니다.
-        이 화면에는 직접 상호작용 검정이 없으며, 제안하는 관리 조치는 시범운영으로 검증할 가설입니다. AI 도입의 인과효과를 추정한 자료도 아닙니다.
+        아래 관리요인의 검증된 집단 간 직접 대비는 표시하지 않으며, 제안하는 관리 조치는 시범운영으로 검증할 가설입니다. AI 도입의 인과효과를 추정한 자료도 아닙니다.
       </section>
 
       <section className="executive-readout">
@@ -961,7 +962,7 @@ export default function ComparisonDashboard({ config, requestedYear }: { config:
               </button>
             ))}
           </div>
-          <p className="chart-footnote">색 막대는 해당 집단에서 p&lt;.05인 관계, 회색은 p≥.05입니다. 두 집단의 계수를 나란히 보되, 한쪽에서만 유의하다는 사실만으로 기관유형 차이가 확정되는 것은 아닙니다.</p>
+          <p className="chart-footnote">색 막대는 해당 집단에서 p&lt;.05인 관계, 회색은 p≥.05입니다. 유의성·계수 크기에 따른 표시 순서이며 개입 효과 순위가 아닙니다. 한쪽에서만 유의하다는 사실만으로 기관유형 차이가 확정되는 것은 아닙니다.</p>
         </article>
 
         <aside className="dashboard-panel valid-panel">
@@ -1033,8 +1034,8 @@ export default function ComparisonDashboard({ config, requestedYear }: { config:
         </article>
 
         <article className="dashboard-panel controls-panel">
-          <div className="panel-heading compact"><div><span className="panel-number">{config.culture ? "10" : "08"}</span><div><h2>회귀모형 통제변수</h2><p>{config.controlTermsLabel ?? `${config.controlTerms}개 더미·연속항을 실제 투입`}</p></div></div><span className="method-pill">FULL CONTROL</span></div>
-          <div className="model-formula"><strong>실제 회귀식</strong><code>{config.modelFormula}</code></div>
+          <div className="panel-heading compact"><div><span className="panel-number">{config.culture ? "10" : "08"}</span><div><h2>회귀모형 통제변수</h2><p>{config.controlTermsLabel ?? `${config.controlTerms}개 더미·연속항을 실제 투입`}</p></div></div><span className="method-pill">STATED CONTROLS</span></div>
+          <div className="model-formula"><strong>{config.reproducibilityNote ? "기존 집계에 기재된 모형" : "실제 회귀식"}</strong><code>{config.modelFormula}</code></div>
           <div className="control-chips">{config.controls.map((control) => <span key={control}>{control}</span>)}</div>
           <p className="control-summary">{config.controlSummary}</p>
           <div className="control-research-note"><strong>왜 통제했나</strong><span>{config.controlResearchNote}</span></div>
@@ -1043,7 +1044,16 @@ export default function ComparisonDashboard({ config, requestedYear }: { config:
         </article>
       </section>
 
-      <details className="method-details"><summary>조작적 정의·분석방법·주의사항 자세히 보기</summary><div><p><strong>조작적 정의</strong>{config.operationalNote}</p><p><strong>분석 순서</strong> 탐색적 요인분석 → 자료별 조작적 정의에 따른 문항 산술평균 → 전체 표본 기준 표준화 → {config.overallRegression ? "전체표본 및 " : ""}집단별 가중 WLS 회귀(HC3)와 모든 통제변수 반영.</p><p><strong>해석 기준</strong> 유효 요인은 p&lt;.05입니다. β와 문화유형 계수는 인과효과가 아니라 다른 변수를 통제한 뒤의 연관성입니다.</p>{config.warnings.map((warning) => <p className="warning-line" key={warning}><strong>주의</strong>{warning}</p>)}</div></details>
+      <details className="method-details">
+        <summary>조작적 정의·분석방법·주의사항 자세히 보기</summary>
+        <div>
+          <p><strong>{config.reproducibilityNote ? "기록된 조작적 정의" : "조작적 정의"}</strong>{config.operationalNote}</p>
+          <p><strong>{config.reproducibilityNote ? "기존 분석 설명 — 재현 미확인" : "분석 순서"}</strong> 탐색적 요인분석 → 자료별 조작적 정의에 따른 문항 산술평균 → 전체 표본 기준 표준화 → {config.overallRegression ? "전체표본 및 " : ""}집단별 가중 WLS 회귀(HC3)와 명시된 통제변수 반영.</p>
+          {config.reproducibilityNote ? <p className="warning-line"><strong>재현 상태</strong>{config.reproducibilityNote}</p> : null}
+          <p><strong>해석 기준</strong> 집단 내 유의성 기준은 p&lt;.05입니다. β와 문화유형 계수는 인과효과가 아니라 다른 변수를 통제한 뒤의 연관성입니다.</p>
+          {config.warnings.map((warning) => <p className="warning-line" key={warning}><strong>주의</strong>{warning}</p>)}
+        </div>
+      </details>
 
       <footer className="dashboard-footer"><strong>INNOVATION IMPACT DASHBOARD</strong><span>{config.footer}</span></footer>
     </div>

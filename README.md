@@ -8,6 +8,15 @@
 
 WPS는 기본 화면입니다. HCCP는 사용자 요청으로 활성 화면과 배포 파일에서 제외했으며 기존 주소에는 제외 안내만 남깁니다. 실제 배포 상태와 검증 범위는 `DEPLOYMENT_STATUS.md`를 기준으로 확인합니다.
 
+## 변경사항 — 2026-09-07
+
+- **키보드·반응형:** 메인 메뉴와 WPS 탭의 방향키·Home/End 포커스 이동, Enter/Space 선택, 탭 목록 재진입 동작을 보완했습니다. 중간 화면 폭에서 공공·민간 및 중앙·지방 비교 카드가 가로로 넘치던 레이아웃을 수정했습니다.
+- **분석 표현:** KIPA 2024의 ‘영향·공통 동력·완전 통제’ 표현을 조건부 연관성과 현장 검증용 제안으로 정돈했습니다. 생성기·WT·표준화 상수의 재현 미확인을 화면에도 명시했습니다. **기존 회귀계수·분모·조사 집계는 변경하지 않았고 새 인과효과를 추정하지 않았습니다.** [후속 직접 비교 명세](KIPA_COMPARISON_METHODS.md)를 추가했습니다.
+- **홍보영상:** 실제 집계 화면 기반 52.67초 영상의 가독성·분모 가림·문헌 설명·장면 이동을 수정했습니다. BGM 버전과 효과음 전용 버전, 편집용 장면·자막·음향 명세, 출처·라이선스·재현 안내를 준비했습니다. [제작 안내](promo/ax-management-radar/README.md).
+- **공개 범위:** 촬영한 공개 집계 PNG와 제작 코드는 포함하되 원자료, 개인별 응답, 음원 원본, 설치된 편집 도구, 임시 산출물은 Git·웹 배포에서 제외합니다. 실제 청취 및 KIPA 결과물 제출은 완료했다고 표시하지 않습니다.
+
+검증 결과: 웹 빌드·회귀 검사 47개, Python 검사 78개 통과. 실제 Chrome에서 8개 화면 × 4개 폭(320·375·768·1,280px)의 가로 넘침 검사와 키보드·필터 조작을 통과했고, 실행 중 발생한 클라이언트 오류는 0건입니다. 공개 집계 검사는 WPS 40개 연도·규모 조합, 기존 수치 모형 16개, 활성 문헌 10편, 보완 문항 166개의 계약을 확인했습니다. 이는 인과 타당성의 자동 인증이 아닙니다.
+
 ## 최신 AX·혁신 분석 (2026-09-06)
 
 현재 구현 범위는 데이터 출처표 12개, 보완 조사문항 166개, WPS 연도·민간 규모 조합 40개 집계입니다.
@@ -48,6 +57,8 @@ npm run dev
 
 검증: `python -m unittest discover -s tests -p "test_*.py"`, `npm test`, `node scripts/verify_release.mjs`. Vercel 업로드 전 `vercel deploy --dry --json`으로 원자료·자격증명 제외를 확인합니다.
 
+`npm run test:browser`는 로컬 대시보드의 실제 필터·키보드·화면 폭을 검사합니다. 브라우저 검사는 홍보영상 폴더의 설치된 Puppeteer와 로컬 Chrome이 필요하며 `AX_QA_CHROME_PATH`로 실행 파일을 지정할 수 있습니다. 원자료 없이 공개 집계 화면만 검사합니다.
+
 ## 기존 비교 메뉴
 
 - 민간 ↔ 공공: KIPA 2024 「한국의 공사조직 구성원 인식 비교 조사」
@@ -55,6 +66,8 @@ npm run dev
 
 기존 KIPA·중앙/지방 두 분석 모두 다중회귀 전에 주성분 요인추출, Kaiser 기준, Varimax 회전에
 따른 탐색적 요인분석(EFA)과 Cronbach's α 신뢰도 검증을 수행합니다.
+
+이 두 화면은 집단별 통제 후 연관성을 나란히 보여주며, 검증된 관리요인×집단 직접 대비를 제시하지 않습니다. 한 집단에서만 유의하다고 두 집단의 효과가 다르다는 뜻은 아닙니다. 특히 KIPA 2024는 현재 저장소에서 기존 JSON 생성기를 찾지 못하여 표본 제외·가중치 처리·표준화 상수와 직접 대비 산출식의 재현 검증이 미완료입니다. 기존 결과를 새로 검증했다고 표시하거나 저장된 차이 p값을 새 결과로 노출하지 않습니다. [재현성 점검과 후속 비교 명세](KIPA_COMPARISON_METHODS.md)를 참고하세요.
 
 ## 화면 구성
 
@@ -163,7 +176,9 @@ WPS·KLIPS 원자료의 특정 고정 인용 문구는 이번에 확인한 가�
 
 ## 홍보영상 제작 도구와 크레딧
 
-사용자가 지정한 제작 도구는 [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)입니다. 선택된 방식으로 홍보영상을 제작 중이며, 아래는 도구 출처와 배포 시 보존해야 할 사항을 기록한 것입니다. 영상은 아직 완성·게시되지 않았습니다.
+사용자가 지정한 [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)의 자율 제작 방식으로 **52.67초, 1080p/30fps** 최종본을 렌더링했습니다. BGM·효과음 버전과 효과음 전용 버전의 영상 스트림은 동일합니다. 현재 파일은 로컬에서 완성했으며 외부 게시 링크는 게시 확인 후 추가합니다.
+
+[제작 소스·재현 안내](promo/ax-management-radar/README.md), [독립 최종 검토](promo/FINAL_REVIEW.md#9-v2-재검토--현재-최종본)를 제공합니다. 시각·수치·전체 디코드 검사는 통과했으며 실제 청취는 미검증입니다. 음원 원본과 원자료는 저장소에 포함하지 않습니다.
 
 > Video production toolkit: video-shotcraft by Wei Yihao (Vincent). Copyright 2026 Wei Yihao. Licensed under the Apache License, Version 2.0.
 
@@ -171,5 +186,15 @@ WPS·KLIPS 원자료의 특정 고정 인용 문구는 이번에 확인한 가�
 - 제작 도구의 원 저장소는 이 프로젝트의 push 대상이나 공개 저장소가 아닙니다.
 - 저자가 영상 게시 시 권장하는 SNS 멘션은 **선택사항**이며, 라이선스 고지 보존과는 별개입니다: X [@VincentWei93](https://x.com/VincentWei93), Douyin [@Vincent](https://www.douyin.com/user/MS4wLjABAAAAK1pkjBxilk2Oi_9h_vFyD-lTAu9CTlvhmOtkosDvvxg), Xiaohongshu [@Vincent](https://xhslink.cn/m/At9iP2d5C1V).
 - [Remotion 라이선스](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md)는 별도 적용됩니다. video-shotcraft의 Apache-2.0만으로 렌더링 엔진까지 동일 조건이라고 판단하지 않습니다.
-- 실제 BGM·효과음·외부 이미지가 정해지면 이 문서에 사용 파일, 제작자, 원본 URL 및 적용 라이선스를 추가합니다. 현재 선택하지 않은 음악·효과음을 이미 사용했다고 표기하지 않습니다. 출처가 확인되지 않는 번들 음원은 공개 홍보영상에 사용하지 않습니다.
+- 제작용으로 선택한 BGM·효과음은 아래와 같습니다. 음원 원본은 저장소에 재배포하지 않으며, 완성 영상에 삽입하는 용도로 사용합니다. 출처가 확인되지 않는 번들 음원은 사용하지 않습니다.
 - 영상에도 사용 자료와 재분석임을 밝히고, KIPA 통계가 등장하면 위 사용허가 문구를 크레딧 또는 설명에 포함합니다. 영상상의 홍보 문구는 관측된 차이를 인과효과나 검증된 AX 성공 비법으로 바꾸지 않습니다.
+
+| 역할 | 음원·제작자 | 원본 파일 | 적용 조건 |
+|---|---|---|---|
+| 배경음악 | Cat Walk — Arulo | [Mixkit 원본](https://assets.mixkit.co/music/371/371.mp3) | [Stock Music Free License](https://mixkit.co/license/#musicFree) |
+| 부드러운 전환 | Air zoom vacuum — Mixkit | [Mixkit 원본](https://assets.mixkit.co/active_storage/sfx/2608/2608-preview.mp3) | [Sound Effects Free License](https://mixkit.co/license/#sfxFree) |
+| 장면 이동 | Powerful air whooshes — Mixkit | [Mixkit 원본](https://assets.mixkit.co/active_storage/sfx/3220/3220-preview.mp3) | [Sound Effects Free License](https://mixkit.co/license/#sfxFree) |
+| 안착·강조 | Cinematic whoosh deep impact — Mixkit | [Mixkit 원본](https://assets.mixkit.co/active_storage/sfx/1143/1143-preview.mp3) | [Sound Effects Free License](https://mixkit.co/license/#sfxFree) |
+| 마무리 | Sweeping sparkle presentation intro — Mixkit | [Mixkit 원본](https://assets.mixkit.co/active_storage/sfx/2633/2633-preview.mp3) | [Sound Effects Free License](https://mixkit.co/license/#sfxFree) |
+
+Cat Walk의 제목·제작자는 [Mixkit 공식 목록](https://mixkit.co/free-stock-music/house/)에서 확인했습니다. Mixkit 음악 안내는 웹사이트·소셜 미디어·온라인 광고 영상 등의 사용과 방송·게임 등 제외 용도를 구분하므로, 다른 매체에 사용할 때는 [음악 FAQ](https://mixkit.co/free-stock-music/)와 [현재 이용약관](https://mixkit.co/terms/)을 확인해야 합니다. 음원의 조건은 조사자료의 이용조건과 별개입니다.

@@ -6,6 +6,7 @@ import wpsAnalysis from "./data/wps-ax-analysis.json";
 import AxModelCard, { type AnalysisModel, formatEffect, formatP } from "./ax-model-card";
 import { AxCausalResearch, AxManagementActions } from "./ax-management-research";
 import YearSelector from "./year-selector";
+import { useManualTabFocus } from "./tab-navigation";
 
 export type AnalysisView = "overview" | "models" | "governance" | "framework" | "perceptions" | "catalog" | "adoption";
 type View = AnalysisView;
@@ -209,12 +210,13 @@ export default function AiWorkplaceDashboard({ initialView = "overview", onViewC
     { id: "models", label: "혁신 보조 결과", note: "2023 단면 회귀" },
     { id: "framework", label: "분석틀·선행연구", note: "통제변수와 인과관계 검토" },
   ];
+  const wpsTabs = useManualTabFocus(tabs.map((tab) => tab.id), view);
   return <div className="ai-dashboard ax-dashboard wps-study">
     <header className="ai-dashboard-header"><div><p>PUBLIC AX NETWORK · WPS EVIDENCE</p><h1>AX를 위한 조직관리, 공공과 민간은 무엇이 다른가</h1><span>도입·운영의 차이를 함께 보고, 조직에서 점검할 질문을 찾습니다.</span></div>{descriptive && slice ? <aside><span>{slice.year} 원표본 · {privateName(sizeGroup)}</span><strong>{(slice.public_n + slice.private_n).toLocaleString("ko-KR")}개 사업체</strong><small>공공 {slice.public_n.toLocaleString("ko-KR")} · 민간 {slice.private_n.toLocaleString("ko-KR")}</small><small>{slice.public_ai_n === null ? "직접 AI 문항 미조사" : "AI 활용: 공공 " + slice.public_ai_n + " · 민간 " + slice.private_ai_n}</small></aside> : null}</header>
     <section className="ai-scope-banner"><strong>비교 범위</strong><span>{descriptive ? "WPS " + year + "년 응답표본 · sep=5 공공, sep=1~4 민간" : "각 모형·문헌에 표시된 측정기간과 표본"}</span><small>민간 규모는 기업의 법정 중소·중견·대기업 분류가 아니라 해당 사업체의 전체 근로자 수 기준입니다.</small></section>
     {descriptive ? <section className="wps-explorer-controls" aria-label="WPS 연도·민간 규모 선택"><YearSelector id="wps-year" years={explorer.years} value={year} onChange={(nextYear) => updateExplorer(nextYear, privateSize)} note="확인된 해당 연도의 문항만 표시합니다." /><label>민간 근로자 수 구간<select id="wps-private-size" value={privateSize} onChange={(event) => updateExplorer(year, event.target.value)}>{explorer.size_groups.map((group) => <option key={group.id} value={group.id}>{group.label}</option>)}</select></label><p>{sizeGroup?.definition}</p>{invalidNotice ? <span role="status">요청한 연도 또는 규모 구간을 사용할 수 없어, 지원되지 않는 선택만 최신 연도 또는 민간 전체로 바꿨습니다.</span> : null}</section> : <FixedPeriodNotice view={view} />}
     {descriptive ? <p className="wps-year-note">기업 구분 변수도 확인했습니다. 2015~2023년의 SB는 ‘중소기업 / 중소기업 아님’ 두 범주이며, 중견기업과 대기업을 나누는 변수는 아닙니다. 이 화면의 세 규모 구간은 근로자 수로 구분합니다.</p> : null}
-    <div className="ai-view-tabs" role="tablist" aria-label="WPS 분석 보기">{tabs.map((tab, index) => <button key={tab.id} type="button" id={"wps-tab-" + tab.id} aria-controls="wps-view" aria-selected={view === tab.id} className={view === tab.id ? "active" : ""} role="tab" onClick={() => selectView(tab.id)}><span>{String(index + 1).padStart(2, "0")}</span><strong>{tab.label}</strong><small>{tab.note}</small></button>)}</div>
+    <div className="ai-view-tabs" role="tablist" aria-label="WPS 분석 보기" aria-orientation="horizontal">{tabs.map((tab, index) => <button key={tab.id} type="button" id={"wps-tab-" + tab.id} aria-controls="wps-view" aria-selected={view === tab.id} className={view === tab.id ? "active" : ""} data-tab-id={tab.id} onClick={() => selectView(tab.id)} onFocus={() => wpsTabs.onTabFocus(tab.id)} onBlur={wpsTabs.onTabBlur} onKeyDown={wpsTabs.onTabKeyDown} ref={wpsTabs.registerTab(tab.id)} role="tab" tabIndex={wpsTabs.focusedTabId === tab.id ? 0 : -1}><span>{String(index + 1).padStart(2, "0")}</span><strong>{tab.label}</strong><small>{tab.note}</small></button>)}</div>
     {view === "overview" ? <SizeComparison year={Number(year)} selectedSize={privateSize} onSize={(size) => updateExplorer(year, size)} /> : null}
     <div id="wps-view" role="tabpanel" aria-labelledby={"wps-tab-" + view}>
       {descriptive && slice ? <DescriptiveView key={year + "-" + privateSize + "-" + view} slice={slice} sizeGroup={sizeGroup} kind={view} onView={selectView} /> : null}

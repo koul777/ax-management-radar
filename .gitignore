@@ -93,5 +93,18 @@ __pycache__/
 /promo/**/.cache/
 /promo/workbench/
 
+# Unused reference-template files stay local; publish the AX composition only.
+/promo/ax-management-radar/TEMPLATE.md
+/promo/ax-management-radar/src/aifl/
+/promo/ax-management-radar/src/lib/*
+!/promo/ax-management-radar/src/lib/PageCam.tsx
+/promo/ax-management-radar/public/textures/live/card*.png
+/promo/ax-management-radar/public/textures/live/detail*.png
+/promo/ax-management-radar/public/textures/live/float*.png
+/promo/ax-management-radar/public/textures/live/nav.png
+/promo/ax-management-radar/public/textures/live/paper*.png
+/promo/ax-management-radar/public/textures/live/projects*.png
+/promo/ax-management-radar/public/textures/live/wbr-full.png
+
 .vercel
 .env*

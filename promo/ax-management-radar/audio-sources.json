@@ -1,0 +1,47 @@
+[
+  {
+    "file": "audio/bgm/cat-walk.mp3",
+    "title": "Cat Walk",
+    "creator": "Arulo",
+    "url": "https://assets.mixkit.co/music/371/371.mp3",
+    "license": "https://mixkit.co/license/#musicFree",
+    "bytes": 3969820,
+    "sha256": "e241cba000ce12e52cadd4c9956274e391ef1f66d1e48a5dd40bfc21645aa489"
+  },
+  {
+    "file": "audio/sfx/air-whoosh-powerful.mp3",
+    "title": "Powerful air whooshes",
+    "provider": "Mixkit",
+    "url": "https://assets.mixkit.co/active_storage/sfx/3220/3220-preview.mp3",
+    "license": "https://mixkit.co/license/#sfxFree",
+    "bytes": 58983,
+    "sha256": "6e857524a69fcbeedd688960fa2a35702de1d2ed1927d9d9344785761e460a76"
+  },
+  {
+    "file": "audio/sfx/impact-deep-whoosh.mp3",
+    "title": "Cinematic whoosh deep impact",
+    "provider": "Mixkit",
+    "url": "https://assets.mixkit.co/active_storage/sfx/1143/1143-preview.mp3",
+    "license": "https://mixkit.co/license/#sfxFree",
+    "bytes": 115904,
+    "sha256": "9854bff8a78fcebef95350ff0ec72a41ba449ab372bbd601b55d84de13bd626d"
+  },
+  {
+    "file": "audio/sfx/shimmer-sparkle-sweep.mp3",
+    "title": "Sweeping sparkle presentation intro",
+    "provider": "Mixkit",
+    "url": "https://assets.mixkit.co/active_storage/sfx/2633/2633-preview.mp3",
+    "license": "https://mixkit.co/license/#sfxFree",
+    "bytes": 94788,
+    "sha256": "8228e373de20a738b3ca74cd08bac181434f72ea0a6f9d75f499e58e7a7fabe3"
+  },
+  {
+    "file": "audio/sfx/transition-soft.mp3",
+    "title": "Air zoom vacuum",
+    "provider": "Mixkit",
+    "url": "https://assets.mixkit.co/active_storage/sfx/2608/2608-preview.mp3",
+    "license": "https://mixkit.co/license/#sfxFree",
+    "bytes": 41082,
+    "sha256": "0e25921648c66e30924892ee17110ae621243de770b2944496526845a15a9998"
+  }
+]
