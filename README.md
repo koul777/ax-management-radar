@@ -8,6 +8,10 @@
 
 홍보영상: [BGM 포함 MP4](https://github.com/koul777/ax-management-radar/releases/download/ax-radar-promo-20260907/ax-management-radar.mp4) · [효과음 전용 MP4](https://github.com/koul777/ax-management-radar/releases/download/ax-radar-promo-20260907/ax-management-radar-no-bgm.mp4) · [영상 소개·출처](https://github.com/koul777/ax-management-radar/releases/tag/ax-radar-promo-20260907)
 
+[![AX 조직관리 레이더 홍보영상 미리보기](promo/ax-management-radar-preview.gif)](https://github.com/koul777/ax-management-radar/releases/download/ax-radar-promo-20260907/ax-management-radar.mp4)
+
+README에서 자동 재생되는 미리보기를 누르면 음향이 포함된 1080p 원본 영상이 열립니다.
+
 두 영상 모두 52.67초 · 1080p · 30fps · 약 9.24 MB입니다.
 
 WPS는 기본 화면입니다. HCCP는 사용자 요청으로 활성 화면과 배포 파일에서 제외했으며 기존 주소에는 제외 안내만 남깁니다. 실제 배포 상태와 검증 범위는 `DEPLOYMENT_STATUS.md`를 기준으로 확인합니다.
