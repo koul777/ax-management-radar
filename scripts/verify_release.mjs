@@ -215,24 +215,32 @@ for (const basename of ["supplemental-public.json", "supplemental-kipa-digital.j
   }
 }
 const publicInstitutions = JSON.parse(await readFile(path.join(root, "app/data/public-institution-innovation.json"), "utf8"));
-const expectedInstitutionSources = ["D01", "D02", "D03", "D04", "D05", "D06", "D07", "D09", "D10", "D14", "D15", "D32", "D33", "D35"];
+const expectedInstitutionSources = ["D01", "D02", "D03", "D04", "D05", "D06", "D07", "D08", "D09", "D10", "D14", "D15", "D32", "D33", "D35"];
 assert.deepEqual(Object.keys(publicInstitutions.sources).sort(), [...expectedInstitutionSources].sort());
 assert.equal(publicInstitutions.agency.records.length, 1554);
 assert.equal(publicInstitutions.localEnterprise.records.length, 2150);
-assert.equal(publicInstitutions.observations.length, 278);
+assert.equal(publicInstitutions.observations.length, 301);
 assert.equal(publicInstitutions.observations.filter((row) => row.valueStatus === "not_asked").length, 3);
-assert.equal(publicInstitutions.collectionBacklog.length, 24);
+assert.equal(publicInstitutions.collectionBacklog.length, 23);
 assert.ok(Object.values(publicInstitutions.sources).every((source) => source.url?.startsWith("https://") && source.limits && source.licenseNote), "Public-institution sources need links, limits and reuse notes");
+assert.ok(Object.values(publicInstitutions.sources).every((source) => source.dataAvailability && source.publicationScope && source.locallyHeldSummary), "Public-institution sources need publication-boundary metadata");
+assert.equal(publicInstitutions.sources.D08.dataAvailability, "Tier A · 로컬 허가 단위기록");
+assert.equal(publicInstitutions.sources.D09.dataAvailability, "Tier A · 비공개 통합 사업체-연도 단위기록");
+assert.equal(publicInstitutions.sources.D32.dataAvailability, "Tier A · 공개 비식별 단위기록");
+assert.equal(publicInstitutions.sources.D33.dataAvailability, "Tier B · 재사용 가능한 공식 조직별 집계 행");
+assert.equal(publicInstitutions.sources.D35.dataAvailability, "Tier B · 재사용 가능한 공식 국가/항목 집계표");
+assert.ok(!JSON.stringify(publicInstitutions).match(/(?:\\.tmp|raw_archives|C:\\\\Users)/), "Public payload must not expose private local paths");
 assert.equal(new Set(publicInstitutions.agency.records.map((row) => `${row.sourceId}/${row.name}`)).size, 1554, "Agency evaluation key collision");
 assert.equal(new Set(publicInstitutions.localEnterprise.records.map((row) => `${row.evaluationYear}/${row.sourceRowNumber}`)).size, 2150, "Local-enterprise source-row key collision");
 assert.deepEqual(Object.fromEntries(["graded", "excluded"].map((status) => [status, publicInstitutions.agency.records.filter((row) => row.status === status).length])), { graded: 1551, excluded: 3 });
 assert.deepEqual(Object.fromEntries(["graded", "not_applicable", "other"].map((status) => [status, publicInstitutions.localEnterprise.records.filter((row) => row.status === status).length])), { graded: 1327, not_applicable: 821, other: 2 });
 assert.ok(publicInstitutions.observations.every((row) => row.valueStatus === "not_asked" ? row.value === null : Number.isFinite(row.value)), "Observed/null contract failed");
 assert.ok(publicInstitutions.observations.filter((row) => row.sourceId === "D07").every((row) => row.unit !== "KRW_100million"), "D07 must not manufacture procurement amounts");
+assert.equal(publicInstitutions.observations.filter((row) => row.sourceId === "D35" && row.metric === "혁신환경 지수").length, 0, "D35 internally conflicting overall innovation index must be withheld");
 assert.equal(publicInstitutions.localEnterprise.records.filter((row) => row.name === "고성군상수도" && row.nameCollision).length, 10, "Homonymous local-enterprise rows were merged");
 const perceptions = JSON.parse(await readFile(path.join(root, "app/data/wps-attribution-perceptions.json"), "utf8"));
 assert.deepEqual(Object.keys(perceptions), ["wps"]);
 assert.deepEqual(Object.keys(perceptions.wps), ["perceptions"]);
 assert.equal(perceptions.wps.perceptions.length, 5);
 assert.ok(perceptions.wps.perceptions.every((item) => item.usage === "descriptive_only"));
-console.log(`Release checks passed: HCCP excluded, source packs/private paths blocked from Vercel, WPS models retained, 40 year/size slices, 10 evidence records, ${supplementalQuestions} supplemental questions, 3,704 public institution evaluation records and 278 source-separated observations. This is not a causal approval.`);
+console.log(`Release checks passed: HCCP excluded, source packs/private paths blocked from Vercel, WPS models retained, 40 year/size slices, 10 evidence records, ${supplementalQuestions} supplemental questions, 3,704 public institution evaluation records and 301 source-separated observations. This is not a causal approval.`);

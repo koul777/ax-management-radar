@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / "research" / "innovation-data-pack"
 OUT = ROOT / "app" / "data" / "public-institution-innovation.json"
-INCLUDED_SOURCE_IDS = {"D01", "D02", "D03", "D04", "D05", "D06", "D07", "D09", "D10", "D14", "D15", "D32", "D33", "D35"}
+INCLUDED_SOURCE_IDS = {"D01", "D02", "D03", "D04", "D05", "D06", "D07", "D08", "D09", "D10", "D14", "D15", "D32", "D33", "D35"}
 
 
 def read(relative: str):
@@ -28,6 +28,9 @@ def compact_source(row: dict) -> dict:
         "referencePeriod": row["reference_period"], "population": row["population"],
         "verificationStatus": row["verification_status"], "accessStatus": row["access_status"],
         "licenseNote": row["license_note"], "limits": row["known_limits"], "url": row["landing_url"], "resourceUrl": row["resource_url"],
+        "dataAvailability": row.get("data_availability", "Tier C · 공개 정보 확인"),
+        "publicationScope": row.get("publication_scope", "공개된 집계·기관 공시 기록만 표시"),
+        "locallyHeldSummary": row.get("locally_held_summary", "로컬 보유 상태를 별도 확인하지 않음"),
     }
 
 
@@ -68,9 +71,9 @@ def main() -> None:
         })
 
     payload = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "generatedFrom": "research/innovation-data-pack (2026-09-08)",
-        "scope": "Institutional publication records and public aggregate statistics only; no respondent-level microdata.",
+        "scope": "Institutional publication records and public aggregate statistics only. Microdata, private local paths, and unit-record rows are excluded.",
         "sources": sources,
         "agency": {
             "distributions": agency_distributions,

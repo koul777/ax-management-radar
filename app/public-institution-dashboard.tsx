@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import payload from "./data/public-institution-innovation.json";
 
-type Source = { id: string; title: string; provider: string; referencePeriod: string; population: string; verificationStatus: string; accessStatus: string; licenseNote: string; limits: string; url: string; resourceUrl: string | null };
+type Source = { id: string; title: string; provider: string; referencePeriod: string; population: string; verificationStatus: string; accessStatus: string; licenseNote: string; limits: string; url: string; resourceUrl: string | null; dataAvailability: string; publicationScope: string; locallyHeldSummary: string };
 type AgencyRecord = { sourceId: string; name: string; category: string; subtype: string | null; evaluationYear: number; grade: string; status: string; sourcePage: number };
 type LocalRecord = { sourceRowNumber: number; name: string; evaluationYear: number; performanceYear: number; grade: string; status: "graded" | "not_applicable" | "other"; nameCollision: boolean; notes: string };
 type Count = { label: string; count: number };
@@ -43,7 +43,7 @@ function Distribution({ rows, label }: { rows: Count[]; label: string }) {
 
 function SourceContext({ sourceId }: { sourceId: string }) {
   const source = data.sources[sourceId];
-  return <dl className="public-source-context"><div><dt>출처·기간</dt><dd><a href={source.url} target="_blank" rel="noreferrer">{source.provider} · {source.referencePeriod}</a></dd></div><div><dt>대상·집계</dt><dd>{source.population}</dd></div><div><dt>확인 상태</dt><dd>{source.verificationStatus} · {source.accessStatus}</dd></div><div><dt>이용조건</dt><dd>{source.licenseNote}</dd></div><div><dt>한계</dt><dd>{source.limits}</dd></div></dl>;
+  return <dl className="public-source-context"><div><dt>출처·기간</dt><dd><a href={source.url} target="_blank" rel="noreferrer">{source.provider} · {source.referencePeriod}</a></dd></div><div><dt>대상·집계</dt><dd>{source.population}</dd></div><div><dt>실제 확보 상태</dt><dd><b className="public-tier-badge">{source.dataAvailability}</b>{source.locallyHeldSummary}</dd></div><div><dt>공개 범위·이용조건</dt><dd>{source.publicationScope}<small>{source.licenseNote}</small></dd></div><div><dt>한계</dt><dd>{source.limits}</dd></div></dl>;
 }
 
 export default function PublicInstitutionDashboard() {
@@ -60,9 +60,15 @@ export default function PublicInstitutionDashboard() {
   const benchmarks = useMemo(() => data.observations.filter((item) => benchmarkSourceIds.includes(item.sourceId)), []);
 
   return <section className="public-institution-dashboard" aria-labelledby="public-institution-title">
-    <header className="public-dashboard-header public-dashboard-header-compact"><div><p>PUBLIC INSTITUTIONS · VERIFIED AGGREGATES</p><h1 id="public-institution-title">공공기관 AX 조직관리</h1><p>기관 공시와 공개 집계로 기준선·운영여건·점검 질문을 확인합니다.</p></div><div className="public-header-badges"><strong>14</strong><span>값이 검증된 출처</span><small>이용조건은 출처별 확인</small></div></header>
+    <header className="public-dashboard-header public-dashboard-header-compact"><div><p>PUBLIC INSTITUTIONS · VERIFIED AGGREGATES</p><h1 id="public-institution-title">공공기관 AX 조직관리</h1><p>기관 공시와 공개 집계로 기준선·운영여건·점검 질문을 확인합니다.</p></div><div className="public-header-badges"><strong>Tier</strong><span>실제 확보 상태를 분리</span><small>이용조건은 출처별 확인</small></div></header>
     <aside className="public-scope-note"><strong>해석 경계</strong><span>기관 공시 기록과 공개 집계만 수록합니다. 기관순위·통합점수·인과효과를 만들지 않으며, 기관평가 등급은 원문 범주 그대로 봅니다.</span></aside>
     <p className="public-takeaway"><strong>한 줄 결론</strong> 공공 AX는 ‘도입 여부’ 하나가 아니라 전담 책임·운영 사례·사용자 지원을 기관 내부 기준선으로 나눠 점검하는 출발점입니다.</p>
+
+    <section className="public-availability" aria-labelledby="public-availability-title"><header><p>ACTUAL DATA STATUS</p><h2 id="public-availability-title">실제 확보 데이터</h2><span>보고서 파일과 재분석 가능한 단위기록을 구분합니다. 아래의 안전한 요약은 원자료·로컬 경로·응답행을 공개하지 않습니다.</span></header><div>
+      <article><span>Tier A · 단위기록 보유</span><h3>재분석은 비공개 환경에서만</h3><ul><li><b>D08</b> 1,608명·21문항 공무원 조사 <Link href="/?view=public-data">별도 KIPA 집계 화면</Link></li><li><b>D09</b> 22,961 사업체-연도 · 2005–2023 · 10웨이브 <Link href="/?view=ax">별도 WPS 집계 화면</Link></li><li><b>D32</b> 151,771명×229항목 비식별 numeric CSV</li></ul><p>원자료는 이 화면과 결합하거나 내려받을 수 없습니다.</p></article>
+      <article><span>Tier B · 재사용 가능한 집계 행</span><h3>공식 표 범위에서 확인</h3><ul><li><b>D05</b> ALIO 4유형×7지표 HTML 집계</li><li><b>D33</b> 102개 조직 Benchmark ODS</li><li><b>D35</b> StatLink 국가·항목 표</li></ul><p>개인 단위기록이 아닌 기관·조직·국가 수준의 공개 집계입니다.</p></article>
+      <article><span>Tier C · 보고서/통계표만</span><h3>정확한 원자료는 아직 없음</h3><p><b>D06 · D07 · D10 · D14 · D15</b></p><p>공개 표·보고서의 출처별 수치만 수록했습니다. 보고서 파일이 원자료를 뜻하지 않으며, 원자료는 미확보 또는 신청·승인 전입니다.</p></article>
+    </div></section>
 
     <section className="public-top-summary" aria-labelledby="public-summary-title"><header><p>WHAT TO KNOW</p><h2 id="public-summary-title">먼저 확인할 세 가지</h2><span>출처별 사실과 적용 범위를 분리한 관리 점검 단서입니다.</span></header><div>
       <article><span>01 · D05 · 활용 현황</span><h3><b>250개 기관 · 1,062건</b></h3><p><strong>사실</strong> 2026-06-30 전체 공시 집계의 AI 활용사례 보유기관과 누적 사례입니다.</p><p><strong>기간·대상</strong> 전체 대상기관 분모가 없어 도입률·기관 성과로 해석하지 않습니다.</p><p className="public-card-action"><strong>관리 점검</strong> 우리 기관의 활용사례·책임부서·확인 기준을 같은 형식으로 기록합니다.</p><SourceLink sourceId="D05" /></article>
@@ -106,7 +112,7 @@ export default function PublicInstitutionDashboard() {
 
     <section className="public-section" aria-labelledby="evidence-title">
       <div className="public-section-heading"><div><p>05 · EVIDENCE STATUS</p><h2 id="evidence-title">검증된 출처와 수집 대기 목록</h2><span>수치가 실제로 수록된 출처와, 파일·원자료를 아직 확보하지 않은 후보를 구분합니다.</span></div></div>
-      <div className="public-evidence-grid"><article><h3>현재 수록·검증된 14개 출처</h3><ul>{Object.values(data.sources).map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noreferrer">{source.id} · {source.title}</a><span>{source.verificationStatus}</span></li>)}</ul></article><article><h3>별도 응답자 수준 근거 화면</h3><p>아래 화면은 이미 있는 KIPA·KLIPS 응답자 집계로, 이 페이지의 기관 공시·공개 통계와 결합하지 않습니다.</p><div className="public-internal-links"><Link href="/?view=public-data">KIPA 공공조직·인사 데이터 화면</Link><Link href="/?view=klips">KLIPS 근로자 직장경험 화면</Link></div></article></div>
+      <div className="public-evidence-grid"><article><h3>수록 출처의 실제 확보 상태</h3><ul>{Object.values(data.sources).map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noreferrer">{source.id} · {source.title}</a><span><b className="public-tier-badge">{source.dataAvailability}</b>{source.accessStatus}</span></li>)}</ul></article><article><h3>별도 응답자 수준 근거 화면</h3><p>아래 화면은 이미 있는 KIPA·KLIPS 응답자 집계로, 이 페이지의 기관 공시·공개 통계와 결합하지 않습니다.</p><div className="public-internal-links"><Link href="/?view=public-data">KIPA 공공조직·인사 데이터 화면</Link><Link href="/?view=klips">KLIPS 근로자 직장경험 화면</Link></div></article></div>
       <details className="public-backlog"><summary>수집 대기 · 원자료 또는 원표 미확보 {data.collectionBacklog.length}건</summary><div className="public-table-wrap"><table className="public-table"><thead><tr><th scope="col">출처</th><th scope="col">접근 상태</th><th scope="col">다음 수집 작업</th><th scope="col">해석 한계</th></tr></thead><tbody>{data.collectionBacklog.map((item) => <tr key={item.sourceId}><th scope="row"><a href={item.url} target="_blank" rel="noreferrer">{item.sourceId} · {item.priority}</a></th><td>{item.accessStatus}</td><td>{item.nextAction}</td><td>{item.limits}</td></tr>)}</tbody></table></div></details>
     </section></div></details>
   </section>;

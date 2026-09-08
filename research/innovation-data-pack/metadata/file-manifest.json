@@ -26,18 +26,18 @@
   },
   {
     "path": "data/metrics.json",
-    "bytes": 15107,
-    "sha256": "a3b80f43fb1520861b6b47632d7e687eab042c2a36f40bf998b5fced6a5b986a"
+    "bytes": 18872,
+    "sha256": "acea998b62361b5a6b51b40cb59f4967d963861bfc88351abf8c194c6312990a"
   },
   {
     "path": "data/observations.json",
-    "bytes": 183817,
-    "sha256": "f1756d956493ece16dcff9114bf61583591054981963d1a18aa6c8c87791252f"
+    "bytes": 203391,
+    "sha256": "639451073ed4f61802028267cef2420777126bdc8963a1965ef2e83c4f2d71d2"
   },
   {
     "path": "data/source-catalog.json",
-    "bytes": 39373,
-    "sha256": "6cf69eac46d3510c2a84198b80096fa2aed171f133fc22bc9d0ad531d7ea818e"
+    "bytes": 43330,
+    "sha256": "5fecf94c8b7b634eab5b21cc690f4b624b6f399864913ee0e66a2e89e6675cb1"
   },
   {
     "path": "data/variable-map.json",
@@ -56,8 +56,8 @@
   },
   {
     "path": "metadata/collection-backlog.json",
-    "bytes": 14956,
-    "sha256": "838c954cbde1592d78f8a5feeaf687ca1ed750966dc5094b27feab2eb56fcfb4"
+    "bytes": 14282,
+    "sha256": "2e07f76d7c63dc5e8ee3dca5db48da25ef05cb195fc26a0f26887f80331298fc"
   },
   {
     "path": "metadata/original-source-checksums.json",
@@ -66,8 +66,8 @@
   },
   {
     "path": "metadata/package-manifest.json",
-    "bytes": 1138,
-    "sha256": "c7aa525801850ad6144905617284b88da17a97ae7d6cc90cc6368c22f2f81581"
+    "bytes": 1261,
+    "sha256": "04d12f7fbebdafcaaebf9f6a3dad09f94ab4bac52e420df8ee2133dfc52563d8"
   },
   {
     "path": "metadata/repo-audit.json",
@@ -76,13 +76,13 @@
   },
   {
     "path": "metadata/validation-result.json",
-    "bytes": 894,
-    "sha256": "c24e22249af683e4a97b2e89239dec1d17fd9fcbaeb8ee1241475e96bbfed422"
+    "bytes": 1024,
+    "sha256": "0ea56bbab791477107c7b73bc65525ba42e9a429cc04849e578497fa18876f9a"
   },
   {
     "path": "scripts/validate_data.py",
-    "bytes": 8160,
-    "sha256": "af6c556d7ea26973a0e07853a56553c1c6741852f80b0cc2b51d24db0d2338ff"
+    "bytes": 10870,
+    "sha256": "6f52710267e213b9f39b4c49589c59f684446a3a3ab5b591065d472e2928d6cf"
   },
   {
     "path": "types.ts",

@@ -36,8 +36,8 @@ def main():
     require(sum(s['novelty']=='new' for s in sources)==counts['new_sources']==36, 'New source count')
     require(len(agency)==counts['agency_evaluation_rows']==1554, 'Agency record count')
     require(len(local)==counts['local_enterprise_evaluation_rows']==2150, 'Local enterprise record count')
-    require(len(obs)==counts['observation_rows']==278, 'Observation count')
-    require(len(metrics)==counts['metric_rows']==81, 'Metric count')
+    require(len(obs)==counts['observation_rows']==301, 'Observation count')
+    require(len(metrics)==counts['metric_rows']==97, 'Metric count')
     require(len(variables)==counts['variable_map_rows']==32, 'Variable map count')
     for rows in [metrics,obs,agency,local,variables]:
         require(all(r['source_id'] in source_ids for r in rows), 'Unknown source reference')
@@ -45,6 +45,19 @@ def main():
         require(source['landing_url'].startswith('https://'), 'Missing official source URL')
         for path in source['included_data_files']:
             require((ROOT/path).is_file(), f'Missing declared data file: {path}')
+    expected_tiers={
+        'D05':'Tier B · 공식 집계 행', 'D06':'Tier C · 공개 보고서/통계표만',
+        'D07':'Tier C · 공개 보고서/통계표만', 'D08':'Tier A · 로컬 허가 단위기록',
+        'D09':'Tier A · 비공개 통합 사업체-연도 단위기록', 'D10':'Tier C · 공개 보고서/통계표만',
+        'D14':'Tier C · 보고서/통계표, 원자료 신청형', 'D15':'Tier C · 보고서/통계표, 원자료 신청형',
+        'D32':'Tier A · 공개 비식별 단위기록', 'D33':'Tier B · 재사용 가능한 공식 조직별 집계 행',
+        'D35':'Tier B · 재사용 가능한 공식 국가/항목 집계표',
+    }
+    source_by_id={source['source_id']:source for source in sources}
+    for source_id, tier in expected_tiers.items():
+        source=source_by_id[source_id]
+        require(source.get('data_availability')==tier, f'{source_id} availability tier')
+        require(bool(source.get('publication_scope')) and bool(source.get('locally_held_summary')), f'{source_id} publication metadata')
 
     metric_by_id = {r['metric_id']:r for r in metrics}
     obs_keys=set()
@@ -68,7 +81,7 @@ def main():
         if row['unit'] in ['cases','institutions','persons']:
             require(int(v)==v, 'Fractional count')
     require(sum(r['value'] is None for r in obs)==counts['not_asked_observations']==3,'Missing count')
-    require(sum(r['value'] is not None for r in obs)==counts['numeric_observations']==275,'Numeric count')
+    require(sum(r['value'] is not None for r in obs)==counts['numeric_observations']==298,'Numeric count')
 
     # Independently documented full-population totals from the official evaluation tables.
     expected_grades={
@@ -115,10 +128,24 @@ def main():
     require(sum(r['value'] for r in contracts if r['group_label']=='전체')==5891, 'SPRi contract grand total')
     sentinel=next(r for r in obs if r['source_id']=='D09' and r['metric_id']=='D09_M01' and r['year']==2023)
     require(sentinel['value']==18.1 and sentinel['unit']=='percent','WPS2023 source sentinel')
+    d32={row['metric_id']:row for row in obs if row['source_id']=='D32' and row['group_label']=='APS 전체'}
+    require(d32['D32_M20']['value']==81.17 and d32['D32_M22']['value']==59.174 and d32['D32_M23']['value']==59.807, 'D32 raw-derived values')
+    require({metric_id: d32[metric_id]['denominator_label'] for metric_id in ['D32_M14','D32_M15','D32_M16','D32_M17','D32_M18','D32_M19','D32_M20','D32_M21','D32_M22','D32_M23']}=={
+        'D32_M14':'q22d 유효응답자 148,655명','D32_M15':'q22e 유효응답자 148,704명',
+        'D32_M16':'q22f 유효응답자 148,692명','D32_M17':'q22i 유효응답자 148,570명',
+        'D32_M18':'q26b 유효응답자 147,834명','D32_M19':'q26d 유효응답자 147,851명',
+        'D32_M20':'q26f 유효응답자 147,854명','D32_M21':'q26g 유효응답자 147,738명',
+        'D32_M22':'q41 유효응답자 132,592명 (code 6·빈값 제외)','D32_M23':'q42 유효응답자 142,397명 (code 6·빈값 제외)',
+    }, 'D32 denominators')
+    require(not any(row['source_id'] in {'D32','D33'} and '원문 변수' in row['metric_label'] for row in obs), 'D32/D33 generic labels')
+    d33=[row for row in obs if row['source_id']=='D33' and row['metric_id']=='D33_M05']
+    require({row['group_label']:row['value'] for row in d33}=={'102개 기관 중앙값':76.605,'응답자 평균':73.993}, 'D33 B20 values')
+    require(not any(row['source_id']=='D35' and row['metric_label']=='혁신환경 지수' for row in obs), 'D35 conflicting overall index must be withheld')
     result={'status':'passed','package_version':manifest['package_version'],'counts':counts,
         'checks':['JSON and IDs','source and metric references','percentage and index units','three unasked cells',
             'agency grade and category totals','local source rows and years','homonym preservation',
-            'ALIO type sums','SPRi category and grand totals','WPS source sentinel'],
+            'ALIO type sums','SPRi category and grand totals','WPS source sentinel',
+            'source-tier publication boundary','D32/D33 verified aggregate additions','D35 conflicting overall index withheld'],
         'scope':'Package data validation only; no target repository build or remote API request'}
     print(json.dumps(result,ensure_ascii=False,indent=2))
 

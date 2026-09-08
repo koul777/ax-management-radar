@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "package_version": "2026-09-08.1",
+  "package_version": "2026-09-08.2",
   "counts": {
     "new_sources": 36,
     "existing_extensions": 2,
@@ -9,10 +9,10 @@
     "local_enterprise_evaluation_rows": 2150,
     "institution_year_evaluation_records": 3704,
     "valid_graded_records": 2878,
-    "observation_rows": 278,
-    "numeric_observations": 275,
+    "observation_rows": 301,
+    "numeric_observations": 298,
     "not_asked_observations": 3,
-    "metric_rows": 81,
+    "metric_rows": 97,
     "variable_map_rows": 32
   },
   "checks": [
@@ -25,7 +25,10 @@
     "homonym preservation",
     "ALIO type sums",
     "SPRi category and grand totals",
-    "WPS source sentinel"
+    "WPS source sentinel",
+    "source-tier publication boundary",
+    "D32/D33 verified aggregate additions",
+    "D35 conflicting overall index withheld"
   ],
   "scope": "Package data validation only; no target repository build or remote API request"
 }

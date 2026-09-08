@@ -518,6 +518,76 @@
     "aggregation_level": "respondent_group"
   },
   {
+    "metric_id": "D32_M14",
+    "source_id": "D32",
+    "metric_label": "상사가 팀의 정기적 업무 검토·개선을 장려한다 (q22d)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M15",
+    "source_id": "D32",
+    "metric_label": "상사가 나의 역량개발에 관심과 노력을 기울인다 (q22e)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M16",
+    "source_id": "D32",
+    "metric_label": "상사가 성과 개선에 도움이 되는 피드백을 제공한다 (q22f)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M17",
+    "source_id": "D32",
+    "metric_label": "상사가 자신의 견해와 다른 의견도 요청한다 (q22i)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M18",
+    "source_id": "D32",
+    "metric_label": "기관 내부 의사소통이 효과적이다 (q26b)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M19",
+    "source_id": "D32",
+    "metric_label": "기관이 포용적인 직장문화를 지원·촉진한다 (q26d)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M20",
+    "source_id": "D32",
+    "metric_label": "기관문화가 구성원의 청렴한 행동을 지원한다 (q26f)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M21",
+    "source_id": "D32",
+    "metric_label": "전문성을 활용한 솔직하고 소신 있는 조언을 지원받는다 (q26g)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M22",
+    "source_id": "D32",
+    "metric_label": "지난 12개월의 공식 학습이 자신의 성과 개선에 도움이 되었다 (q41)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M23",
+    "source_id": "D32",
+    "metric_label": "최근 상사와의 성과·개발 면담이 자신의 성과 개선에 도움이 되었다 (q42)",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
     "metric_id": "D33_M01",
     "source_id": "D33",
     "metric_label": "새 아이디어 시도 지원",
@@ -546,11 +616,53 @@
     "aggregation_level": "institution_benchmark_or_respondent_group"
   },
   {
-    "metric_id": "D35_M01",
-    "source_id": "D35",
-    "metric_label": "혁신환경 지수",
-    "unit": "index_0_100",
-    "aggregation_level": "country_group"
+    "metric_id": "D33_M05",
+    "source_id": "D33",
+    "metric_label": "팀의 새롭고 더 나은 업무방식 제안을 장려 (B20)",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M06",
+    "source_id": "D33",
+    "metric_label": "기존 업무방식에 이의를 제기해도 안전함 (B46)",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M07",
+    "source_id": "D33",
+    "metric_label": "상사로부터 업무 수행 권한을 부여받음 (B64)",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M08",
+    "source_id": "D33",
+    "metric_label": "지난 12개월 학습·개발 활동이 성과 개선에 도움 (B22)",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M09",
+    "source_id": "D33",
+    "metric_label": "기관의 변화관리가 잘 이루어짐 (B42)",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M10",
+    "source_id": "D33",
+    "metric_label": "AI 사용으로 주당 1시간 이상 절약했다고 응답 (B62)",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M11",
+    "source_id": "D33",
+    "metric_label": "향후 5년 내 AI가 업무를 바꿀 가능성이 있다고 응답 (B63)",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
   },
   {
     "metric_id": "D35_M02",

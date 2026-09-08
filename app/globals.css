@@ -1641,6 +1641,19 @@ button:focus-visible, summary:focus-visible { outline: 3px solid color-mix(in sr
 .public-scope-note strong { color: #286e75; font-size: 10px; white-space: nowrap; }
 .public-takeaway { margin: 10px 0 0; padding: 10px 13px; border-left: 4px solid #2e8791; border-radius: 7px; background: #f6fafb; color: #526e79; font-size: 12px; line-height: 1.65; }
 .public-takeaway strong { margin-right: 8px; color: #246b74; font-size: 10px; }
+.public-availability { margin-top: 14px; padding: 16px; border: 1px solid #cadfe4; border-top: 4px solid #347f88; border-radius: 10px; background: linear-gradient(135deg, #f3fafb, #fff 65%); box-shadow: var(--shadow); }
+.public-availability header p { margin: 0 0 4px; color: #2d7b83; font-size: 9px; font-weight: 900; letter-spacing: .1em; }
+.public-availability h2 { margin: 0; color: #294656; font-size: 18px; letter-spacing: -.035em; }
+.public-availability header > span { display: block; max-width: 900px; margin-top: 5px; color: #647984; font-size: 10px; line-height: 1.65; }
+.public-availability > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+.public-availability article { min-width: 0; padding: 13px; border: 1px solid #d8e7e9; border-radius: 8px; background: rgba(255,255,255,.9); }
+.public-availability article > span { color: #2b7580; font-size: 9px; font-weight: 900; letter-spacing: .06em; }
+.public-availability h3 { margin: 7px 0 0; color: #3a5768; font-size: 13px; }
+.public-availability ul { display: grid; gap: 6px; margin: 9px 0 0; padding: 0; list-style: none; }
+.public-availability li, .public-availability p { margin: 8px 0 0; color: #667b86; font-size: 10px; line-height: 1.65; }
+.public-availability li b, .public-availability p b { color: #385d6b; }
+.public-availability a { color: #356f89; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+.public-tier-badge { display: inline-block; width: fit-content; margin: 0 5px 3px 0; padding: 2px 5px; border: 1px solid #bcd5d8; border-radius: 4px; background: #eef8f8; color: #286d75; font-size: 8px; font-weight: 900; line-height: 1.35; }
 .public-top-summary, .public-priority-flow { margin-top: 14px; padding: 16px; border: 1px solid #d5e3e6; border-radius: 10px; background: #fff; box-shadow: var(--shadow); }
 .public-top-summary header p, .public-priority-flow header p { margin: 0 0 4px; color: #2d7b83; font-size: 9px; font-weight: 900; letter-spacing: .1em; }
 .public-top-summary h2, .public-priority-flow h2 { margin: 0; color: #294656; font-size: 18px; letter-spacing: -.035em; }
@@ -1752,6 +1765,7 @@ button:focus-visible, summary:focus-visible { outline: 3px solid color-mix(in sr
   .public-triple-grid, .public-benchmark-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .public-management-lens > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .public-top-summary > div, .public-priority-flow ol { grid-template-columns: 1fr; }
+  .public-availability > div { grid-template-columns: 1fr; }
 }
 @media (max-width: 620px) {
   .public-institution-dashboard { width: min(100% - 22px, 1440px); margin-top: 10px; }
