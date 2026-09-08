@@ -14,6 +14,7 @@ const checks = [
   ["/?view=ax&section=framework", /인과관계 검토/, /통제변수/, /측정/],
   ["/?view=ax&section=models", /AI–혁신 관계/, /보조 분석/],
   ["/?view=public-data", /공공조직의 인사·데이터 활용 여건/, /클라우드/, /생성형/, /이용조건 준수 서약서 전문/],
+  ["/?view=public-institutions", /공공기관 혁신·AI 관측/, /기관별 평가 등급과 기관 찾기/, /지방공기업 경영평가/, /공공 AI 입력·도입·조달·지원 관측/, /검증된 출처와 수집 대기 목록/, /이용조건은 출처별로 확인/],
   ["/?view=ax&year=2023&private_size=under300", /민간 규모를 나누어 비교하기/, /1,837/, /300인 미만|300명 미만/, /83\/1837/],
   ["/?view=ax&section=catalog&year=2021&private_size=300_999", /2021년 응답표본/, /dq1029/, /직접 AI 문항 미조사/],
   ["/?view=public-data&year=2020", /디지털 전환/, /305/, /한국행정연구원 연구자료관리규칙에 의거 사용허가를 받았음/],
