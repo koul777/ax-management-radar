@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "package_version": "2026-09-08.1",
+  "counts": {
+    "new_sources": 36,
+    "existing_extensions": 2,
+    "source_catalog_rows": 38,
+    "agency_evaluation_rows": 1554,
+    "local_enterprise_evaluation_rows": 2150,
+    "institution_year_evaluation_records": 3704,
+    "valid_graded_records": 2878,
+    "observation_rows": 278,
+    "numeric_observations": 275,
+    "not_asked_observations": 3,
+    "metric_rows": 81,
+    "variable_map_rows": 32
+  },
+  "checks": [
+    "JSON and IDs",
+    "source and metric references",
+    "percentage and index units",
+    "three unasked cells",
+    "agency grade and category totals",
+    "local source rows and years",
+    "homonym preservation",
+    "ALIO type sums",
+    "SPRi category and grand totals",
+    "WPS source sentinel"
+  ],
+  "scope": "Package data validation only; no target repository build or remote API request"
+}

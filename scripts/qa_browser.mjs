@@ -129,7 +129,7 @@ try {
   await evidence('Tab re-entry returns to the selected WPS tab', wpsReentry.focus === 'wps-tab-overview' && wpsReentry.selected === 'wps-tab-overview', wpsReentry);
 
   for (const width of [320, 375, 768, 1280]) {
-    for (const view of ['ax', 'public-private', 'central-local', 'public-data', 'klips', 'personal-ai', 'citizen', 'research']) {
+    for (const view of ['ax', 'public-private', 'central-local', 'public-data', 'public-institutions', 'klips', 'personal-ai', 'citizen', 'research']) {
       await go(`/?view=${view}`, width);
       const overflow = await page.evaluate(() => {
         const viewport = innerWidth;
@@ -146,7 +146,7 @@ try {
         return { viewport, document: documentWidth, body: bodyWidth, offenders };
       });
       await evidence(`no viewport overflow ${view}/${width}`, overflow.document <= width + 1 && overflow.body <= width + 1, overflow);
-      if (overflow.document > width + 1 || overflow.body > width + 1 || width === 320 && ['ax', 'public-data', 'research'].includes(view)) {
+      if (overflow.document > width + 1 || overflow.body > width + 1 || width === 320 && ['ax', 'public-data', 'public-institutions', 'research'].includes(view)) {
         await page.screenshot({ path: path.join(out, `${view}-${width}.png`), fullPage: false });
       }
     }

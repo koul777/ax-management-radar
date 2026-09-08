@@ -186,6 +186,36 @@ test("new KIPA digital-transformation and GenAI surveys retain separate samples 
   assert.ok(ai.questions.some((question) => question.groups.some((group) => group.structural_missing_n > 0)), "AI user-only questions must retain their excluded non-user counts");
 });
 
+test("public-institution innovation view keeps institutional grades, public statistics and backlog separate", async () => {
+  const [response, raw, component] = await Promise.all([
+    render("public-institutions"),
+    readFile(new URL("../app/data/public-institution-innovation.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/public-institution-dashboard.tsx", import.meta.url), "utf8"),
+  ]);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const text = plainText(html);
+  const data = JSON.parse(raw);
+  assert.equal(Object.keys(data.sources).length, 14);
+  assert.equal(data.agency.records.length, 1554);
+  assert.equal(data.localEnterprise.records.length, 2150);
+  assert.equal(data.observations.length, 278);
+  assert.equal(data.collectionBacklog.length, 24);
+  assert.match(text, /공공기관 혁신·AI 관측/);
+  assert.match(text, /기관별 평가 등급과 기관 찾기/);
+  assert.match(text, /지방공기업 경영평가 · 2021–2025/);
+  assert.match(text, /공공 AI 입력·도입·조달·지원 관측/);
+  assert.match(text, /혁신·일터 맥락 벤치마크/);
+  assert.match(text, /수집 대기 · 원자료 또는 원표 미확보 24건/);
+  assert.match(text, /미조사/);
+  assert.match(text, /KIPA 공공조직·인사 데이터 화면/);
+  assert.match(text, /KLIPS 근로자 직장경험 화면/);
+  assert.match(component, /MANAGEMENT LENS · HYPOTHESES TO CHECK/);
+  assert.match(component, /AX 조직관리 점검 렌즈/);
+  assert.match(component, /합산하거나 순위를 매기지 않으며/);
+  assert.doesNotMatch(component, /종합(?:점수|순위)|인과효과를 입증/);
+});
+
 test("single-wave screens explain incomplete year coverage instead of inventing older statistics", async () => {
   const [klips, citizen, publicPrivate] = await Promise.all([
     render("klips", null, { year: 2017 }), render("citizen", null, { year: 2022 }), render("public-private", null, { year: 2021 }),

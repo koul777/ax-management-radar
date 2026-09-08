@@ -1,0 +1,54 @@
+{
+  "repository": "https://github.com/koul777/public-private-innovation-dashboard",
+  "reviewed_on": "2026-09-08",
+  "reviewed_ref": "main (date-based read; commit SHA not pinned)",
+  "observed_stack": {
+    "runtime": "Node >=22.13.0",
+    "framework": "vinext + React + TypeScript",
+    "resolveJsonModule": true
+  },
+  "observed_commands": {
+    "build": "npm run build",
+    "lint": "npm run lint",
+    "test": "npm test"
+  },
+  "existing_datasets": [
+    {
+      "file_or_reference": "innovation-analysis.json",
+      "dataset": "2024 한국의 공사조직 구성원 인식 비교",
+      "sample": "2,020명: 공공1,012·민간1,008",
+      "variables": "Y15_7~9 혁신행동; 주도성·자율성·목표·PSM·리더십",
+      "novelty": "기존 데이터: 신규36종에서 제외",
+      "notes": "공공집단은 중앙·광역 공무원; ALIO 공기업 직원과 동일하지 않음"
+    },
+    {
+      "file_or_reference": "central-local-analysis.json",
+      "dataset": "2025 공직생활실태조사",
+      "sample": "6,084명: 중앙2,024·지방4,060",
+      "variables": "q33_1~2 혁신행동; 훈련·소통·리더십·PSM 등",
+      "novelty": "기존 데이터: 신규36종에서 제외",
+      "notes": "q33_3~8은 현재 코드가 논문 비교를 위해 제외; 같은 원자료 추가문항 후보"
+    },
+    {
+      "file_or_reference": "기존 논문 비교",
+      "dataset": "2014 공사조직 / 2018 공직생활",
+      "sample": "논문 요약이 기존 코드에 포함",
+      "variables": "2014 논문 결과변수는 직무몰입",
+      "novelty": "새 데이터라고 중복 집계하지 않음",
+      "notes": "2014 원자료 재분석은 E02; 과거 공직생활 확장은 E01"
+    },
+    {
+      "file_or_reference": "결합 기준",
+      "dataset": "조사·행정자료 분석단위",
+      "sample": "개인 / 사업체 / 공공기관 / 기관유형 / 국가",
+      "variables": "원자료 응답자키·기관코드·연도·분모 유지",
+      "novelty": "기관 단위 결과는 개인 응답에 직접 병합하지 않음",
+      "notes": "공무원·공공기관 직원·광의 공공부문 정의를 각 출처대로 유지"
+    }
+  ],
+  "reviewed_data_paths": [
+    "app/data/innovation-analysis.json",
+    "app/data/central-local-analysis.json"
+  ],
+  "source_notes": "기존 두 설문의 개인 원자료는 저장소에 포함되지 않으며 집계 결과만 제공된다. 최신 체크아웃의 파일·스크립트·AGENTS.md를 먼저 확인한다."
+}

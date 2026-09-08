@@ -1,0 +1,92 @@
+[
+  {
+    "path": "CODEX_HANDOFF.md",
+    "bytes": 10794,
+    "sha256": "32104fe4cdfb57dd477a61633466ea6184669be595bdb57927d6437397f452c1"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3585,
+    "sha256": "78682423048181d43713130c1cfab8c8cce7f6eaed47e34ec02e1f99637665f2"
+  },
+  {
+    "path": "data/agency-evaluations.json",
+    "bytes": 988990,
+    "sha256": "f08a535a5eef2253e04e22a20591405d3aad9f924603cd702f3c9135302d6131"
+  },
+  {
+    "path": "data/institution-crosswalk.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "data/local-enterprise-evaluations.json",
+    "bytes": 996599,
+    "sha256": "cd89083a12d2db0498de5342c586f9650bcf44b8d8cd4be82625a2caae148c61"
+  },
+  {
+    "path": "data/metrics.json",
+    "bytes": 15107,
+    "sha256": "a3b80f43fb1520861b6b47632d7e687eab042c2a36f40bf998b5fced6a5b986a"
+  },
+  {
+    "path": "data/observations.json",
+    "bytes": 183817,
+    "sha256": "f1756d956493ece16dcff9114bf61583591054981963d1a18aa6c8c87791252f"
+  },
+  {
+    "path": "data/source-catalog.json",
+    "bytes": 39373,
+    "sha256": "6cf69eac46d3510c2a84198b80096fa2aed171f133fc22bc9d0ad531d7ea818e"
+  },
+  {
+    "path": "data/variable-map.json",
+    "bytes": 12059,
+    "sha256": "dd37c986381c1d6dd9285d6fc0cf27a059d1f5129691b4916f00e5a783059713"
+  },
+  {
+    "path": "examples/query.mjs",
+    "bytes": 1298,
+    "sha256": "32e43d47f37c178a7b8e6fbec4d262c7eeb601a7460039e9a548882bf86c9d3a"
+  },
+  {
+    "path": "examples/query.ts",
+    "bytes": 2300,
+    "sha256": "6048034a4efc9066becb81feb142d16d83675c4448f200bae21d35c28c0fe7dd"
+  },
+  {
+    "path": "metadata/collection-backlog.json",
+    "bytes": 14956,
+    "sha256": "838c954cbde1592d78f8a5feeaf687ca1ed750966dc5094b27feab2eb56fcfb4"
+  },
+  {
+    "path": "metadata/original-source-checksums.json",
+    "bytes": 3806,
+    "sha256": "1a0726f07e247c216c5893e31a3c2a0424e18d9f73e2a395787f5c210dc02e70"
+  },
+  {
+    "path": "metadata/package-manifest.json",
+    "bytes": 1138,
+    "sha256": "c7aa525801850ad6144905617284b88da17a97ae7d6cc90cc6368c22f2f81581"
+  },
+  {
+    "path": "metadata/repo-audit.json",
+    "bytes": 2523,
+    "sha256": "f9cbaddc96e788fcd2d3b46b6cb1303bde39cba47643c00f86d44047bab26491"
+  },
+  {
+    "path": "metadata/validation-result.json",
+    "bytes": 894,
+    "sha256": "c24e22249af683e4a97b2e89239dec1d17fd9fcbaeb8ee1241475e96bbfed422"
+  },
+  {
+    "path": "scripts/validate_data.py",
+    "bytes": 8160,
+    "sha256": "af6c556d7ea26973a0e07853a56553c1c6741852f80b0cc2b51d24db0d2338ff"
+  },
+  {
+    "path": "types.ts",
+    "bytes": 2972,
+    "sha256": "ea66a9201bd0a2456239683d60f8fe51ceff1f7a03c67ff9cde46afe75ca5038"
+  }
+]

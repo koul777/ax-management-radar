@@ -1,0 +1,290 @@
+[
+  {
+    "source_id": "D09",
+    "variable_code": "DQ2016",
+    "meaning": "개선 제안제도 유무",
+    "scale": "설문 코드북 확인",
+    "verified_scope": "2023 최신 설문 확인",
+    "notes": "제안·채택은2015 질문대상 확대; 채택률은 분모>0일 때 산출",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0032&list_no=148136&mid=a60104000000"
+  },
+  {
+    "source_id": "D09",
+    "variable_code": "DQ2017",
+    "meaning": "연간 제안 건수",
+    "scale": "설문 코드북 확인",
+    "verified_scope": "2023 최신 설문 확인",
+    "notes": "제안·채택은2015 질문대상 확대; 채택률은 분모>0일 때 산출",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0032&list_no=148136&mid=a60104000000"
+  },
+  {
+    "source_id": "D09",
+    "variable_code": "DQ2018",
+    "meaning": "연간 채택 건수",
+    "scale": "설문 코드북 확인",
+    "verified_scope": "2023 최신 설문 확인",
+    "notes": "제안·채택은2015 질문대상 확대; 채택률은 분모>0일 때 산출",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0032&list_no=148136&mid=a60104000000"
+  },
+  {
+    "source_id": "D09",
+    "variable_code": "DQ2019",
+    "meaning": "소집단 개선활동",
+    "scale": "설문 코드북 확인",
+    "verified_scope": "2023 최신 설문 확인",
+    "notes": "제안·채택은2015 질문대상 확대; 채택률은 분모>0일 때 산출",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0032&list_no=148136&mid=a60104000000"
+  },
+  {
+    "source_id": "D09",
+    "variable_code": "DQ2011/2012/2013",
+    "meaning": "팀의 작업계획·일정·방식 자율권",
+    "scale": "설문 코드북 확인",
+    "verified_scope": "2023 최신 설문 확인",
+    "notes": "제안·채택은2015 질문대상 확대; 채택률은 분모>0일 때 산출",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0032&list_no=148136&mid=a60104000000"
+  },
+  {
+    "source_id": "D09",
+    "variable_code": "DQ2909~2912",
+    "meaning": "품질관리 교육·데이터활용·보상·참여",
+    "scale": "설문 코드북 확인",
+    "verified_scope": "2023 최신 설문 확인",
+    "notes": "제안·채택은2015 질문대상 확대; 채택률은 분모>0일 때 산출",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0032&list_no=148136&mid=a60104000000"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q22A",
+    "meaning": "의사결정 참여",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q22C",
+    "meaning": "업무 자율성",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q22D/F",
+    "meaning": "협력·신뢰/내부소통",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q24B",
+    "meaning": "상향 의견표현",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q24E/F",
+    "meaning": "평가·보상 공정성/경영진 신뢰",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q25A/B/C",
+    "meaning": "새 시도 장려/혁신 보상/창의성 대우",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q25G/H/I",
+    "meaning": "규칙 강조/하향전달/위계",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q26A~C",
+    "meaning": "일·보수·관계 만족",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D13",
+    "variable_code": "W23Q27A~G",
+    "meaning": "이직·몰입·공정성·스트레스",
+    "scale": "5점척도; 방향은 문항별",
+    "verified_scope": "2023 근로자 설문",
+    "notes": "공기업 제외 민간 벤치마크; 개인 혁신행동과 조직문화 구별",
+    "source_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202"
+  },
+  {
+    "source_id": "D11",
+    "variable_code": "p270401 (일반형 p**0401)",
+    "meaning": "사업체 종류",
+    "scale": "3=정부 외 공공기관;5=정부기관;1=민간회사·개인사업체;2=외국인회사",
+    "verified_scope": "2024(27차) 개인파일",
+    "notes": "4법인·6무소속·7시민종교·8기타는 임의로 민간에 합치지 않음",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0016&list_no=147529&mid=a40104000000"
+  },
+  {
+    "source_id": "D11",
+    "variable_code": "p274316",
+    "meaning": "개인 성장 가능성 만족",
+    "scale": "1긍정~5부정",
+    "verified_scope": "2024(27차) 개인파일",
+    "notes": "높을수록 긍정으로 맞출 때 역코딩; 특수결측 먼저 처리",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0016&list_no=147529&mid=a40104000000"
+  },
+  {
+    "source_id": "D11",
+    "variable_code": "p274317",
+    "meaning": "소통·대인관계 만족",
+    "scale": "1긍정~5부정",
+    "verified_scope": "2024(27차) 개인파일",
+    "notes": "높을수록 긍정으로 맞출 때 역코딩; 특수결측 먼저 처리",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0016&list_no=147529&mid=a40104000000"
+  },
+  {
+    "source_id": "D11",
+    "variable_code": "p274318",
+    "meaning": "인사평가 공정성 만족",
+    "scale": "1긍정~5부정",
+    "verified_scope": "2024(27차) 개인파일",
+    "notes": "높을수록 긍정으로 맞출 때 역코딩; 특수결측 먼저 처리",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0016&list_no=147529&mid=a40104000000"
+  },
+  {
+    "source_id": "D11",
+    "variable_code": "p274321",
+    "meaning": "전반적 일자리 만족",
+    "scale": "1긍정~5부정",
+    "verified_scope": "2024(27차) 개인파일",
+    "notes": "높을수록 긍정으로 맞출 때 역코딩; 특수결측 먼저 처리",
+    "source_url": "https://www.kli.re.kr/board.es?act=view&bid=0016&list_no=147529&mid=a40104000000"
+  },
+  {
+    "source_id": "D34",
+    "variable_code": "Q1",
+    "meaning": "역량향상 기회",
+    "scale": "문항별 응답범주/가중 비율",
+    "verified_scope": "2024 기술보고서",
+    "notes": "한국 문항과 의미상 연결이며 척도 동등성 검증 전",
+    "source_url": "https://www.opm.gov/fevs/reports/data-reports/"
+  },
+  {
+    "source_id": "D34",
+    "variable_code": "Q2",
+    "meaning": "새 업무방법 장려",
+    "scale": "문항별 응답범주/가중 비율",
+    "verified_scope": "2024 기술보고서",
+    "notes": "한국 문항과 의미상 연결이며 척도 동등성 검증 전",
+    "source_url": "https://www.opm.gov/fevs/reports/data-reports/"
+  },
+  {
+    "source_id": "D34",
+    "variable_code": "Q4",
+    "meaning": "기대역할 명확성",
+    "scale": "문항별 응답범주/가중 비율",
+    "verified_scope": "2024 기술보고서",
+    "notes": "한국 문항과 의미상 연결이며 척도 동등성 검증 전",
+    "source_url": "https://www.opm.gov/fevs/reports/data-reports/"
+  },
+  {
+    "source_id": "D34",
+    "variable_code": "Q5",
+    "meaning": "업무량",
+    "scale": "문항별 응답범주/가중 비율",
+    "verified_scope": "2024 기술보고서",
+    "notes": "한국 문항과 의미상 연결이며 척도 동등성 검증 전",
+    "source_url": "https://www.opm.gov/fevs/reports/data-reports/"
+  },
+  {
+    "source_id": "D34",
+    "variable_code": "Q6",
+    "meaning": "재능 활용",
+    "scale": "문항별 응답범주/가중 비율",
+    "verified_scope": "2024 기술보고서",
+    "notes": "한국 문항과 의미상 연결이며 척도 동등성 검증 전",
+    "source_url": "https://www.opm.gov/fevs/reports/data-reports/"
+  },
+  {
+    "source_id": "D34",
+    "variable_code": "Q7",
+    "meaning": "기관목표·업무 연결",
+    "scale": "문항별 응답범주/가중 비율",
+    "verified_scope": "2024 기술보고서",
+    "notes": "한국 문항과 의미상 연결이며 척도 동등성 검증 전",
+    "source_url": "https://www.opm.gov/fevs/reports/data-reports/"
+  },
+  {
+    "source_id": "D34",
+    "variable_code": "Q8",
+    "meaning": "보복 우려 없는 위반신고",
+    "scale": "문항별 응답범주/가중 비율",
+    "verified_scope": "2024 기술보고서",
+    "notes": "한국 문항과 의미상 연결이며 척도 동등성 검증 전",
+    "source_url": "https://www.opm.gov/fevs/reports/data-reports/"
+  },
+  {
+    "source_id": "D33",
+    "variable_code": "B05",
+    "meaning": "업무방법 자율성",
+    "scale": "문항별 척도 상이",
+    "verified_scope": "2025 설문",
+    "notes": "B62시간범주·B63예상 문항; 지수 합산 금지",
+    "source_url": "https://www.gov.uk/government/publications/civil-service-people-survey-2025-results"
+  },
+  {
+    "source_id": "D33",
+    "variable_code": "B30",
+    "meaning": "업무목표 명확성",
+    "scale": "문항별 척도 상이",
+    "verified_scope": "2025 설문",
+    "notes": "B62시간범주·B63예상 문항; 지수 합산 금지",
+    "source_url": "https://www.gov.uk/government/publications/civil-service-people-survey-2025-results"
+  },
+  {
+    "source_id": "D33",
+    "variable_code": "B45",
+    "meaning": "결정 전 의견 제시",
+    "scale": "문항별 척도 상이",
+    "verified_scope": "2025 설문",
+    "notes": "B62시간범주·B63예상 문항; 지수 합산 금지",
+    "source_url": "https://www.gov.uk/government/publications/civil-service-people-survey-2025-results"
+  },
+  {
+    "source_id": "D33",
+    "variable_code": "B62",
+    "meaning": "AI로 절약한 업무시간",
+    "scale": "문항별 척도 상이",
+    "verified_scope": "2025 설문",
+    "notes": "B62시간범주·B63예상 문항; 지수 합산 금지",
+    "source_url": "https://www.gov.uk/government/publications/civil-service-people-survey-2025-results"
+  },
+  {
+    "source_id": "D33",
+    "variable_code": "B63",
+    "meaning": "향후5년 AI 직무변화 예상",
+    "scale": "문항별 척도 상이",
+    "verified_scope": "2025 설문",
+    "notes": "B62시간범주·B63예상 문항; 지수 합산 금지",
+    "source_url": "https://www.gov.uk/government/publications/civil-service-people-survey-2025-results"
+  }
+]

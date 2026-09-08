@@ -1,0 +1,242 @@
+[
+  {
+    "source_id": "D08",
+    "priority": "P1",
+    "next_action": "공식 자료실에서 SAV 또는 XLSX와 설문지를 함께 받는다. 파일목록은 확인됐으나 실제 원자료는 아직 미수령. 응답자·문항·특수결측을 확인해 문항별 공무원 집계를 만든다.",
+    "access_status": "공식 파일목록 확인; 원자료 파일 미수령",
+    "landing_url": "https://sky.kipa.re.kr/library/10220/contents/7139614",
+    "resource_url": null,
+    "license_note": "공공누리2유형(출처표시·비상업)",
+    "known_limits": "배너·이메일·온라인패널 자발적 참여. 전국 확률표본으로 일반화 불가."
+  },
+  {
+    "source_id": "D11",
+    "priority": "P1",
+    "next_action": "1~27차 자료의 개인 27차 파일을 받고 p270401로 정부 외 공공기관·정부기관·민간을 구분한다. 만족도 역코딩 및 패널가중치 선택 후 집계한다.",
+    "access_status": "27차 공개 및 실제 문항 확인; 미시자료 미수령",
+    "landing_url": "https://www.kli.re.kr/board.es?act=view&bid=0016&list_no=147529&mid=a40104000000",
+    "resource_url": "https://www.kli.re.kr/menu.es?mid=a40402000000",
+    "license_note": "다운로드 이용절차·재배포 조건 확인 필요",
+    "known_limits": "공공기관 정의는 ALIO와 불일치. 만족도 1=긍정,5=부정. 표본·가중치 통일 필요."
+  },
+  {
+    "source_id": "D12",
+    "priority": "P1",
+    "next_action": "2023 CSV와 7차 설명서를 받고 부문 구분·자율권·참여 문항의 실제 변수명부터 확인한다. 과거 차수 코드로 추정하지 않는다.",
+    "access_status": "공식 원자료 제공·라이선스 확인; CSV 미수령",
+    "landing_url": "https://www.data.go.kr/data/15119761/fileData.do",
+    "resource_url": "https://portal.kosha.or.kr/archive/research/research_invironmnet/guide",
+    "license_note": "무료·이용허락범위 제한 없음",
+    "known_limits": "2023 부문 구분 변수번호·범주 유지 여부 추가 확인 필요. 공공부문 정의가 넓음."
+  },
+  {
+    "source_id": "D13",
+    "priority": "P1",
+    "next_action": "무료 원자료 신청 안내를 따라 일반공개2023 근로자파일을 확보한다. W23Q25A/B/C 등의 혁신문화 문항을 민간 참고집단으로 집계한다.",
+    "access_status": "실제 2023 문항 PDF 확보; 신청형 원자료 미수령",
+    "landing_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=202",
+    "resource_url": "https://www.krivet.re.kr/kor/sub.do?menuSn=18",
+    "license_note": "이메일·목적·동의 등 작성; NICE 재무는 별도 유료",
+    "known_limits": "공기업·개인기업 제외. 같은 조사 안 공공/민간 비교 불가. 기업명 비공개."
+  },
+  {
+    "source_id": "D16",
+    "priority": "P1",
+    "next_action": "공식 PDF/ZIP의272~300쪽 AI 표를 확보해 분모·조사기준일을 확인한다. 아직 검증되지 않은32.9%를 확정치로 쓰지 않는다.",
+    "access_status": "공식 파일명·목차 확인; 다운로드 미성공",
+    "landing_url": "https://nia.or.kr/site/nia_kor/ex/bbs/View.do?bcIdx=28926&cbIdx=62156",
+    "resource_url": null,
+    "license_note": "원자료 제공·재배포 조건 미확인",
+    "known_limits": "AI 표272~300쪽. 언론의 사용률32.9%는 원표 검증 전이므로 수록 수치에서 제외."
+  },
+  {
+    "source_id": "D17",
+    "priority": "P1",
+    "next_action": "자료실 ZIP 안의 기관별 청렴도 등급표를 구조화한다. 자료실 첨부의 공공누리4유형 조건과 출처를 유지한다.",
+    "access_status": "ZIP 실제 확보; 135쪽 주보고서 텍스트 추출; 기관별 표 미구조화",
+    "landing_url": "https://www.acrc.go.kr/board.es?act=view&bid=36&list_no=102140&mid=a10106000000",
+    "resource_url": null,
+    "license_note": "자료실 공공누리4유형; 별도 보도자료1유형과 구별",
+    "known_limits": "기관 청렴성과의 보조지표. 혁신행동 직접측정 아님. 원문 보고서 재배포·변경 조건 구별."
+  },
+  {
+    "source_id": "D18",
+    "priority": "P1",
+    "next_action": "연도별 공시기준에 맞춰 apbaId·현원·유연근무·육아휴직 등 공통항목을 수집한다. 해당 기관·기준일별 공개값을 확인한다.",
+    "access_status": "공식 공시기준 확인; 전수값·API 미확보",
+    "landing_url": "https://alio.go.kr/",
+    "resource_url": "https://www.khnp.co.kr/main/contents.do?key=177",
+    "license_note": "재이용 조건 미확인",
+    "known_limits": "기관키 apbaId. 교육시간·이직률을 공통항목이라고 확정하지 않음. 공시 기준일 확인."
+  },
+  {
+    "source_id": "D19",
+    "priority": "P1",
+    "next_action": "공공데이터포털에서 서비스키와 실제 응답 스키마를 확인한 뒤 연도별 XML을 수집한다. 이 패키지에는 키나 실호출 결과가 없다.",
+    "access_status": "명세 확인; 활용신청·실호출 미실시",
+    "landing_url": "https://www.data.go.kr/data/15156857/openapi.do",
+    "resource_url": null,
+    "license_note": "무료·제한 없음; 개발/운영 자동승인; 개발계정10,000건",
+    "known_limits": "서비스키 발급 후 호출 필요. 공시 인원은 직원의 혁신성 측정치 아님."
+  },
+  {
+    "source_id": "D20",
+    "priority": "P1",
+    "next_action": "2026-06-19 공식 보도자료의 기관별 평가결과 첨부를 확보해88개 기관 등급을 구조화한다.",
+    "access_status": "정부 보도자료 전재 및 첨부 존재 확인; 파일 미확보",
+    "landing_url": "https://eiec.kdi.re.kr/policy/materialView.do?num=282972",
+    "resource_url": null,
+    "license_note": "첨부 재이용 조건 확인 필요",
+    "known_limits": "기관종합성과는 혁신 전용지표 아님. 연도별 평가체계 확인."
+  },
+  {
+    "source_id": "D21",
+    "priority": "P1",
+    "next_action": "243개 지방정부 평가결과·우수기관 명단을 원문 PDF와 대조해 구조화한다.",
+    "access_status": "원문 제공 확인; 전체 기관별 CSV 미확보",
+    "landing_url": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=124641",
+    "resource_url": null,
+    "license_note": "공공누리1유형",
+    "known_limits": "지방정부 기관평가. 공공기관 근로자 설문과 모집단 다름."
+  },
+  {
+    "source_id": "D22",
+    "priority": "P2",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "메타데이터 확인; 실제 CSV·API 미수령",
+    "landing_url": "https://www.data.go.kr/data/15154028/fileData.do",
+    "resource_url": null,
+    "license_note": "무료·이용허락 제한 없음",
+    "known_limits": "제품 지정자료. 수요기관의 실제 구매나 직원 혁신행동으로 해석 불가."
+  },
+  {
+    "source_id": "D23",
+    "priority": "P1",
+    "next_action": "2025 공무원 인식조사의 XLSX/SAV·설문지를 받고 공직생활실태조사와 중복·상이 문항을 구분한다.",
+    "access_status": "공식 파일목록 확인; 원자료 미수령",
+    "landing_url": "https://sky.kipa.re.kr/library/10220/contents/7706506",
+    "resource_url": null,
+    "license_note": "공공누리2유형",
+    "known_limits": "공직생활실태조사와 다른 조사. 기관유형·직급 층화 이메일 조사."
+  },
+  {
+    "source_id": "D24",
+    "priority": "P2",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "공식 파일목록 확인; 원자료 미수령",
+    "landing_url": "https://sky.kipa.re.kr/library/10220/contents/7706508",
+    "resource_url": null,
+    "license_note": "공공누리2유형",
+    "known_limits": "직원 인식조사가 아닌 시민 측 성과·신뢰 자료. 지역·성·연령 층화 온라인."
+  },
+  {
+    "source_id": "D25",
+    "priority": "P1",
+    "next_action": "부록 설문·통계표에서 정확한 표본·분모·문항을 확인한 뒤 활용역량·공유·지원조직 수치를 추출한다.",
+    "access_status": "공식 보고서 목차·부록 통계표 존재 확인; 미시자료 미확인",
+    "landing_url": "https://www.nkis.re.kr/subject_view1.do?eoSeq=0&otpId=OTP_0000000000013737&otpSeq=0",
+    "resource_url": null,
+    "license_note": "자료별 재이용 조건 확인 필요",
+    "known_limits": "세부 표본·문항 분모 확인 후 통계 추출 필요."
+  },
+  {
+    "source_id": "D26",
+    "priority": "P1",
+    "next_action": "조사설계와 공무원 집단별 표를 먼저 확인한 뒤 RPA·AI 지원·장애 항목을 추출한다.",
+    "access_status": "공식 연구내용·목차 확인; 원자료 공개 미확인",
+    "landing_url": "https://www.nkis.re.kr/subject_view1.do?eoSeq=0&otpId=OTP_0000000000013313&otpSeq=0",
+    "resource_url": null,
+    "license_note": "자료별 재이용 조건 확인 필요",
+    "known_limits": "RPA·AI 도입의 조직조건 보조자료. 표본과 개별 문항 원표 추가 확인."
+  },
+  {
+    "source_id": "D27",
+    "priority": "P1",
+    "next_action": "2023 SAV와 설문지를 확보해 정부 수준별 협력·정보공유·자율성 문항을 확인한다.",
+    "access_status": "공식 원자료 파일목록 및 보고서 표본 확인; 원자료 미수령",
+    "landing_url": "https://sky.kipa.re.kr/%26/10220/contents/7139599",
+    "resource_url": "https://www.nkis.re.kr/subject_view1.do?eoSeq=0&otpId=OTP_0000000000013359&otpSeq=0",
+    "license_note": "데이터별 재이용 조건 확인 필요",
+    "known_limits": "부처·정부간 협력과 조직내 협력은 다른 수준의 개념."
+  },
+  {
+    "source_id": "D28",
+    "priority": "P2",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "공식 아카이브·설문 링크 확인; 원자료 이용절차 확인 필요",
+    "landing_url": "https://kossda.snu.ac.kr/handle/20.500.12236/25683",
+    "resource_url": "https://kossda.snu.ac.kr/bitstream/20.500.12236/25683/1/kor_que_20150149.pdf",
+    "license_note": "KOSSDA 자료별 조건 확인 필요",
+    "known_limits": "과거의 원격근무 환경. 현재 제도·도입률로 사용 불가."
+  },
+  {
+    "source_id": "D29",
+    "priority": "P2",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "공식 원자료 파일목록 확인; 원자료 미수령",
+    "landing_url": "https://sky.kipa.re.kr/library/10220/contents/7533458",
+    "resource_url": null,
+    "license_note": "해당 파일의 이용조건 확인 필요",
+    "known_limits": "국무조정실 선정 유의할당 표본; 오래된 참고자료. 대표성 제한."
+  },
+  {
+    "source_id": "D30",
+    "priority": "P2",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "공식 발표 내용 확인; 미시자료 공개 미확인",
+    "landing_url": "https://www.mogef.go.kr/nw/enw/nw_enw_s001d.do?bbtSn=712700&mid=mda700",
+    "resource_url": null,
+    "license_note": "자료별 이용조건 확인 필요",
+    "known_limits": "30인 이상 사업체 중심. 혁신행동 직접 측정이 아닌 발언·조직문화 보조자료."
+  },
+  {
+    "source_id": "D31",
+    "priority": "P2",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "포털 메뉴·공식 분석 확인; 원자료 미수령",
+    "landing_url": "https://stat.kisdi.re.kr/kor/contents/ContentsList.html?sub_div=S&subject=SURV",
+    "resource_url": "https://www.kisdi.re.kr/report/view.do?arrMasterId=4333447&artId=1938416&key=m2101113025790&masterId=4333447",
+    "license_note": "분석보고서 공공누리4유형; 원자료 조건 별도",
+    "known_limits": "공공/민간 소유구분 미확인. 사용률13.7→31.6은 분모·가중치 최종검증 전이라 수록 수치 제외."
+  },
+  {
+    "source_id": "D34",
+    "priority": "P1",
+    "next_action": "2024 Agency Report Excel을 확보하고 Q2 등 문항별 가중응답률·분모를 기관별로 추출한다.",
+    "access_status": "공식 Excel 링크·공개파일 UI 및 문항 확인; 파일 미수령",
+    "landing_url": "https://www.opm.gov/fevs/reports/data-reports/",
+    "resource_url": "https://www.opm.gov/fevs/public-data-file/",
+    "license_note": "자료별 재이용 조건 확인 필요",
+    "known_limits": "응답수 비가중·문항 응답비율 가중. 개인파일 비식별 처리. 2025 수치 확인 못함."
+  },
+  {
+    "source_id": "D36",
+    "priority": "P2",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "공식 PDF·설명 확인; 미시자료 이용조건 미확인",
+    "landing_url": "https://www.eurofound.europa.eu/en/surveys-and-data/surveys/european-company-survey/ecs-2019",
+    "resource_url": "https://assets.eurofound.europa.eu/f/279033/3fe61d5438/ef20001en.pdf",
+    "license_note": "원자료 등록·이용·재배포 조건 확인 필요",
+    "known_limits": "공공행정·국방·사회보장·교육·보건사회복지 제외. 같은 조사에서 공공/민간 비교 불가."
+  },
+  {
+    "source_id": "E01",
+    "priority": "확장",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "과거연도 자료 경로 확인; 원자료 미수령",
+    "landing_url": "https://kossda.snu.ac.kr/handle/20.500.12236/31174",
+    "resource_url": "https://sky.kipa.re.kr/library/10220/contents/7139640",
+    "license_note": "연도별 이용조건·연구목적 입력 등 확인 필요",
+    "known_limits": "반복횡단면을 개인패널로 취급하지 않음. 문항·모집단 변화 확인."
+  },
+  {
+    "source_id": "E02",
+    "priority": "확장",
+    "next_action": "공식 원문·원자료 및 이용조건을 확인하고 조사대상·문항·분모를 검증한 뒤 추가 집계한다.",
+    "access_status": "공식 아카이브 확인; 원자료 미수령",
+    "landing_url": "https://kossda.snu.ac.kr/handle/20.500.12236/25728",
+    "resource_url": null,
+    "license_note": "KOSSDA 개별자료 조건 확인 필요",
+    "known_limits": "새 독립 데이터군으로 세지 않음. 기존 논문 결과변수는 직무몰입으로 혁신행동과 구별."
+  }
+]

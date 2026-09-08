@@ -1,0 +1,569 @@
+[
+  {
+    "metric_id": "D05_M01",
+    "source_id": "D05",
+    "metric_label": "AI 전담인력 보유기관",
+    "unit": "institutions",
+    "aggregation_level": "institution_type"
+  },
+  {
+    "metric_id": "D05_M02",
+    "source_id": "D05",
+    "metric_label": "AI 전담인력",
+    "unit": "persons",
+    "aggregation_level": "institution_type"
+  },
+  {
+    "metric_id": "D05_M03",
+    "source_id": "D05",
+    "metric_label": "AI 전담조직 운영기관",
+    "unit": "institutions",
+    "aggregation_level": "institution_type"
+  },
+  {
+    "metric_id": "D05_M04",
+    "source_id": "D05",
+    "metric_label": "AI 예산 보유기관",
+    "unit": "institutions",
+    "aggregation_level": "institution_type"
+  },
+  {
+    "metric_id": "D05_M05",
+    "source_id": "D05",
+    "metric_label": "AI 예산",
+    "unit": "KRW_100million",
+    "aggregation_level": "institution_type"
+  },
+  {
+    "metric_id": "D05_M06",
+    "source_id": "D05",
+    "metric_label": "AI 활용사례 보유기관",
+    "unit": "institutions",
+    "aggregation_level": "institution_type"
+  },
+  {
+    "metric_id": "D05_M07",
+    "source_id": "D05",
+    "metric_label": "AI 활용사례",
+    "unit": "cases",
+    "aggregation_level": "institution_type"
+  },
+  {
+    "metric_id": "D09_M01",
+    "source_id": "D09",
+    "metric_label": "업무 개선 제안제도",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M02",
+    "source_id": "D09",
+    "metric_label": "개선 소집단 활동",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M03",
+    "source_id": "D09",
+    "metric_label": "다기능 교육",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M04",
+    "source_id": "D09",
+    "metric_label": "정기 업무 순환",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M05",
+    "source_id": "D09",
+    "metric_label": "직무분석 실시",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M06",
+    "source_id": "D09",
+    "metric_label": "최고책임자와 전체 직원 회의",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M07",
+    "source_id": "D09",
+    "metric_label": "경영자 현장 순회 대화",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M08",
+    "source_id": "D09",
+    "metric_label": "경영자 직접 의견 전달 채널",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M09",
+    "source_id": "D09",
+    "metric_label": "직급별 회합을 통한 경영정보 전달",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M10",
+    "source_id": "D09",
+    "metric_label": "정기 직원 의견조사",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D09_M11",
+    "source_id": "D09",
+    "metric_label": "전사 품질관리 프로그램",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D10_M01",
+    "source_id": "D10",
+    "metric_label": "현재 조치: AI 기반 시스템 마련",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M02",
+    "source_id": "D10",
+    "metric_label": "현재 조치: 직원 AI 교육",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M03",
+    "source_id": "D10",
+    "metric_label": "현재 조치: 정보보호·윤리 규정 및 교육",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M04",
+    "source_id": "D10",
+    "metric_label": "현재 조치: 직무 재배치",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M05",
+    "source_id": "D10",
+    "metric_label": "현재 조치: AI 전담부서 신설",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M06",
+    "source_id": "D10",
+    "metric_label": "현재 조치: AI 전문인력 채용",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M07",
+    "source_id": "D10",
+    "metric_label": "현재 조치: 인사에 AI역량 반영",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M08",
+    "source_id": "D10",
+    "metric_label": "현재 조치: AI 구독료 등 비용 지원",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M09",
+    "source_id": "D10",
+    "metric_label": "현재 조치: 조직 차원의 대응 없음",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M10",
+    "source_id": "D10",
+    "metric_label": "활용 장애: 관리자의 이해·활용 의지 부족",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M11",
+    "source_id": "D10",
+    "metric_label": "활용 장애: 구성원의 소극적 태도",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M12",
+    "source_id": "D10",
+    "metric_label": "활용 장애: AI 구축 예산 부족",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M13",
+    "source_id": "D10",
+    "metric_label": "활용 장애: AI 시스템과 업무 부적합",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M14",
+    "source_id": "D10",
+    "metric_label": "활용 장애: 정보보호에 따른 사용 제한",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M15",
+    "source_id": "D10",
+    "metric_label": "활용 장애: 추진 조직·인력 부재",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M16",
+    "source_id": "D10",
+    "metric_label": "활용 장애: 기술·지식 부족",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M17",
+    "source_id": "D10",
+    "metric_label": "활용 장애: 업무 실익 부족",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M18",
+    "source_id": "D10",
+    "metric_label": "활용 장애: 구독료 등 지원 부족",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D10_M19",
+    "source_id": "D10",
+    "metric_label": "활용 장애: 장애 없음",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D14_M01",
+    "source_id": "D14",
+    "metric_label": "회의 간소화",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D14_M02",
+    "source_id": "D14",
+    "metric_label": "보고 간소화",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D14_M03",
+    "source_id": "D14",
+    "metric_label": "회식 문화 개선",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D14_M04",
+    "source_id": "D14",
+    "metric_label": "업무시간 외 메신저 금지",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D14_M05",
+    "source_id": "D14",
+    "metric_label": "성별다양성 정기 교육",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D14_M06",
+    "source_id": "D14",
+    "metric_label": "조직문화 면담·간담회·태도조사",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D14_M07",
+    "source_id": "D14",
+    "metric_label": "조직문화 개선팀 운영",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D14_M08",
+    "source_id": "D14",
+    "metric_label": "관련 제도 미실시",
+    "unit": "percent",
+    "aggregation_level": "workplace_group"
+  },
+  {
+    "metric_id": "D07_M01",
+    "source_id": "D07",
+    "metric_label": "AI 포함 조달 계약",
+    "unit": "cases",
+    "aggregation_level": "procurement_or_institution_group"
+  },
+  {
+    "metric_id": "D07_M02",
+    "source_id": "D07",
+    "metric_label": "AI 포함 계약이 식별된 기관 비율",
+    "unit": "percent",
+    "aggregation_level": "procurement_or_institution_group"
+  },
+  {
+    "metric_id": "D06_M01",
+    "source_id": "D06",
+    "metric_label": "AI 도입·활용",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M02",
+    "source_id": "D06",
+    "metric_label": "도입 장애: 예산 부족",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M03",
+    "source_id": "D06",
+    "metric_label": "도입 장애: 신규 전문인력 채용 어려움",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M04",
+    "source_id": "D06",
+    "metric_label": "도입 장애: 기존 직원 역량 부족",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M05",
+    "source_id": "D06",
+    "metric_label": "도입 장애: 내부 가용 데이터 부족",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M06",
+    "source_id": "D06",
+    "metric_label": "도입방식: 외부 위탁 개발",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M07",
+    "source_id": "D06",
+    "metric_label": "도입방식: 구매·구독",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M08",
+    "source_id": "D06",
+    "metric_label": "도입방식: 내부 자체 개발",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M09",
+    "source_id": "D06",
+    "metric_label": "필요 정책 1순위: AI 인력양성",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M10",
+    "source_id": "D06",
+    "metric_label": "AI 업무 겸직 담당인력 운영",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D06_M11",
+    "source_id": "D06",
+    "metric_label": "AI 전담부서·팀·인력 운영",
+    "unit": "percent",
+    "aggregation_level": "institution_group"
+  },
+  {
+    "metric_id": "D15_M01",
+    "source_id": "D15",
+    "metric_label": "서비스업 혁신율",
+    "unit": "percent",
+    "aggregation_level": "company_group"
+  },
+  {
+    "metric_id": "D15_M02",
+    "source_id": "D15",
+    "metric_label": "상품혁신율",
+    "unit": "percent",
+    "aggregation_level": "company_group"
+  },
+  {
+    "metric_id": "D15_M03",
+    "source_id": "D15",
+    "metric_label": "비즈니스프로세스 혁신율",
+    "unit": "percent",
+    "aggregation_level": "company_group"
+  },
+  {
+    "metric_id": "D32_M01",
+    "source_id": "D32",
+    "metric_label": "새 업무개선 방법 모색을 책임으로 인식",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M02",
+    "source_id": "D32",
+    "metric_label": "상사의 새 업무방법 제안 장려",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M03",
+    "source_id": "D32",
+    "metric_label": "혁신적 업무방식에 대한 인정",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M04",
+    "source_id": "D32",
+    "metric_label": "기관의 새 업무방법 제안 독려",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M05",
+    "source_id": "D32",
+    "metric_label": "실패를 혁신의 일부로 인정·지원",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M06",
+    "source_id": "D32",
+    "metric_label": "업무방법 선택 자율성",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M07",
+    "source_id": "D32",
+    "metric_label": "업무 관련 의사결정 참여",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M08",
+    "source_id": "D32",
+    "metric_label": "직무·책임 명확성",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M09",
+    "source_id": "D32",
+    "metric_label": "변화에 대한 직원 의견수렴",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M10",
+    "source_id": "D32",
+    "metric_label": "기관의 변화관리",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M11",
+    "source_id": "D32",
+    "metric_label": "어려운 문제 제기 가능",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M12",
+    "source_id": "D32",
+    "metric_label": "실수가 불이익으로 돌아오지 않음",
+    "unit": "percent",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D32_M13",
+    "source_id": "D32",
+    "metric_label": "혁신환경 지수",
+    "unit": "index_0_100",
+    "aggregation_level": "respondent_group"
+  },
+  {
+    "metric_id": "D33_M01",
+    "source_id": "D33",
+    "metric_label": "새 아이디어 시도 지원",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M02",
+    "source_id": "D33",
+    "metric_label": "고위리더의 조직 변화 비전",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M03",
+    "source_id": "D33",
+    "metric_label": "AI로 주1시간 이상 시간 절약",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D33_M04",
+    "source_id": "D33",
+    "metric_label": "향후5년 AI가 직무를 바꿀 가능성",
+    "unit": "percent",
+    "aggregation_level": "institution_benchmark_or_respondent_group"
+  },
+  {
+    "metric_id": "D35_M01",
+    "source_id": "D35",
+    "metric_label": "혁신환경 지수",
+    "unit": "index_0_100",
+    "aggregation_level": "country_group"
+  },
+  {
+    "metric_id": "D35_M02",
+    "source_id": "D35",
+    "metric_label": "학습·개발 지수",
+    "unit": "index_0_100",
+    "aggregation_level": "country_group"
+  },
+  {
+    "metric_id": "D35_M03",
+    "source_id": "D35",
+    "metric_label": "새로운 방법 모색 장려 긍정",
+    "unit": "percent",
+    "aggregation_level": "country_group"
+  }
+]

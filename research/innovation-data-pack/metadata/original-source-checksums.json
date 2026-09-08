@@ -1,0 +1,104 @@
+[
+  {
+    "title": "ALIO AI 활용현황",
+    "source_url": "https://alio.go.kr/statistics/aiUtilStatus.do",
+    "original_filename": "alio_ai_2026.html",
+    "sha256": "80b2f605bfdc1bf0bde7f4d6583cf05089d8b494831e4d708ce00f6be882cdbb",
+    "bytes": 41628,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "title": "2025년 데이터기반행정 실태점검 기관별 평가등급",
+    "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000006&nttId=124783",
+    "original_filename": "data_admin_2025.pdf",
+    "sha256": "611fcb9af84324cf19eff788ef0751ee62b2943b8562df77c272d2fac09bd4e7",
+    "bytes": 131431,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "title": "2025년 공공데이터 제공 운영실태 평가 기관별 평가등급",
+    "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000006&nttId=124893",
+    "original_filename": "public_data_2025.pdf",
+    "sha256": "a01d42ee8e65633493377f0e8f1f31a7e39d9c8724b7e9f74b2aa2baf817fa37",
+    "bytes": 120441,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "title": "2025년도 공공기관 고객만족도 조사결과",
+    "source_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156757068",
+    "original_filename": "customer_2025.pdf",
+    "sha256": "d2eae5949d9aba6c8e7856615dd796e6279e9f5e0c47581e40d8aa0d1e522874",
+    "bytes": 407600,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "title": "클린아이 경영평가등급",
+    "source_url": "https://www.cleaneye.go.kr/user/mngEvaluGradeStat.do",
+    "original_filename": "cleaneye_grades_2021_2025.html",
+    "sha256": "7f9a8123a667cf56de09b3a91f2f4f2f414e97cbdf3b466d9287ce2e20b2e460",
+    "bytes": 313347,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "title": "2025년도 공공기관 종합청렴도 평가 결과",
+    "source_url": "https://www.acrc.go.kr/board.es?act=view&bid=36&list_no=102140&mid=a10106000000",
+    "original_filename": "integrity_2025.zip",
+    "sha256": "66e60af4d02469ae0eb2bc14d1a9f05aeb74ff059fd66fc1f66259c1921983e9",
+    "bytes": 11919667,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "source_id": "D09",
+    "original_filename": "wps_report.pdf",
+    "sha256": "3f165551dae674b9a962a1f3d62bf59973ed3aa85befffb40f1045853034765d",
+    "bytes": 32817489,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "source_id": "D09",
+    "original_filename": "wps_q.pdf",
+    "sha256": "42096d69e7169aa48b1eb16b0bd06394d4c9186e8b1c4913d818ea88e8c47361",
+    "bytes": 3204394,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "source_id": "D10",
+    "original_filename": "keis_ai.pdf",
+    "sha256": "bbb8cfcb87c3a41bd9c482c74d3b52873b99bc1f5a0be864012abada60af4a9a",
+    "bytes": 1887291,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "source_id": "D14",
+    "original_filename": "kwmp_report2025.pdf",
+    "sha256": "2b45bf4ca674017d0fb38eedf5a11d6483ae4f2a73c902fe09e8026be733d839",
+    "bytes": 12714804,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "source_id": "D13",
+    "original_filename": "hccp_q.pdf",
+    "sha256": "fc226fcfcceff7548e84d4e8fd6cc8c4c06793b4efba5a74b2c5fab32c161d86",
+    "bytes": 4257136,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  },
+  {
+    "source_id": "D11",
+    "original_filename": "klips_q.pdf",
+    "sha256": "a8773a77bf50056ea1300c4f849c0c3c74e6ae713adb749a4e53406cbdc369b5",
+    "bytes": 11540658,
+    "retrieved_on": "2026-09-08",
+    "original_included": false
+  }
+]
