@@ -8,20 +8,20 @@
 - 운영 주소: https://public-private-innovation-dashboard.vercel.app
 - 공개 저장소: https://github.com/koul777/ax-management-radar
 - Vercel 프로젝트: `hrkim/public-private-innovation-dashboard`
-- 배포 ID: `dpl_E7J68DJr5D3cP8bv7jBRnA2c2hxQ`
-- 고유 주소: https://public-private-innovation-dashboard-2z4qr81ah-hrkim.vercel.app
-- 배포 소스: `e4b5a12d97ddb54772cd4bd5230317ae00e188c5` (이후 배포 기록 변경은 실행 코드 변경이 아님)
+- 배포 ID: `dpl_8p4emhXnZF6dVxbMeYp5rPwr7XGf`
+- 고유 주소: https://public-private-innovation-dashboard-82mvkflum-hrkim.vercel.app
+- 배포 소스: `1d1fcf6aac186520f2db1ed680647ca129637a36` (이후 배포 기록 변경은 실행 코드 변경이 아님)
 - 상태: `READY`, `production`, 운영 도메인 연결 완료
-- Sites 비공개 미러: 버전 10, https://public-innovation-radar-kipa-2024.kimci.chatgpt.site, 배포 성공
+- Sites 비공개 미러: 버전 11, https://public-innovation-radar-kipa-2024.kimci.chatgpt.site, 배포 성공
 - 사용자의 명시적 요청으로 공개 GitHub 저장소를 생성했다. 배포 보호 설정이나 인증정보는 변경하지 않았다.
 
 ## 검증 결과
 
-- `npm test`: 로컬 빌드와 회귀·탐색·정책 검사 **51개 통과**.
+- `npm test`: 로컬 빌드와 회귀·탐색·정책 검사 **52개 통과**.
 - Python 분석·입력경로 검사 **78개 통과**. 보존된 HCCP 검사는 활성 앱 포함을 뜻하지 않는다.
 - `npm run lint`, `npx tsc --noEmit`: 통과.
 - `node scripts/verify_release.mjs`: WPS 연도·규모 **40개 집계**, 수치 모형 **16개**, 활성 근거 **10편**, 추가 자료 **166문항**, 공공기관 평가기록 **3,704건**과 출처별 관측치 **301개**의 스키마·분모·상태·공개 경계 통과.
-- 운영 URL의 **19개 경로**에서 HTTP 200, 화면별 본문, 새 공공기관 혁신·AI 화면, AI 미조사 연도, 규모 구간, KIPA 사용허가·이용조건 전문을 확인했다. HCCP 옛 링크는 제외 안내다.
+- 운영 URL의 **19개 경로**에서 HTTP 200, 화면별 본문, 새 공공기관 혁신·AI 화면, AI 미조사 연도, 규모 구간, KIPA 사용허가·이용조건 전문을 확인했다. 별도 운영 응답 검사에서 AI051의 설문 원문·세부 문항·응답대상·회상기간·응답 보기·변수코드가 서버 렌더됨을 확인했다. HCCP 옛 링크는 제외 안내다.
 - 운영 JS/CSS **8개**와 OG/X 이미지의 HTTP 응답·Content-Type·요청 호스트 기반 절대 주소를 확인했다.
 - 실제 배포 수신 목록: **49개 파일**. 업로드 전 dry-run에서 원자료·개인 환경파일·내부 기록·영상 제작·연구 패키지 폴더 제외를 확인했다. 웹에는 생성된 공개 평가·집계 payload만 포함하고 응답자별 행을 배포하지 않았다.
 - 공개 저장소 검사는 원자료/비밀파일 이름, 알려진 인증정보 패턴, 개인 절대 경로, 큰 파일을 검사한다. 정해진 패턴 검사이며 모든 형태의 비식별성을 수학적으로 보장하지 않는다.
@@ -67,6 +67,6 @@ node scripts/verify_release.mjs
 node scripts/verify_repository.mjs
 ```
 
-현재 클라이언트 대시보드 청크는 약 2,650.32 kB(gzip 311.71 kB)로 크기 경고가 있다. `headers()` 경로의 빌드 분류 `Unknown`은 운영 응답 검증과 구분한다.
+현재 클라이언트 대시보드 청크는 약 2,705.74 kB(gzip 316.33 kB)로 크기 경고가 있다. `headers()` 경로의 빌드 분류 `Unknown`은 운영 응답 검증과 구분한다.
 
-현재 배포 `dpl_E7J68DJr5D3cP8bv7jBRnA2c2hxQ`는 실제 확보 데이터 등급, D08 원자료 보유 상태, D32 원자료 재집계, D33 공식 ODS 집계와 D35 충돌 지수 보류를 반영했다. 직전 배포는 공공기관 화면의 첫 노출을 세 핵심 신호와 실행 흐름 중심으로 단순화했다. 그 이전 이력은 Git 기록에서 확인할 수 있다.
+현재 배포 `dpl_8p4emhXnZF6dVxbMeYp5rPwr7XGf`는 WPS AX 운영·대응 AI050~AI067의 실제 설문 구조를 카드 제목 아래에 표시한다. 직전 배포의 실제 확보 데이터 등급, D08 원자료 보유 상태, D32 원자료 재집계, D33 공식 ODS 집계와 D35 충돌 지수 보류도 유지한다. 그 이전 이력은 Git 기록에서 확인할 수 있다.
