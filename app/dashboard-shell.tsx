@@ -22,7 +22,7 @@ function workforceScope(scope: "public_private_workers" | "citizen_services"): S
 
 const menuGroups: Array<{ title: string; items: Array<{ id: DashboardMenu; title: string; subtitle: string }> }> = [
   { title: "조직 비교", items: [{ id: "ax", title: "사업체패널 · AX 조직관리", subtitle: "공공 ↔ 민간 · 현황과 실무 질문" }, { id: "public-private", title: "공공 ↔ 민간 · 혁신행동", subtitle: "KIPA 2024 · 2,020명" }] },
-  { title: "공공 내부", items: [{ id: "central-local", title: "중앙 ↔ 지방 · 혁신행동", subtitle: "공직생활실태조사 2025 · 6,084명" }, { id: "public-data", title: "공공 인사·데이터·AI 활용", subtitle: "KIPA 2015 · 2019 · 2020 · 2022 · 2023" }, { id: "public-institutions", title: "공공기관 · 혁신·AI 관측", subtitle: "기관 공시·공개 집계 · 14개 출처" }] },
+  { title: "공공 내부", items: [{ id: "central-local", title: "중앙 ↔ 지방 · 혁신행동", subtitle: "공직생활실태조사 2025 · 6,084명" }, { id: "public-data", title: "공공 인사·데이터·AI 활용", subtitle: "KIPA 2015 · 2019 · 2020 · 2022 · 2023" }, { id: "public-institutions", title: "공공 AX · 한눈에 보기", subtitle: "핵심 신호 3개 · 실행 질문 · 상세 근거" }] },
   { title: "개인·시민", items: [{ id: "klips", title: "근로자 직장 경험", subtitle: "KLIPS 2018 · 개인 단위" }, { id: "personal-ai", title: "개인 AI 이용", subtitle: "KISDI 2022–2024 · KMP 2023–2024" }, { id: "citizen", title: "시민 전자정부서비스", subtitle: "AI 이용 경험 · 시민 단위" }, { id: "research", title: "근거 · 자료", subtitle: "연구설계 · 확인범위 · 전이한계" }] },
 ];
 const menuTabIds = menuGroups.flatMap((group) => group.items.map((item) => item.id));

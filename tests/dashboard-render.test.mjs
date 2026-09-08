@@ -201,7 +201,13 @@ test("public-institution innovation view keeps institutional grades, public stat
   assert.equal(data.localEnterprise.records.length, 2150);
   assert.equal(data.observations.length, 278);
   assert.equal(data.collectionBacklog.length, 24);
-  assert.match(text, /공공기관 혁신·AI 관측/);
+  assert.match(text, /공공기관 AX 조직관리/);
+  assert.match(text, /먼저 확인할 세 가지/);
+  assert.match(text, /250개 기관 · 1,062건/);
+  assert.match(text, /겸직 65.5% · 전담 15.9%/);
+  assert.match(text, /조직 대응 없음 32.1%/);
+  assert.match(text, /AI 사용자 참고조사 · 공공기관 전용 결과 아님/);
+  assert.match(text, /공공 AX 조직관리 우선순위/);
   assert.match(text, /기관별 평가 등급과 기관 찾기/);
   assert.match(text, /지방공기업 경영평가 · 2021–2025/);
   assert.match(text, /공공 AI 입력·도입·조달·지원 관측/);
@@ -210,9 +216,8 @@ test("public-institution innovation view keeps institutional grades, public stat
   assert.match(text, /미조사/);
   assert.match(text, /KIPA 공공조직·인사 데이터 화면/);
   assert.match(text, /KLIPS 근로자 직장경험 화면/);
-  assert.match(component, /MANAGEMENT LENS · HYPOTHESES TO CHECK/);
-  assert.match(component, /AX 조직관리 점검 렌즈/);
-  assert.match(component, /합산하거나 순위를 매기지 않으며/);
+  assert.equal((component.match(/<details className="public-detail">/g) ?? []).length, 3);
+  assert.match(component, /기관순위·통합점수·인과효과를 만들지 않으며/);
   assert.doesNotMatch(component, /종합(?:점수|순위)|인과효과를 입증/);
 });
 
