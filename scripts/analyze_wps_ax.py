@@ -66,6 +66,62 @@ GOVERNANCE = [
     ("ai066", "창의성·소통 능력 중요성 증가 인식", "perceived_requirements", "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님."),
     ("ai067", "고학력 직원 확보 중요성 증가 인식", "perceived_requirements", "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님."),
 ]
+CONSULTATION_STEM = "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오."
+CONSULTATION_ITEMS = {
+    "ai051": "잠재적 일자리 상실", "ai052": "임금에 미치는 영향", "ai053": "근로 조건에 미치는 영향",
+    "ai054": "숙련과 교육에 대한 필요", "ai055": "데이터 수집 및 활용", "ai056": "특정 근로자 집단에 미치는 영향",
+}
+AI_RESPONDENT = "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1)."
+CONSULTATION_RESPONDENT = AI_RESPONDENT + " 노조·노사협의회 보유 여부로 추가 분기하지 않음."
+RESPONSE_RESPONDENT = AI_RESPONDENT + " AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1)."
+AI_PERIOD = "조사차수 2023 · 문항 자체의 회상기간 명시 없음"
+YES_NO_UNKNOWN = "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)"
+AGREE_UNKNOWN = "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)"
+RULES_STEM = "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오."
+RULES_ITEMS = {
+    "ai057": "인공지능 활용에 관한 단체협약 체결", "ai058": "인공지능 전략의 변경 혹은 채택",
+    "ai059": "인공지능 활용 가이드라인의 변경 혹은 채택",
+}
+RESPONSE_STEM = "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?"
+RESPONSE_ITEMS = {
+    "ai061": "내부 직원을 재교육하거나 숙련도를 높여 해결", "ai062": "새 직원을 채용하여 해결",
+    "ai063": "외부 회사로부터 서비스를 구매하여 해결", "ai064": "해고나 인원 정리를 통해 해결",
+}
+STANDALONE_AI_QUESTIONS = {
+    "ai050": "{귀사는/귀 사업장은} 인공지능 활용과 관련하여 직원 또는 직원의 업무에 대한 데이터를 수집합니까?",
+    "ai060": "인공지능이 {귀사/귀 사업장}의 기술 요구를 변화시켰다고 생각하십니까?",
+    "ai065": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 이를 유지하거나 개발하는데 필요한 보다 전문화된 인공지능 기술을 보유하는 것이 더 중요하게 되었습니까?",
+    "ai066": "{귀사/귀 사업장}에서 인공지능의 도입이 창의성이나 의사소통 같은 보다 인간적인 능력을 좀 더 중요하게 만들었나요?",
+    "ai067": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 고학력 직원의 확보가 더 중요해졌습니까?",
+}
+
+
+def ai_question_detail(column: str) -> dict | None:
+    source = f"WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, {column.upper()}"
+    if column in CONSULTATION_ITEMS:
+        return {"exactQuestion": CONSULTATION_STEM, "itemPhrase": CONSULTATION_ITEMS[column],
+                "respondent": CONSULTATION_RESPONDENT, "referencePeriod": AI_PERIOD,
+                "responseOptions": YES_NO_UNKNOWN, "variableCode": column, "sourceLocation": source}
+    if column in RULES_ITEMS:
+        return {"exactQuestion": RULES_STEM, "itemPhrase": RULES_ITEMS[column],
+                "respondent": CONSULTATION_RESPONDENT, "referencePeriod": AI_PERIOD,
+                "responseOptions": AGREE_UNKNOWN, "variableCode": column, "sourceLocation": source}
+    if column in RESPONSE_ITEMS:
+        return {"exactQuestion": RESPONSE_STEM, "itemPhrase": RESPONSE_ITEMS[column],
+                "respondent": RESPONSE_RESPONDENT, "referencePeriod": AI_PERIOD,
+                "responseOptions": AGREE_UNKNOWN, "variableCode": column, "sourceLocation": source}
+    if column in STANDALONE_AI_QUESTIONS:
+        return {"exactQuestion": STANDALONE_AI_QUESTIONS[column], "respondent": AI_RESPONDENT,
+                "referencePeriod": AI_PERIOD, "responseOptions": YES_NO_UNKNOWN,
+                "variableCode": column, "sourceLocation": source}
+    if column == "discussion_any":
+        return {"exactQuestion": "파생지표 · 단독 설문문항 없음",
+                "itemPhrase": "AI051~AI056 중 하나 이상이 ‘예’이면 논의 확인, 6개 모두 ‘아니요’이면 모든 항목 아니요, 그 외는 불명",
+                "respondent": CONSULTATION_RESPONDENT, "referencePeriod": AI_PERIOD,
+                "responseOptions": "AI051~AI056 각 항목의 " + YES_NO_UNKNOWN + "을 사용",
+                "variableCode": "discussion_any ← AI051~AI056",
+                "sourceLocation": "WPS 통합 코드북 v1.91 AI051~AI056 항목; WPS 통합설문지 v1.91 물리 507쪽(인쇄 489쪽), AI051~AI056; 대시보드 파생 규칙"}
+    return None
 
 
 def binary(series: pd.Series) -> pd.Series:
@@ -207,6 +263,7 @@ def key_items(frame: pd.DataFrame) -> list[dict]:
         is_perceived = column in {"ai060", "ai065", "ai066", "ai067"}
         categories = [{"code": 1, "label": "논의 확인", "raw_code": 1}, {"code": 2, "label": "모든 항목 아니요", "raw_code": 2},
                       {"code": 99, "label": "불명", "raw_code": 99}] if is_composite else yes_no_unknown
+        question_detail = ai_question_detail(column)
         specifications.append({"id": column, "column": column, "label": label, "category": "ax_operations",
             "concept": {"data": "직원·업무 데이터 수집", "consultation": "근로자 대표와의 협의", "rules": "협의 결과의 규칙·전략 반영",
                         "skills": "기술 요구 변화 인식", "response": "숙련 변화에 대한 인력운영 대응", "perceived_requirements": "필요 역량의 중요성 변화 인식"}[dimension],
@@ -214,8 +271,9 @@ def key_items(frame: pd.DataFrame) -> list[dict]:
             "period": "2023 AI 활용 사업체의 관련 경험·대응; 명시되지 않은 회상기간을 임의로 1년으로 정하지 않음",
             "section": "AI051~056 파생" if is_composite else column.upper() + "; 통합설문지 물리적507~509쪽",
             "eligibility_rule": "ai001=1 and ai060=1" if is_response else "ai001=1", "scale_type": "nominal" if is_composite else "binary",
-            "usage": "descriptive_only", "measurement": "논의 확인/모든항목아니요/불명" if is_composite else "1예/2아니요/99모름",
-            "categories": agree_unknown if column in {"ai057", "ai058", "ai059", "ai061", "ai062", "ai063", "ai064"} else categories, "note": note})
+            "usage": "descriptive_only", "measurement": "논의 확인/모든항목아니요/불명" if is_composite else "1그렇다/2그렇지않다/99잘모르겠다" if column in {"ai057", "ai058", "ai059", "ai061", "ai062", "ai063", "ai064"} else "1예/2아니요/99모름",
+            "categories": agree_unknown if column in {"ai057", "ai058", "ai059", "ai061", "ai062", "ai063", "ai064"} else categories, "note": note,
+            **({"questionDetail": question_detail} if question_detail else {})})
     for column, label in [("aq3015", "공정·프로세스 혁신 실행"), ("aq3014", "제품·서비스 혁신 출시")]:
         specifications.append({"id": column, "column": column, "label": label, "category": "innovation_outcomes",
             "concept": "혁신 실행" if column == "aq3015" else "혁신 제품·서비스 출시", "role": "AI→혁신 보조분석의 결과변수",

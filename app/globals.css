@@ -1188,6 +1188,14 @@ button:focus-visible, summary:focus-visible { outline: 3px solid color-mix(in sr
 .ax-distribution-card { padding-top: 18px; }
 .ax-distribution-card h3 { font-size: 15px; }
 .ax-item-note { max-width: 980px; margin: 7px 0 12px; color: #6b7582; font-size: 12px; line-height: 1.7; }
+.wps-question-detail { margin: 13px 0 16px; padding: 14px 16px; border: 1px solid #d9e4e1; border-left: 4px solid #397f70; border-radius: 8px; background: #f7fbfa; }
+.wps-question-detail dl { margin: 0; }
+.wps-question-detail dl > div { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 12px; padding: 6px 0; border-top: 1px solid #dfeae7; font-size: 11px; line-height: 1.7; }
+.wps-question-detail dl > div:first-child { padding-top: 0; border-top: 0; }
+.wps-question-detail dl > div:last-child { padding-bottom: 0; }
+.wps-question-detail dt { color: #4d746c; font-weight: 800; }
+.wps-question-detail dd { margin: 0; color: #3d5352; overflow-wrap: anywhere; }
+.wps-question-detail code { color: #27675a; font-size: 10px; }
 .ax-distribution-card .ai-distribution-grid { gap: 14px; }
 .ax-distribution-card .ai-distribution-grid > article { padding: 15px; background: #f5f7fa; }
 .ax-distribution-card .ai-perception-sample { font-size: 11px; line-height: 1.7; }
@@ -1805,6 +1813,7 @@ button:focus-visible, summary:focus-visible { outline: 3px solid color-mix(in sr
 }
 @media (max-width: 640px) {
   .ax-direct-contrast .ai-panel-coefficients { grid-template-columns: 1fr; }
+  .wps-question-detail dl > div { grid-template-columns: 1fr; gap: 2px; }
 }
 @media (max-width: 440px) {
   .ax-stage-grid { grid-template-columns: 1fr; }

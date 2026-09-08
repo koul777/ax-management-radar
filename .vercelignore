@@ -8,6 +8,7 @@ research
 .next
 .vinext
 .wrangler
+.pytest_cache
 dist
 tmp
 tools

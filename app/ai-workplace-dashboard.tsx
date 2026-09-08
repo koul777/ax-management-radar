@@ -18,12 +18,17 @@ type Distribution = {
   weighted_n: number; weighted_excluded_n: number; weighted_effective_n: number | null;
   responses: Response[]; small_sample?: boolean; suppressed?: boolean;
 };
+type QuestionDetail = {
+  exactQuestion: string; itemPhrase?: string; respondent: string; referencePeriod: string;
+  responseOptions: string; variableCode: string; sourceLocation: string;
+};
 type KeyItem = {
   id: string; label: string; column: string; category: string; category_label: string;
   concept: string; role: string; period: string; note: string; scale_type: string;
   measurement: string; eligibility: string; eligibility_rule: string; usage: string;
   source: { file: string; section: string; columns: string[] };
   categories: Array<{ code: number; label: string; raw_code: number | string | null }>;
+  questionDetail?: QuestionDetail;
   public: Distribution; private: Distribution;
 };
 type SizeGroup = { id: string; label: string; definition: string };
@@ -90,7 +95,8 @@ function DistributionCard({ item, privateLabel, weighted }: { item: KeyItem; pri
   const groupName = (group: Group) => group === "public" ? "공공 전체" : privateLabel;
   const colorClass = (response: Response, index: number) => response.code === 99 ? "segment-3" : item.scale_type === "ordinal" ? "ax-ordinal-" + index : "ax-category-" + index;
   return <article className="ai-perception-item ax-distribution-card">
-    <header><h3>{item.label}</h3><small>{item.column}</small></header><p className="ax-item-note">{item.note}</p>
+    <header><h3>{item.label}</h3><small>{item.column}</small></header><QuestionDetailBlock detail={item.questionDetail} />
+    <p className="ax-item-note">{item.note}</p>
     <div className="ai-distribution-grid">{(["public", "private"] as Group[]).map((group) => {
       const stats = item[group];
       const visible = canShowDistribution(stats, weighted);
@@ -176,6 +182,20 @@ function DistributionGap({ item, weighted, privateLabel }: { item: KeyItem; weig
   const ordinal = item.scale_type === "ordinal", gap = publicValue - privateValue;
   const label = item.categories.find((category) => category.code === 1)?.label ?? "예";
   return <div className="ax-distribution-gap"><span>{ordinal ? "평균(1–5점)" : "‘" + label + "’ 비율"} · {weighted ? "가중" : "원표본"}</span><strong>공공 전체 {ordinal ? publicValue.toFixed(2) : percent(publicValue)} · {privateLabel} {ordinal ? privateValue.toFixed(2) : percent(privateValue)}</strong><small>공공−민간 {ordinal ? (gap >= 0 ? "+" : "") + gap.toFixed(2) + "점" : formatEffect(gap, "probability") + "%p"} · 기술통계, 유의성 검정 아님</small></div>;
+}
+function QuestionDetailBlock({ detail }: { detail?: QuestionDetail }) {
+  if (!detail) return null;
+  return <section className="wps-question-detail" aria-label="설문 문항 상세">
+    <dl>
+      <div><dt>설문 원문</dt><dd>{detail.exactQuestion}</dd></div>
+      {detail.itemPhrase ? <div><dt>세부 문항</dt><dd>{detail.itemPhrase}</dd></div> : null}
+      <div><dt>응답 대상</dt><dd>{detail.respondent}</dd></div>
+      <div><dt>회상기간</dt><dd>{detail.referencePeriod}</dd></div>
+      <div><dt>응답 보기</dt><dd>{detail.responseOptions}</dd></div>
+      <div><dt>변수코드</dt><dd><code>{detail.variableCode}</code></dd></div>
+      <div><dt>설문 근거</dt><dd>{detail.sourceLocation}</dd></div>
+    </dl>
+  </section>;
 }
 function ItemMetadata({ item, privateLabel }: { item: KeyItem; privateLabel: string }) {
   return <details className="ax-item-metadata"><summary>정확한 측정·질문 대상·결측과 출처</summary><dl>

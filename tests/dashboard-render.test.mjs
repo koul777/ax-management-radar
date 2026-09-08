@@ -116,6 +116,41 @@ test("every rendered WPS question has an accessible five-group employment-size m
   }
 });
 
+test("WPS AI-operation cards server-render verified question wording, scope, period, options, and code", async () => {
+  const [raw, response] = await Promise.all([
+    readFile(new URL("../app/data/wps-explorer.json", import.meta.url), "utf8"),
+    render("ax", "governance", { year: 2023, private_size: "all" }),
+  ]);
+  const data = JSON.parse(raw);
+  const slice = data.slices.find((item) => item.year === 2023 && item.private_size_id === "all");
+  const detail = (column) => slice.key_items.find((item) => item.column === column).questionDetail;
+  const html = await response.text();
+  const text = plainText(html);
+  const ai051 = detail("ai051");
+
+  assert.equal(response.status, 200);
+  for (let number = 50; number <= 67; number += 1) {
+    const current = detail(`ai${String(number).padStart(3, "0")}`);
+    assert.ok(current?.exactQuestion && current.respondent && current.referencePeriod && current.responseOptions && current.variableCode && current.sourceLocation, `AI${number} question detail`);
+  }
+  assert.equal(ai051.exactQuestion, "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.");
+  assert.equal(ai051.itemPhrase, "잠재적 일자리 상실");
+  assert.equal(ai051.referencePeriod, "조사차수 2023 · 문항 자체의 회상기간 명시 없음");
+  assert.equal(ai051.responseOptions, "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)");
+  assert.match(ai051.respondent, /인사담당자.*AI001=1.*노조·노사협의회 보유 여부로 추가 분기하지 않음/);
+  assert.match(html, /class="wps-question-detail"/);
+  for (const expected of ["설문 원문", ai051.exactQuestion, "세부 문항", ai051.itemPhrase, "응답 대상", ai051.respondent, "회상기간", ai051.referencePeriod, "응답 보기", ai051.responseOptions, "변수코드", "ai051"]) assert.ok(text.includes(expected), expected);
+  assert.ok(text.includes("신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항."), "summary remains contextual, but is not the only visible question text");
+
+  assert.equal(detail("ai050").exactQuestion, "{귀사는/귀 사업장은} 인공지능 활용과 관련하여 직원 또는 직원의 업무에 대한 데이터를 수집합니까?");
+  assert.equal(detail("ai057").itemPhrase, "인공지능 활용에 관한 단체협약 체결");
+  assert.equal(detail("ai057").responseOptions, "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)");
+  assert.match(detail("ai061").respondent, /AI001=1.*AI060=.*1/);
+  assert.equal(detail("ai065").exactQuestion, "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 이를 유지하거나 개발하는데 필요한 보다 전문화된 인공지능 기술을 보유하는 것이 더 중요하게 되었습니까?");
+  assert.equal(detail("discussion_any").exactQuestion, "파생지표 · 단독 설문문항 없음");
+  assert.match(detail("discussion_any").variableCode, /AI051~AI056/);
+});
+
 test("WPS regression pages retain fixed periods and do not inherit descriptive filters", async () => {
   const html = await (await render("ax", "adoption", { year: 2005, private_size: "under300" })).text();
   const text = plainText(html);

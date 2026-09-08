@@ -21657,6 +21657,15 @@
             }
           ],
           "note": "하나라도 예=논의 확인,6개모두아니요=모든항목아니요,그외모름·결측포함불명.검증된합성척도아님.",
+          "questionDetail": {
+            "exactQuestion": "파생지표 · 단독 설문문항 없음",
+            "itemPhrase": "AI051~AI056 중 하나 이상이 ‘예’이면 논의 확인, 6개 모두 ‘아니요’이면 모든 항목 아니요, 그 외는 불명",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "AI051~AI056 각 항목의 ① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)을 사용",
+            "variableCode": "discussion_any ← AI051~AI056",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI051~AI056 항목; WPS 통합설문지 v1.91 물리 507쪽(인쇄 489쪽), AI051~AI056; 대시보드 파생 규칙"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -21794,6 +21803,14 @@
             }
           ],
           "note": "AI 활용과 관련한 데이터 수집 여부. 수집 자체를 좋은 거버넌스로 점수화하지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 인공지능 활용과 관련하여 직원 또는 직원의 업무에 대한 데이터를 수집합니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai050",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI050"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -21926,6 +21943,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "잠재적 일자리 상실",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai051",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI051"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -22058,6 +22084,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "임금에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai052",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI052"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -22190,6 +22225,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "근로 조건에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai053",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI053"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -22322,6 +22366,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "숙련과 교육에 대한 필요",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai054",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI054"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -22454,6 +22507,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "데이터 수집 및 활용",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai055",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI055"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -22586,6 +22648,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "특정 근로자 집단에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai056",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI056"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -22699,7 +22770,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -22718,6 +22789,15 @@
             }
           ],
           "note": "양 부문 모두 예 응답 0건. 변이가 없어 회귀를 추정하지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 활용에 관한 단체협약 체결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai057",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI057"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -22831,7 +22911,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -22850,6 +22930,15 @@
             }
           ],
           "note": "협의 결과에 관한 응답이며 일반적인 AI 전략 보유율이 아님. 공공 예 1건.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 전략의 변경 혹은 채택",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai058",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI058"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -22963,7 +23052,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -22982,6 +23071,15 @@
             }
           ],
           "note": "협의 결과에 관한 응답이며 일반적인 가이드라인 보유율이 아님. 공공 예 1건.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 활용 가이드라인의 변경 혹은 채택",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai059",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI059"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -23114,6 +23212,14 @@
             }
           ],
           "note": "기술 요구의 변화 인식으로, 실제 역량 향상 척도가 아님. 다음 대응 문항의 분기 변수.",
+          "questionDetail": {
+            "exactQuestion": "인공지능이 {귀사/귀 사업장}의 기술 요구를 변화시켰다고 생각하십니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai060",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI060"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -23227,7 +23333,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -23246,6 +23352,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "내부 직원을 재교육하거나 숙련도를 높여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai061",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI061"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -23359,7 +23474,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -23378,6 +23493,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "새 직원을 채용하여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai062",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI062"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -23491,7 +23615,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -23510,6 +23634,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "외부 회사로부터 서비스를 구매하여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai063",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI063"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -23623,7 +23756,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -23642,6 +23775,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "해고나 인원 정리를 통해 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai064",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI064"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -23774,6 +23916,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 이를 유지하거나 개발하는데 필요한 보다 전문화된 인공지능 기술을 보유하는 것이 더 중요하게 되었습니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai065",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI065"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -23906,6 +24056,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에서 인공지능의 도입이 창의성이나 의사소통 같은 보다 인간적인 능력을 좀 더 중요하게 만들었나요?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai066",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI066"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -24038,6 +24196,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 고학력 직원의 확보가 더 중요해졌습니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai067",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI067"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -25685,6 +25851,15 @@
             }
           ],
           "note": "하나라도 예=논의 확인,6개모두아니요=모든항목아니요,그외모름·결측포함불명.검증된합성척도아님.",
+          "questionDetail": {
+            "exactQuestion": "파생지표 · 단독 설문문항 없음",
+            "itemPhrase": "AI051~AI056 중 하나 이상이 ‘예’이면 논의 확인, 6개 모두 ‘아니요’이면 모든 항목 아니요, 그 외는 불명",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "AI051~AI056 각 항목의 ① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)을 사용",
+            "variableCode": "discussion_any ← AI051~AI056",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI051~AI056 항목; WPS 통합설문지 v1.91 물리 507쪽(인쇄 489쪽), AI051~AI056; 대시보드 파생 규칙"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -25822,6 +25997,14 @@
             }
           ],
           "note": "AI 활용과 관련한 데이터 수집 여부. 수집 자체를 좋은 거버넌스로 점수화하지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 인공지능 활용과 관련하여 직원 또는 직원의 업무에 대한 데이터를 수집합니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai050",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI050"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -25954,6 +26137,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "잠재적 일자리 상실",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai051",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI051"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -26086,6 +26278,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "임금에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai052",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI052"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -26218,6 +26419,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "근로 조건에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai053",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI053"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -26350,6 +26560,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "숙련과 교육에 대한 필요",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai054",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI054"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -26482,6 +26701,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "데이터 수집 및 활용",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai055",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI055"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -26614,6 +26842,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "특정 근로자 집단에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai056",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI056"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -26727,7 +26964,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -26746,6 +26983,15 @@
             }
           ],
           "note": "양 부문 모두 예 응답 0건. 변이가 없어 회귀를 추정하지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 활용에 관한 단체협약 체결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai057",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI057"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -26859,7 +27105,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -26878,6 +27124,15 @@
             }
           ],
           "note": "협의 결과에 관한 응답이며 일반적인 AI 전략 보유율이 아님. 공공 예 1건.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 전략의 변경 혹은 채택",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai058",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI058"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -26991,7 +27246,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -27010,6 +27265,15 @@
             }
           ],
           "note": "협의 결과에 관한 응답이며 일반적인 가이드라인 보유율이 아님. 공공 예 1건.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 활용 가이드라인의 변경 혹은 채택",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai059",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI059"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -27142,6 +27406,14 @@
             }
           ],
           "note": "기술 요구의 변화 인식으로, 실제 역량 향상 척도가 아님. 다음 대응 문항의 분기 변수.",
+          "questionDetail": {
+            "exactQuestion": "인공지능이 {귀사/귀 사업장}의 기술 요구를 변화시켰다고 생각하십니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai060",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI060"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -27255,7 +27527,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -27274,6 +27546,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "내부 직원을 재교육하거나 숙련도를 높여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai061",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI061"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -27387,7 +27668,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -27406,6 +27687,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "새 직원을 채용하여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai062",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI062"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -27519,7 +27809,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -27538,6 +27828,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "외부 회사로부터 서비스를 구매하여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai063",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI063"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -27651,7 +27950,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -27670,6 +27969,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "해고나 인원 정리를 통해 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai064",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI064"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -27802,6 +28110,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 이를 유지하거나 개발하는데 필요한 보다 전문화된 인공지능 기술을 보유하는 것이 더 중요하게 되었습니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai065",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI065"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -27934,6 +28250,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에서 인공지능의 도입이 창의성이나 의사소통 같은 보다 인간적인 능력을 좀 더 중요하게 만들었나요?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai066",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI066"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -28066,6 +28390,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 고학력 직원의 확보가 더 중요해졌습니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai067",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI067"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -29713,6 +30045,15 @@
             }
           ],
           "note": "하나라도 예=논의 확인,6개모두아니요=모든항목아니요,그외모름·결측포함불명.검증된합성척도아님.",
+          "questionDetail": {
+            "exactQuestion": "파생지표 · 단독 설문문항 없음",
+            "itemPhrase": "AI051~AI056 중 하나 이상이 ‘예’이면 논의 확인, 6개 모두 ‘아니요’이면 모든 항목 아니요, 그 외는 불명",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "AI051~AI056 각 항목의 ① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)을 사용",
+            "variableCode": "discussion_any ← AI051~AI056",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI051~AI056 항목; WPS 통합설문지 v1.91 물리 507쪽(인쇄 489쪽), AI051~AI056; 대시보드 파생 규칙"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -29850,6 +30191,14 @@
             }
           ],
           "note": "AI 활용과 관련한 데이터 수집 여부. 수집 자체를 좋은 거버넌스로 점수화하지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 인공지능 활용과 관련하여 직원 또는 직원의 업무에 대한 데이터를 수집합니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai050",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI050"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -29982,6 +30331,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "잠재적 일자리 상실",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai051",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI051"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -30114,6 +30472,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "임금에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai052",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI052"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -30246,6 +30613,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "근로 조건에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai053",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI053"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -30378,6 +30754,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "숙련과 교육에 대한 필요",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai054",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI054"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -30510,6 +30895,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "데이터 수집 및 활용",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai055",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI055"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -30642,6 +31036,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "특정 근로자 집단에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai056",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI056"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -30755,7 +31158,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -30774,6 +31177,15 @@
             }
           ],
           "note": "양 부문 모두 예 응답 0건. 변이가 없어 회귀를 추정하지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 활용에 관한 단체협약 체결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai057",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI057"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -30887,7 +31299,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -30906,6 +31318,15 @@
             }
           ],
           "note": "협의 결과에 관한 응답이며 일반적인 AI 전략 보유율이 아님. 공공 예 1건.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 전략의 변경 혹은 채택",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai058",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI058"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -31019,7 +31440,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -31038,6 +31459,15 @@
             }
           ],
           "note": "협의 결과에 관한 응답이며 일반적인 가이드라인 보유율이 아님. 공공 예 1건.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 활용 가이드라인의 변경 혹은 채택",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai059",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI059"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -31170,6 +31600,14 @@
             }
           ],
           "note": "기술 요구의 변화 인식으로, 실제 역량 향상 척도가 아님. 다음 대응 문항의 분기 변수.",
+          "questionDetail": {
+            "exactQuestion": "인공지능이 {귀사/귀 사업장}의 기술 요구를 변화시켰다고 생각하십니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai060",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI060"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -31283,7 +31721,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -31302,6 +31740,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "내부 직원을 재교육하거나 숙련도를 높여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai061",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI061"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -31415,7 +31862,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -31434,6 +31881,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "새 직원을 채용하여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai062",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI062"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -31547,7 +32003,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -31566,6 +32022,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "외부 회사로부터 서비스를 구매하여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai063",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI063"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -31679,7 +32144,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -31698,6 +32163,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "해고나 인원 정리를 통해 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai064",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI064"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -31830,6 +32304,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 이를 유지하거나 개발하는데 필요한 보다 전문화된 인공지능 기술을 보유하는 것이 더 중요하게 되었습니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai065",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI065"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -31962,6 +32444,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에서 인공지능의 도입이 창의성이나 의사소통 같은 보다 인간적인 능력을 좀 더 중요하게 만들었나요?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai066",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI066"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -32094,6 +32584,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 고학력 직원의 확보가 더 중요해졌습니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai067",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI067"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -33741,6 +34239,15 @@
             }
           ],
           "note": "하나라도 예=논의 확인,6개모두아니요=모든항목아니요,그외모름·결측포함불명.검증된합성척도아님.",
+          "questionDetail": {
+            "exactQuestion": "파생지표 · 단독 설문문항 없음",
+            "itemPhrase": "AI051~AI056 중 하나 이상이 ‘예’이면 논의 확인, 6개 모두 ‘아니요’이면 모든 항목 아니요, 그 외는 불명",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "AI051~AI056 각 항목의 ① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)을 사용",
+            "variableCode": "discussion_any ← AI051~AI056",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI051~AI056 항목; WPS 통합설문지 v1.91 물리 507쪽(인쇄 489쪽), AI051~AI056; 대시보드 파생 규칙"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -33878,6 +34385,14 @@
             }
           ],
           "note": "AI 활용과 관련한 데이터 수집 여부. 수집 자체를 좋은 거버넌스로 점수화하지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 인공지능 활용과 관련하여 직원 또는 직원의 업무에 대한 데이터를 수집합니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai050",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI050"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -34010,6 +34525,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "잠재적 일자리 상실",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai051",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI051"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -34142,6 +34666,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "임금에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai052",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI052"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -34274,6 +34807,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "근로 조건에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai053",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI053"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -34406,6 +34948,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "숙련과 교육에 대한 필요",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai054",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI054"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -34538,6 +35089,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "데이터 수집 및 활용",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai055",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI055"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -34670,6 +35230,15 @@
             }
           ],
           "note": "신기술 사용 관련 노조·노사협의회와의 협의에서 논의된 사항.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의에서 다음의 내용들이 논의되었는지 응답해 주십시오.",
+            "itemPhrase": "특정 근로자 집단에 미치는 영향",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai056",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI056"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -34783,7 +35352,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -34802,6 +35371,15 @@
             }
           ],
           "note": "양 부문 모두 예 응답 0건. 변이가 없어 회귀를 추정하지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 활용에 관한 단체협약 체결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai057",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI057"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -34915,7 +35493,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -34934,6 +35512,15 @@
             }
           ],
           "note": "협의 결과에 관한 응답이며 일반적인 AI 전략 보유율이 아님. 공공 예 1건.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 전략의 변경 혹은 채택",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai058",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI058"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -35047,7 +35634,7 @@
           "eligibility_rule": "ai001=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -35066,6 +35653,15 @@
             }
           ],
           "note": "협의 결과에 관한 응답이며 일반적인 가이드라인 보유율이 아님. 공공 예 1건.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}의 신기술 사용과 관련된 노조(노사협의회)와의 협의 결과 다음의 사항이 이루어졌는지 응답해 주십시오.",
+            "itemPhrase": "인공지능 활용 가이드라인의 변경 혹은 채택",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). 노조·노사협의회 보유 여부로 추가 분기하지 않음.",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai059",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI059"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -35198,6 +35794,14 @@
             }
           ],
           "note": "기술 요구의 변화 인식으로, 실제 역량 향상 척도가 아님. 다음 대응 문항의 분기 변수.",
+          "questionDetail": {
+            "exactQuestion": "인공지능이 {귀사/귀 사업장}의 기술 요구를 변화시켰다고 생각하십니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai060",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI060"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -35311,7 +35915,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -35330,6 +35934,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "내부 직원을 재교육하거나 숙련도를 높여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai061",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI061"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -35443,7 +36056,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -35462,6 +36075,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "새 직원을 채용하여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai062",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI062"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -35575,7 +36197,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -35594,6 +36216,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "외부 회사로부터 서비스를 구매하여 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai063",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI063"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -35707,7 +36338,7 @@
           "eligibility_rule": "ai001=1 and ai060=1",
           "scale_type": "binary",
           "usage": "descriptive_only",
-          "measurement": "1예/2아니요/99모름",
+          "measurement": "1그렇다/2그렇지않다/99잘모르겠다",
           "categories": [
             {
               "code": 1,
@@ -35726,6 +36357,15 @@
             }
           ],
           "note": "ai060=1인 도입자만 적격. 비대상 결측을 아니요로 채우지 않음.",
+          "questionDetail": {
+            "exactQuestion": "{귀사는/귀 사업장은} 기술 요구의 변경 문제를 다음 중 어떤 방식으로 해결하셨습니까?",
+            "itemPhrase": "해고나 인원 정리를 통해 해결",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1). AI060에서 기술 요구가 변화했다고 응답한 사업체(AI060=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 그렇다 · ② 그렇지 않다 · 99 잘 모르겠다 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai064",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI064"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "AI 활용 사업체 중 AI가 기술 요구를 바꾸었다고 응답한 사업체",
           "source": {
@@ -35858,6 +36498,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 이를 유지하거나 개발하는데 필요한 보다 전문화된 인공지능 기술을 보유하는 것이 더 중요하게 되었습니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai065",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI065"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -35990,6 +36638,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에서 인공지능의 도입이 창의성이나 의사소통 같은 보다 인간적인 능력을 좀 더 중요하게 만들었나요?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai066",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI066"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
@@ -36122,6 +36778,14 @@
             }
           ],
           "note": "요구 역량의 중요성 변화 인식. 실제 보유 역량이나 AI 영향 회귀변수가 아님.",
+          "questionDetail": {
+            "exactQuestion": "{귀사/귀 사업장}에는 인공지능 도입과 활용으로 인해 고학력 직원의 확보가 더 중요해졌습니까?",
+            "respondent": "인사담당자. AI001에서 2023년 말 AI를 활용한다고 응답한 사업체(AI001=1).",
+            "referencePeriod": "조사차수 2023 · 문항 자체의 회상기간 명시 없음",
+            "responseOptions": "① 예 · ② 아니요 · 99 모름 (설문 화면에서 3초 후 표시)",
+            "variableCode": "ai067",
+            "sourceLocation": "WPS 통합 코드북 v1.91 AI050~AI067 항목; WPS 통합설문지 v1.91 물리 507~509쪽, AI067"
+          },
           "category_label": "AX 운영·대응",
           "eligibility": "2023년 말 AI 활용 사업체",
           "source": {
